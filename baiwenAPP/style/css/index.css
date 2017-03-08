@@ -1,0 +1,1027 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=button] {
+    -webkit-appearance: none;
+    outline: none
+}
+
+input[type=submit] {
+    -webkit-appearance: none;
+    outline: none
+}
+
+body {
+    line-height: 1.6;
+    font-family: "PingFang SC", Helvetica, Arial, "微软雅黑", "黑体"!important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+.click-bg:active {
+    background-color: #f7f7f7;
+}
+
+.index {
+    height: 100%;
+    position: relative;
+}
+
+.top-bg {
+    background: url(../images/i-bg-top.png)no-repeat center top;
+    width: 100%;
+    height: 3.173333rem;
+    position: fixed;
+    top: -0.5rem;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+}
+
+.bottom-bg {
+    background: url(../images/i-bg-bottom.png)no-repeat center top;
+    width: 100%;
+    height: 5.173333rem;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* .border-box{
+    background: url(../images/bg4.png)no-repeat center center;
+    background-size: 100% 100%;
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:-0.58rem;
+    z-index: -1;
+} */
+
+.header .head-box {
+    background: rgba(255, 255, 255, 0.65);
+    height: 1.12rem;
+    line-height: 1.12rem;
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    /*两端对齐*/
+    -webkit-box-align: center;
+}
+
+.header .ico-wrap {
+    width: 1.52rem;
+    text-align: center;
+}
+
+.header .logo .ico {
+    background: url(../images/logo.png)no-repeat;
+    width: 0.466667rem;
+    height: 0.813333rem;
+    background-size: contain;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .search-ico .ico {
+    background: url(../images/search-ico.png)no-repeat;
+    width: 0.453333rem;
+    height: 0.453333rem;
+    background-size: contain;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .title {
+    font-size: 0;
+}
+
+.header .title span {
+    font-size: 0.4rem;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.12rem;
+    width: 0.826667rem;
+    text-align: center;
+}
+
+.header .title span.active {
+    color: #d33c3e;
+    position: relative;
+}
+
+.header .title span.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: auto;
+    width: 0.826667rem;
+    border: 1px solid #d33c3e;
+    z-index: 102;
+}
+
+.header .title .dot {
+    width: 6px;
+    height: 6px;
+    background: #2d2d2d;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 0.52rem;
+    display: inline-block;
+}
+
+.index .main {
+    padding-top: 1.12rem;
+    padding-bottom: 1.333333rem;
+}
+
+.index .main .m-wrap .m-box {
+    padding: 0.186667rem 0.333333rem;
+}
+
+.index .main .m-wrap .m-box .n-list>a {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.index .main .m-wrap .m-box .n-list>a .left-pic {
+    width: 2.76rem;
+    height: 2.106667rem;
+    overflow: hidden;
+    background: url(../images/list-pic-bg.png)no-repeat center top;
+    background-size: 2.826667rem 1.626667rem;
+    margin-right: 0.493333rem;
+    padding-top: 0.133333rem;
+    padding-right: 0.133333rem;
+}
+
+.index .main .m-wrap .m-box .n-list>a .left-pic>img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.index .main .m-wrap .m-box .n-list>a .right-text {
+    height: 1.693333rem;
+    position: relative;
+    width: 5.746667rem;
+}
+
+.index .main .m-wrap .m-box .n-list>a .right-text .top {
+    position: relative;
+    top: -0.2rem;
+}
+
+.index .main .m-wrap .m-box .n-list>a .right-text .top>h2 {
+    font-size: 0.4rem;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.index .main .m-wrap .m-box .n-list>a .right-text .intro>p {
+    font-size: 0.32rem;
+    top: -0.106667rem;
+    position: relative;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.3;
+}
+
+.index .main .m-wrap .m-box .n-list>a .right-text .tags {
+    font-size: 0;
+    position: absolute;
+    bottom: 0rem;
+    left: auto;
+}
+
+.index .main .m-wrap .m-box .n-list>a .right-text .tags span {
+    display: inline-block;
+    line-height: 0.4rem;
+    border: 1px solid #d4d4d4;
+    width: 1.253333rem;
+    font-size: 0.266667rem;
+    text-align: center;
+    color: #999;
+    margin-right: 0.093333rem;
+    border-radius: 0.213333rem;
+    box-sizing: border-box;
+}
+
+.index .main .m-wrap .m-box .n-list>a .right-text .tags span.tag-class {
+    color: #efa1a2;
+    border: 1px solid #efa1a2;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer .foot-box {
+    background: #fff;
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    /*两端对齐*/
+    -webkit-box-align: center;
+    padding: 0 0.4rem;
+}
+
+.footer .foot-box li .ico {
+    display: inline-block;
+}
+
+.footer .foot-box li .view-ico {
+    background: url(../images/f-shizheng-ico.png)no-repeat center center;
+    background-size: cover;
+    width: 0.573333rem;
+    height: 0.56rem;
+}
+
+.footer .foot-box li .bookstore-ico {
+    background: url(../images/f-book-ico.png)no-repeat center center;
+    background-size: cover;
+    width: 0.453333rem;
+    height: 0.573333rem;
+}
+
+.footer .foot-box li .book-frame-ico {
+    background: url(../images/f-bookframe-ico.png)no-repeat center center;
+    background-size: cover;
+    width: 0.493333rem;
+    height: 0.52rem;
+}
+.footer .foot-box li:nth-of-type(3).active .ico{
+       background: url(../images/book-fram-active.png)no-repeat center center;
+       background-size: cover;
+       width:0.52rem;
+       height:0.546667rem;
+}
+.footer .foot-box li:nth-of-type(1).active .ico{
+    background: url(../images/shizheng-active.png) no-repeat center center;
+    background-size: cover;
+    width:0.586667rem;
+    height:0.6rem;
+}
+.footer .foot-box li:nth-of-type(2).active .ico{
+    background: url(../images/book-active.png) no-repeat center center;
+    background-size: cover;
+    width:0.453333rem;
+    height:0.573333rem;
+}
+.footer .foot-box li:nth-of-type(4).active .ico{
+    background: url(../images/book-active.png) no-repeat center center;
+    background-size: cover;
+}
+.footer .foot-box li .person-ico {
+    background: url(../images/f-footer-ico.png)no-repeat center center;
+    background-size: cover;
+    width: 0.386667rem;
+    height: 0.546667rem;
+}
+
+.footer .foot-box li {
+    width: 25%;
+    text-align: center;
+    padding: 0.173333rem 0;
+}
+
+.footer .foot-box li p {
+    font-size: 0.32rem;
+    color: #333;
+    text-align: center;
+    line-height: 0.38rem;
+}
+
+
+/* 推荐 */
+
+
+/* swiper样式 */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    width: 0.213333rem!important;
+    height: 0.213333rem!important;
+    display: inline-block;
+    border-radius: 100%;
+    background: transparent!important;
+    border: 1px solid #fff!important;
+    opacity: 1!important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff!important;
+}
+
+.recomm .main {
+    padding-top: 1.12rem;
+}
+
+.recomm .main .swiper-container .swiper-wrapper a {
+    display: block;
+    width: 100%;
+    height: 3.573333rem;
+}
+
+.recomm .main .pre-maga {
+    border: 2px solid #181818;
+    padding: 2px;
+    margin: 0 0.4rem;
+    margin-top: 0.333333rem;
+}
+
+.recomm .main .wrap {
+    border: 1px solid #181818;
+}
+
+.recomm .main .wrap .box .maga-detail {
+    background: url(../images/maga-bg2_03.png)no-repeat center center;
+    width: 2.78rem;
+    height: 3.693333rem;
+    overflow: hidden;
+    background-size: cover;
+    padding-left: 0.08rem;
+    margin:0.173333rem 0;
+    margin-left:0.133333rem;
+    margin-right:0.373333rem;
+}
+
+.recomm .main .wrap .box .maga-detail img {
+     width: 100%;
+    height: 100%;
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    box-sizing: border-box;
+}
+
+.recomm .main .wrap .box {
+    display: -webkit-box;
+    -webkit-box-align: center;
+}
+
+.recomm .main .wrap .box .btns span {
+    width: 1.346667rem;
+    height: 0.413333rem;
+    line-height: 0.413333rem;
+    color: #fff;
+    text-align: center;
+    background: #bc212b;
+    display: block;
+    font-size: 0.266667rem;
+}
+
+.recomm .main .wrap .box .btns span:first-of-type .ico {
+    background: url(../images/read.png)center center no-repeat;
+    width: 0.253333rem;
+    height: 0.253333rem;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.106667rem;
+}
+
+.recomm .main .wrap .box .btns span:last-of-type {
+    background: #e3e3e3;
+    color: #333;
+    margin-top: 0.36rem;
+}
+
+.recomm .main .wrap .box .btns span:last-of-type .ico {
+    background: url(../images/collect.png)center center;
+    width: 0.24rem;
+    height: 0.226667rem;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.16rem;
+}
+
+.recomm .main .wrap .box .intro {
+    height: 4.066667rem;
+      position: relative;
+}
+
+.recomm .main .wrap .box .f-left {
+    border-right: 1px solid #282828;
+    width: 5.12rem;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    height: 4.066667rem;
+}
+
+
+
+.recomm .main .wrap .box .intro p {
+    font-size: 0.266667rem;
+    color: #333;
+    width: 0.266667rem;
+    word-wrap: break-word;
+    writing-mode: tb-rl;
+    line-height: 1.5;
+    letter-spacing: 0.04rem;
+    position:absolute;
+    right: 0.5rem;
+    top: 0.2rem;
+
+}
+
+.recomm .main .wrap .box .intro {
+    width: 2.2rem;
+    border-right: 1px solid #282828;
+    height: 4.066667rem;
+    overflow: hidden;
+}
+
+.recomm .main .wrap .box .maga-data {
+    position: relative;
+    height: 4.066667rem;
+    width: 1.7rem;
+    top:0;
+}
+
+.recomm .main .wrap .box .maga-data p {
+    line-height: 1.4;
+    position: absolute;
+    right:0.5rem;
+    top: 0.6rem;
+    letter-spacing: 0.05rem;
+    writing-mode: tb-rl;
+    font-size:.32rem;
+    font-weight: 600;
+    height:3rem;
+}
+
+.recomm .maga-box {
+    margin-top: 0.16rem;
+    padding: 0 0.4rem;
+    padding-bottom: 2.933333rem;
+}
+
+.recomm .maga-box .year-title h2 {
+    font-size: 0.373333rem;
+    color: #1a1a1a;
+    line-height: 0.8rem;
+    border-bottom: 1px solid #bc212b;
+    display: inline-block;
+}
+
+.recomm .maga-box .year-title {
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 0.573333rem;
+}
+
+.recomm .maga-box .maga-list ul li {
+    border: 1px solid #e3e3e3;
+    margin-right: 0.12rem;
+    width: 32.3%;
+    height:3.586667rem;
+    box-sizing: border-box;
+    position:relative;
+    margin-bottom: 0.266667rem;
+}
+.recomm .maga-box .maga-list ul li  .right-data{
+        position:absolute;
+    right:0;
+    top:0;
+    writing-mode: tb-rl;
+    display:block;
+    background:#ececec;
+    width:0.586667rem;
+    border:1px solid #dedede;
+    height:100%;
+    box-sizing: border-box;
+    padding:0.16rem 0;
+}
+.recomm .maga-box .maga-list ul li .maga-date{
+    writing-mode: tb-rl;
+    display:block;
+    font-size: 0.32rem;
+    color:#1a1a1a;
+    letter-spacing: 0.053333rem;
+   
+}
+.recomm .maga-box .maga-list ul li .logo-ico{
+    background:url(../images/logo.png)no-repeat center center;
+    width:0.293333rem;
+    height:0.546667rem;
+    background-size: cover;
+    display:block;
+    position:absolute;
+    right:0.133333rem;
+    bottom:0.16rem;
+
+}
+.recomm .maga-box .maga-list ul li:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.recomm .maga-box .maga-list ul {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recomm .maga-box .maga-list ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.recomm .pre-tag {
+    background: url(../images/pre-data.png)no-repeat center center;
+    width: 0.346667rem;
+    height: 0.746667rem;
+    position: absolute;
+    top: 0rem;
+    right:0.1rem;
+    z-index: 102;
+    background-size: cover;
+}
+
+
+/* 书架页 */
+
+.book-frame {
+    height: 100%;
+    width: 100%;
+    background: url(../images/book-frame-bg.png)center -0.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed!important;
+}
+.book-frame .header .title h2{
+    font-size:0.4rem;
+    color:#d33c3e;
+    text-align: center;
+    position:relative;
+    
+}
+.book-frame .header .title h2:after{
+    content:'';
+    position:absolute;
+    width:0.826667rem;
+    border-bottom:0.04rem solid #d33c3e;
+    left:50%;
+    bottom:-0.026667rem;
+    margin-left:-0.4133335rem;
+}
+.book-frame .main {
+    padding-top: 1.12rem;
+}
+
+.book-frame .main .main-box .list-box {
+    width: 9.36rem;
+    list-style-type: none;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex-flow: wrap;
+    -webkit-align-items: stretch;
+    padding: 0 0.32rem;
+    margin: 0 auto;
+}
+
+.book-frame .main .main-box .list-box .list {
+    width: 2.466667rem;
+    height: 3.346667rem;
+    position: relative;
+    margin-right: 0.56rem;
+    margin-top: 0.88rem;
+
+}
+.book-frame .main .main-box .list-box .list .img-shadow{
+    width:2.693333rem;
+    height:0.266667rem;
+    background:url(../images/fram-pic-bg_03.png)no-repeat center center;
+    background-size: contain;
+    display:block;
+    position: absolute;
+    bottom:0rem;
+    left:0rem;
+    z-index: 11;
+}
+
+
+
+.book-frame .main .main-box .list-box .list .l-mask {
+    width: 2.466667rem;
+    height: 3.346667rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(161, 86, 66, 0.5);
+    z-index: 10;
+}
+
+.book-frame .main .main-box .list-box .list:nth-child(3n+1) {
+    margin-left: 0.4rem;
+}
+
+.book-frame .main .main-box .list-box .list:nth-child(3n) {
+    margin-right: 0.4rem;
+}
+
+.book-frame .main .main-box .list-box .list:nth-child(3n+1):after {
+    content: '';
+    background: url(../images/bar-03_02.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    width: 9.32rem;
+    display: block;
+    height: 0.466667rem;
+    position: absolute;
+    left: -0.413333rem;
+    bottom: -0.3rem;
+    box-shadow: 0 0.25rem 0.45rem 0.04rem rgba(0, 0, 0, .3);
+    z-index: 10;
+}
+
+.book-frame .main .main-box .list-box .list .hot.new-tag {
+    background: url(../images/new-tag_03.png)no-repeat center center;
+    background-size: contain;
+    width: 0.973333rem;
+    height: 1.053333rem;
+    position: absolute;
+    display: block;
+    top:-0.053333rem;
+    right: 0;
+}
+
+
+.book-frame .main .main-box .list-box .list .which-jour {
+    font-size: 0.32rem;
+    color: #fff;
+    background-color: #d33d3e;
+    width: 2.466667rem;
+    height: 0.826667rem;
+    line-height: 0.826667rem;
+    display: block;
+    position: absolute;
+    text-align: center;
+    bottom: 0rem;
+    left: 0;
+    z-index: 12;
+}
+
+
+/* 
+目录页 */
+.d-top{
+   width: 100%;
+    position: fixed;
+    left:0;
+    top:0;
+}
+.d-header {
+    width: 100%;
+    background: rgba(255,255,255,.92);
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 1.146667rem;
+}
+
+.d-header  .ico-wrap {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.226667rem;
+    height: 1.146667rem;
+    text-align: center;
+}
+
+.d-header  .ico-wrap .back {
+    background: url(../images/back_03.png)no-repeat center center;
+    width: 0.426667rem;
+    display: inline-block;
+    height: 0.426667rem;
+    vertical-align: middle;
+    background-size: contain;
+}
+
+.d-header  .title h2 {
+    font-size: 0.4rem;
+    color: #d64041;
+    text-align: center;
+    line-height: 1.146667rem;
+    letter-spacing: 0.026667rem;
+}
+.dir .d-top .tab{
+    width:100%;
+    text-align: center;
+    background:#fff;
+}
+.dir .d-top .tab span{
+    width:0.826667rem;
+    font-size: 0.373333rem;
+    color:#333;
+    display: inline-block;
+    line-height: 0.773333rem;
+    margin-right:0.666667rem;
+}
+.dir .d-top .tab span:last-of-type{
+    margin-right:0;
+}
+.dir .d-top .tab span.active{
+    color:#d64041;
+    position: relative;
+}
+.dir .d-top .tab span.active:after{
+    content:"";
+    width:0.826667rem;
+    display: block;
+    border-bottom: 3px solid #d64041;
+    position: absolute;
+    left:0;
+    bottom:-0.03125rem;
+}
+.dir .main {
+    padding-top:1.933333rem;
+}
+.dir .main .wrap {
+    padding-top:0.293333rem;
+        padding-left:0.4rem;
+    padding-right:0.4rem;
+}
+
+.dir .main .wrap .box li a {
+    display: block;
+    line-height: 0.56rem;
+    padding:0.293333rem 0;
+    font-size: 0;
+     border-bottom: 1px solid #ebebeb;
+}
+.dir .main .wrap .box li a h2{
+    font-size: 0.4rem;
+    color:#333;
+    background:url(../images/dir-ico_03.png)no-repeat left center;
+    padding-left:0.44rem;
+    display: inline-block;
+    vertical-align: top;
+    padding-right:0.306667rem;
+}
+.dir .main .wrap .box li a  span{
+    font-size: 0.373333rem;
+    color:#666;
+     vertical-align: middle;
+     display: inline-block;
+     
+}
+.dir .main .wrap .box li a .title-d{
+    width:6.693333rem;
+    display: inline-block;
+}
+/* 杂志内容 */
+.maga-content .d-top .ico-wrap:last-of-type{
+    right:0.266667rem!important;
+    left:auto;
+    top:0;
+}
+.maga-content .d-top .ico-wrap .share{
+    background:url(../images/share_03.png)no-repeat center center;
+    background-size: contain;
+    width:0.72rem;
+    height:0.173333rem;
+    line-height: 1.146667rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.maga-content .main{
+
+     padding:0 0.4rem;
+         padding-top:1.146667rem;
+         padding-bottom: 0.893333rem;
+}
+.maga-content .main .wrap .article p{
+    font-size: 0.373333rem;
+    color:#1a1a1a;
+    line-height: 1.6;
+    padding-top:0.533333rem;
+}
+.maga-content .main .wrap .article img{
+    max-width: 100%;
+    width:100%;
+    height:auto;
+    max-height:100%;
+    padding:0.266667rem 0;
+}
+.maga-content .main  .share-to {
+    padding-top:0.533333rem;
+    margin-bottom: 0.746667rem;
+}
+.maga-content .main  .share-title{
+    text-align: center;
+    border-bottom: 1px solid #e3e3e3;
+    width:100%;
+}
+.maga-content .main  .share-to .share-title p{
+    text-align: center;
+    position: relative;
+    top:0.3rem;
+    padding:0 0.266667rem;
+    display: inline-block;
+    background:#fff;
+    font-size: 0.346667rem;
+    color:#999;
+} 
+.maga-content .main  .share-to .share-add{
+    line-height: 1.146667rem;
+    padding:0.72rem 1.866667rem;
+    text-align: center;
+    font-size: 0;
+}
+.maga-content .main  .share-to .share-add a i.sina{
+    display: inline-block;
+    background:url(../images/sina_03.png)no-repeat center center;
+    width:0.72rem;
+    height:0.586667rem;
+    vertical-align: middle;
+}
+.maga-content .main  .share-to .share-add a i.weixin{
+    display: inline-block;
+    background:url(../images/weixin_03.png)no-repeat center center;
+    width:0.746667rem;
+    height:0.6rem;
+     vertical-align: middle;
+}
+.maga-content .main  .share-to .share-add a i.qq{
+    display: inline-block;
+    background:url(../images/aa_03.png)no-repeat center center;
+    width:0.56rem;
+    height:0.56rem;
+     vertical-align: middle;
+}
+.maga-content .main  .share-to .share-add a{
+    display: inline-block;
+    width:1.146667rem;
+    height:1.146667rem;
+    border-radius: 50%;
+    border:1px solid #dedede;
+    text-align: center;
+    margin-right:0.986667rem;
+    box-sizing: border-box;
+}
+.maga-content .main  .share-to .share-add a:last-of-type{
+    margin-right:0;
+}
+
+.maga-content .main   .recomm .left-pic{
+    background:url(../images/maga-bg2_03.png)no-repeat center center;
+    width:2.76rem;
+    height:3.693333rem;
+    overflow: hidden;
+    background-size: cover;
+    padding-left:0.093333rem;
+}
+.maga-content .main   .recomm .left-pic img{
+    width:100%;
+    height:100%;
+    border-top:1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    box-sizing: border-box;
+}
+.maga-content .main   .recomm .left-pic {
+    margin-right:0.533333rem;
+}
+.maga-content .main   .recomm  .right{
+    width:5.8rem;
+}
+.maga-content .main   .recomm  .right h2{
+    font-size: 0.426667rem;
+    color:#333;
+    line-height: 0.533333rem;
+        overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.maga-content .main   .recomm  .right p{
+    font-size: 0.346667rem;
+    color:#666;
+    line-height: 0.45rem;
+    margin-top:0.226667rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.maga-content .main   .recomm-box {
+        display: -webkit-box;
+}
+.maga-content .main   .recomm  .right a{
+   font-size: 0.293333rem;
+   color:#d64041;
+   line-height: 0.36rem;
+   display: block;
+   margin-top:0.32rem;
+}
+.maga-content .main  .coll-box{
+    position: absolute;
+    right:0.133333rem;
+    bottom:0;
+    width:1.08rem;
+    height:1.08rem;
+    background:rgba(0,0,0,.28);
+    border-radius: 50%;
+    line-height: 1.08rem;
+    text-align: center;
+}
+.maga-content .main  .coll-box .collec{
+    display: inline-block;
+    vertical-align:middle;
+    background:url(../images/collect-white_03.png)no-repeat center center;
+    width:0.573333rem;
+    height:0.533333rem;
+    background-size: cover;
+
+}

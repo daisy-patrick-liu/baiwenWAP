@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/css/index.css">
+    <link rel="stylesheet" href="script/swipe/css/swiper.min.css">
+    <script src="script/flexible.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/swipe/js/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/swipe/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <title>百问网推荐</title>
+    <style type="text/css" media="screen">
+    html {
+        height: 100%;
+    }
+    </style>
+</head>
+
+<body class="recomm">
+    <!-- 上面背景 -->
+    <div class="top-bg"></div>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="head-box">
+            <div class="logo ico-wrap">
+                <i class="ico"></i>
+            </div>
+            <div class="title">
+                <span class="active">推荐</span>
+                <i class="dot"></i>
+                <span>分类</span>
+            </div>
+            <div class="search-ico ico-wrap">
+                <i class="ico"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <section class="banner">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="javascript:;" style="background:url(style/images/banner_03.png)no-repeat center center;background-size: cover;"></a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="javascript:;" style="background:url(style/images/banner_03.png)no-repeat center center;background-size: cover;"></a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="pre-maga">
+            <div class="wrap">
+                <div class="box">
+                    <div class="f-left">
+                        <div class="maga-detail">
+                            <img src="style/images/maga.png" alt="">
+                        </div>
+                        <div class="btns">
+                            <span><i class="ico"></i>订阅</span>
+                            <span><i class="ico"></i>收藏</span>
+                        </div>
+                    </div>
+                    <div class="intro">
+                        <p>今年新任书记省长异地考察取了那些“真经”印度电子政务成功经验借鉴与启示</p>
+                    </div>
+                    <div class="maga-data">
+                        <p>
+                            2017年第4-5期合同订刊
+                        </p>
+                        <i class="pre-tag"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="maga-box">
+            <div class="year-title">
+                <h2>2017年</h2>
+            </div>
+            <div class="maga-list">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="style/images/maga.png" alt="">
+                            <div class="right-data">
+                                <span class="maga-date">2017年第6期</span>
+                                <i class="logo-ico"></i>
+                            </div>
+                        </a>
+                    </li>
+                       <li>
+                        <a href="javascript:;">
+                            <img src="style/images/maga.png" alt="">
+                            <div class="right-data">
+                                <span class="maga-date">2017年第6期</span>
+                                <i class="logo-ico"></i>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="foot-box">
+            <li>
+                <i class="ico view-ico"></i>
+                <p>时政</p>
+            </li>
+            <li class="active">
+                <i class="ico bookstore-ico"></i>
+                <p>书店</p>
+            </li>
+            <li>
+                <i class="ico book-frame-ico"></i>
+                <p>书架</p>
+            </li>
+            <li>
+                <i class="ico person-ico"></i>
+                <p>会员</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 下面背景 -->
+    <div class="bottom-bg"></div>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
+</body>
+
+</html>

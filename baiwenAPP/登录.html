@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style/css/index.css">
+<script src="script/flexible.js" type="text/javascript" charset="utf-8"></script>
+<title>登录</title>
+<style type="text/css" media="screen">
+@font-face {
+  font-family: 'iconfont';
+  src: url('fonts/iconfont.eot');
+  src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/iconfont.woff') format('woff'),
+  url('fonts/iconfont.ttf') format('truetype'),
+  url('fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+html, body {
+	height: 100%;
+}
+body {
+	background: url(style/images/register_bg.png) no-repeat;
+	background-size: cover;
+}
+.box {
+	padding: 0.533333rem 0.4rem;
+}
+.close {
+	text-align: right;
+}
+.close img {
+	width: 0.666667rem;
+	height: 1.173333rem;
+}
+.logo {
+	text-align: center;
+	padding-top: 0.533333rem;
+	padding-bottom: 1.333333rem;
+}
+.logo img {
+	width: 1.96rem;
+	height: 1.853333rem;
+}
+div.form {
+	padding: 0 1.066667rem;
+}
+.inputwrap {
+	padding-top: 0.64rem;
+	border-bottom: 1px solid #e1e1e1;
+	/*padding-left: 0.786667rem;*/
+}
+.inputwrap input {
+	line-height: 0.893333rem;
+	-webkit-appearance: none;
+	background: none;
+	border: none;
+}
+.font12 {
+    font-size: 12px;
+}
+
+[data-dpr="2"] .font12 {
+    font-size: 24px;
+}
+
+[data-dpr="3"] .font12 {
+    font-size: 36px;
+}
+.font15 {
+    font-size: 15px;
+}
+
+[data-dpr="2"] .font15 {
+    font-size: 30px;
+}
+
+[data-dpr="3"] .font15 {
+    font-size: 45px;
+}
+div.code {
+	position: relative;
+}
+span.timetip {
+	position: absolute;
+	right: 0;
+	bottom: 0.133333rem;
+	border: 1px solid #999;
+	color: #999;
+	padding: 0.066667rem;
+}
+.btnwrap {
+	margin-top: 1.293333rem;
+	color: #1a1a1a;
+}
+.btnwrap input {
+	border:  1px solid #1a1a1a;
+	margin: 0 auto;
+	width: 100%;
+	line-height: 1.066667rem;
+	background: none;
+}
+.links {
+	border-bottom: none;
+}
+.links a {
+	color: #666;
+	line-height: 0.8rem;
+	border-bottom: 1px solid #e1e1e1;
+	padding-bottom: 0.133333rem;
+}
+.clearfix{ clear:both;}
+.clearfix:before{ content:"."; display:block; clear:both; height:0; font-size:0; visibility:hidden; overflow:hidden;}
+.clearfix:after{ content:"."; display:block; clear:both; height:0; font-size:0; visibility:hidden; overflow:hidden;}
+.fl{float:left;}
+.fr{float:right;}
+</style>
+</head>
+
+<body>
+	<div class="box">
+		<div class="close"><img src="style/images/close_btn.png" alt=""></div>
+		<div class="logo">
+			<img src="style/images/login_logo_03.png" alt="">
+		</div>
+		<div class="form font15">
+			<form action="#" method="post">
+				<div class="inputwrap">
+					<i class="iconfont font15">&#xe60f;</i>
+					<input type="text" name="phone" placeholder="手机号/Phone Number">
+				</div>
+				<div class="inputwrap">
+					<i class="iconfont font15">&#xe616;</i>
+					<input type="password" name="password" placeholder="密码/Password">
+				</div>
+				<div class="inputwrap font12 links">
+					<div class="clearfix">
+						<div class="fl">
+							<a href="#">注册新账号</a>
+						</div>
+						<div class="fr">
+							<a href="#">忘记密码？</a>
+						</div>
+					</div>
+				</div>
+				<div class="btnwrap">
+					<input type="submit" value="登录">
+				</div>
+			</form>
+		</div>
+		
+	</div>
+</body>
+</html>
