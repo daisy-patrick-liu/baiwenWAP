@@ -105,6 +105,12 @@ span.timetip {
 	width: 100%;
 	line-height: 1.066667rem;
 	background: none;
+	border-radius: 0.133333rem;
+}
+.btnwrap input.active {
+	color: #fff;
+	background: #d33c3e;
+	border: none;
 }
 </style>
 </head>
@@ -131,7 +137,10 @@ span.timetip {
 					<input type="password" name="password" placeholder="密码/Password">
 				</div>
 				<div class="btnwrap">
-					<input type="submit" value="注册">
+					<!-- active -->
+					<input type="submit" class="active" value="注册">
+					<!-- disable -->
+					<input type="submit" class="" value="注册" disabled="disabled">
 				</div>
 			</form>
 		</div>
