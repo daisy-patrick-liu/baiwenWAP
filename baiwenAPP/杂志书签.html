@@ -14,8 +14,14 @@
         position: relative;
     }
     li.hasFlag a:after {
+        content:'';
         position: absolute;
         right: 0;
+        width: 0.373333rem;
+        height: 100%;
+        background: url(style/images/bookmark_flag_03.png) no-repeat center center;
+        background-size: 0.373333rem 0.466667rem;
+        bottom: 0;
     }
     </style>
 </head>
@@ -48,7 +54,15 @@
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="hasFlag">
+                    <a href="">
+                        <h2 class="title">一周综述</h2>
+                        <div class="title-d">
+                            <span>政务服务一周动态</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="hasFlag">
                     <a href="">
                         <h2 class="title">一周综述</h2>
                         <div class="title-d">
@@ -64,15 +78,7 @@
                         </div>
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        <h2 class="title">一周综述</h2>
-                        <div class="title-d">
-                            <span>政务服务一周动态</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
+                <li class="hasFlag">
                     <a href="">
                         <h2 class="title">一周综述</h2>
                         <div class="title-d">
