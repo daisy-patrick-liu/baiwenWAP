@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/css/index.css">
+    <script src="script/flexible.js" type="text/javascript" charset="utf-8"></script>
+    <title>我的书架</title>
+    <style type="text/css" media="screen">
+    html {
+        height: 100%;
+    }
+    div.title {
+        margin: 0 auto;
+    }
+    .book-frame {
+        background: none;
+    }
+    .content_wrap {
+        padding: 0 0.4rem;
+        text-align: center;
+    }
+    .icn_wrap {
+        padding-top: 4.146667rem;
+        padding-bottom: 2.346667rem;
+        background: url(style/images/emptyIcn_03.png) no-repeat center 2.36rem;
+        background-size: 0.906667rem 0.973333rem;
+        color: #333;
+    }
+    .font15 {
+        font-size: 15px;
+    }
+
+    [data-dpr="2"] .font15 {
+        font-size: 30px;
+    }
+
+    [data-dpr="3"] .font15 {
+        font-size: 45px;
+    }
+    a.subscribe {
+        display: block;
+        height: 0.986667rem;
+        border-radius: 0.133333rem;
+        color: #fff;
+        line-height: 0.986667rem;
+        background-color: #f8606a;
+    }
+    </style>
+</head>
+
+<body class="book-frame">
+    <div class="top-bg"></div>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="head-box">
+            <div class="title">
+                <h2>我的书架</h2>
+            </div>
+        </div>
+    </div>
+    <section class="main">
+        <div class="content_wrap font15">
+            <div class="icn_wrap">您还未订阅任何杂志！</div>
+            <div>
+                <a href="#" class="subscribe">立即前往订阅</a>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <ul class="foot-box">
+            <li>
+                <i class="ico view-ico"></i>
+                <p>时政</p>
+            </li>
+            <li class="active">
+                <i class="ico bookstore-ico"></i>
+                <p>书店</p>
+            </li>
+            <li>
+                <i class="ico book-frame-ico"></i>
+                <p>书架</p>
+            </li>
+            <li>
+                <i class="ico person-ico"></i>
+                <p>会员</p>
+            </li>
+        </ul>
+    </div>
+    <div class="bottom-bg"></div>
+</body>
+
+</html>

@@ -8,6 +8,7 @@
 <script src="script/flexible.js" type="text/javascript" charset="utf-8"></script>
 <script src="script/swipe/js/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
 <script src="script/swipe/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="script/zepto.min.js"></script>
 <title>首页分类</title>
 <style type="text/css" media="screen">
 html {
@@ -86,12 +87,23 @@ html {
 [data-dpr="3"] .font16 {
     font-size: 48px;
 }
-.line {
+.pics {
+    /*
     display: -webkit-box;
     -webkit-box-pack: justify;
-    text-align: center;
+    -webkit-box-align: center;
     margin-bottom: 0.266667rem;
+    */
+    text-align: center;
 }
+.pics .cover {
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+.pics .cover:nth-child(3n) {
+    margin-right: 0;
+}
+
 .line .cover {
     display: block;
     border: 1px solid #e9e9e9;
@@ -162,58 +174,10 @@ html {
             <section class="journal">
                 <div class="year-title">
                     <span>2017年1月</span>
-                    <a href="#"><p class="more active">更多</p></a>
-                </div>
-                <div class="pics">
-                    <div class="line">
-                        <div class="cover">
-                            <img src="style/images/journal_cover_03.png" alt="">
-                            <div class="journalFlag">
-                                <span class="font11">第14期</span>
-                            </div>
-                        </div>
-                        <div class="cover">
-                            <img src="style/images/journal_cover_03.png" alt="">
-                            <div class="journalFlag">
-                                <span class="font11">第14期</span>
-                            </div>
-                        </div>
-                        <div class="cover">
-                            <img src="style/images/journal_cover_03.png" alt="">
-                            <div class="journalFlag">
-                                <span class="font11">第14期</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="cover">
-                            <img src="style/images/journal_cover_03.png" alt="">
-                            <div class="journalFlag">
-                                <span class="font11">第14期</span>
-                            </div>
-                        </div>
-                        <div class="cover">
-                            <img src="style/images/journal_cover_03.png" alt="">
-                            <div class="journalFlag">
-                                <span class="font11">第14期</span>
-                            </div>
-                        </div>
-                        <div class="cover">
-                            <img src="style/images/journal_cover_03.png" alt="">
-                            <div class="journalFlag">
-                                <span class="font11">第14期</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="journal">
-                <div class="year-title">
-                    <span>2017年1月</span>
                     <a href="#"><p class="more">更多</p></a>
                 </div>
                 <div class="pics">
-                    <div class="line">
+                    
                         <div class="cover">
                             <img src="style/images/journal_cover_03.png" alt="">
                             <div class="journalFlag">
@@ -232,8 +196,8 @@ html {
                                 <span class="font11">第14期</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="line hide">
+                    
+                    
                         <div class="cover">
                             <img src="style/images/journal_cover_03.png" alt="">
                             <div class="journalFlag">
@@ -252,7 +216,7 @@ html {
                                 <span class="font11">第14期</span>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
             </section>
         </div>
@@ -285,6 +249,14 @@ html {
         pagination: '.swiper-pagination',
         paginationClickable: true
     });
+    $(function() {
+        $(".pics .cover").each(function(index) {
+            if (index > 2) {
+                $(this).css("display", "none");
+            }
+        });
+
+    })
     </script>
 </body>
 
