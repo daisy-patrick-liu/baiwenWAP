@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/css/index.css">
+    <script src="script/flexible.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/zepto.min.js"></script>
+    <title>杂志详情</title>
+    <style type="text/css" media="screen">
+    html {
+        height: 100%;
+    }
+    .article p {
+        text-indent: 2em;
+    }
+    /* footer */
+    .footer {
+        position: fixed;
+        bottom: 0;
+        background: #fff;
+        padding: 0.4rem;
+        display: -webkit-box;
+        -webkit-box-pack: justify;
+        text-align: center;
+        line-height: 0.533333rem;
+        font-size: 0.4rem;
+        color: #d64041;
+    }
+    .footer a.left {
+        display: inline-block;
+        width: 3.066667rem;
+        height: 0.533333rem;
+        vertical-align: middle;
+    }
+    .footer .right {
+        display: block;
+        width: 3.066667rem;
+    }
+    .footer .left {
+        background: url(style/images/icn_dir_03.png) no-repeat;
+        background-position: center;
+        background-size: 0.6rem 0.48rem;
+        border-right: 1px solid #e3e3e3;
+    }
+    .footer .right {
+        background: url(style/images/bookmark_03.png) no-repeat;
+        background-position: center;
+        background-size: 0.48rem 0.506667rem;
+        border-left: 1px solid #e3e3e3;
+    }
+    .footer .right.added {
+        background-image: url(style/images/bookmark_added_03.png);
+    }
+    </style>
+</head>
+
+<body class="maga-content">
+    <div class="top-bg"></div>
+    <!-- 头部 -->
+    <div class="d-top">
+        <div class="d-header">
+            <div class="ico-wrap">
+                <i class="back"></i>
+            </div>
+            <div class="title">
+                <h2>2017年第28期合订刊</h2>
+            </div>
+            <div class="ico-wrap">
+                <i class="share"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wrap">
+            <div class="article">
+                <p>今天下午，中国人民政治协商会议第十二届全国委员会第五次会议将在北京召开。按照惯例，除了出席政协大会的开、闭幕，会议期间习近平总书记还会参加全国政协委员的界别联组会，与委员们共商国是。</p>
+                <p>政协协商酿春潮。2013至2016年的全国两会上，习近平分别参加了科协、科技界委员联组会，少数民族界委员联组会，民革、台盟、台联委员联组会和政协民建、工商联界委员联组会。围绕科技创新、民族工作、两岸关系、非公经济等发表了重要讲话。</p>
+                <p>2013年3月4日，习近平看望了出席全国政协十二届一次会议的科协、科技界委员，并参加联组讨论。</p>
+                <p>在“两会时间”之外，习近平还参加全面政协新年茶话会、听取党组工作汇报、主持召开党外人士座谈会等，对新时期人民政协工作面临的新形势新任务，提出一系列新部署、新要求。</p>
+                <p>协商民主：充分协商、发扬民主、科学决策协商民主，无疑是十八大以来中国民主政治的高频词。从十八大报告首提、三中全会部署，到习近平在庆祝中国人民政治协商会议成立65周年大会上的重要讲话中着重论述，再</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bg"></div>
+    <div class="footer">
+        <a href="#" class="left"></a>
+        <div class="middle">1/14</div>
+        <div class="right"></div>
+    </div>
+</body>
+<script>
+    $(function() {
+        // 书签已加入
+        $(".right").on("touchend", function() {
+            // 替换图标
+            $(this).toggleClass('added');
+        })
+    })
+</script>
+</html>

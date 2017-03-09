@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/css/index.css">
+    <link rel="stylesheet" type="text/css" href="style/css/person-center.css">
+    <script src="script/flexible.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/zepto.min.js"></script>
+    <title>意见反馈</title>
+    <style type="text/css" media="screen">
+    html {
+        height: 100%;
+    }
+
+    .font14 {
+        font-size: 14px;
+    }
+
+    [data-dpr="2"] .font14 {
+        font-size: 28px;
+    }
+
+    [data-dpr="3"] .font14 {
+        font-size: 42px;
+    }
+
+    .font15 {
+        font-size: 15px;
+    }
+
+    [data-dpr="2"] .font15 {
+        font-size: 30px;
+    }
+
+    [data-dpr="3"] .font15 {
+        font-size: 45px;
+    }
+
+    textarea {
+        -webkit-appearance: none;
+        margin: 0;
+        width: 100%;
+        resize: none;
+        border: 1px solid #ebebeb;
+        box-sizing: border-box;
+        padding: 0.4rem;
+    }
+    div.main {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .header .title h2 {
+        font-size: initial;
+    }
+    </style>
+</head>
+
+<body class="maga-content">
+    <div class="top-bg"></div>
+    <!-- 头部 -->
+    <div class="header font15">
+        <div class="head-box">
+            <div class="ico-wrap">
+                <i class="back"></i>
+            </div>
+            <div class="title">
+                <h2>意见反馈</h2>
+            </div>
+            <div class="right-btn">
+                <h2>提交</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <form action="#" method="post">
+            <textarea name="suggestion" id="suggestion" rows="10" placeholder="请您留下您的宝贵意见，谢谢！" class="font14"></textarea>
+        </form>
+    </div>
+    
+    <div class="bottom-bg"></div>
+    <div class="footer">
+        <ul class="foot-box">
+            <li>
+                <i class="ico view-ico"></i>
+                <p>时政</p>
+            </li>
+            <li class="active">
+                <i class="ico bookstore-ico"></i>
+                <p>书店</p>
+            </li>
+            <li>
+                <i class="ico book-frame-ico"></i>
+                <p>书架</p>
+            </li>
+            <li>
+                <i class="ico person-ico"></i>
+                <p>会员</p>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    $(function() {
+        // 书签已加入
+        $(".right").on("touchend", function() {
+            // 替换图标
+            $(this).css("background", "url(style/images/bookmark_added_03.png) no-repeat");
+            $(this).css("background-position","center");
+        })
+    })
+</script>
+</html>
