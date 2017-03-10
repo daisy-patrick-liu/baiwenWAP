@@ -94,11 +94,12 @@ html {
     -webkit-box-align: center;
     margin-bottom: 0.266667rem;
     */
-    text-align: center;
+    /*text-align: center;*/
 }
 .pics .cover {
     display: inline-block;
     margin-right: 0.2rem;
+    position: relative;
 }
 .pics .cover:nth-child(3n) {
     margin-right: 0;
@@ -250,11 +251,14 @@ html {
         paginationClickable: true
     });
     $(function() {
-        $(".pics .cover").each(function(index) {
-            if (index > 2) {
-                $(this).css("display", "none");
-            }
+        $(".pics").each(function(index, el) {
+            $(".pics .cover").each(function(index) {
+                if (index > 2) {
+                    $(this).css("display", "none");
+                }
+            });
         });
+        
 
     })
     </script>

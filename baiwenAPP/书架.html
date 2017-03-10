@@ -4,47 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style/css/index.css">
+    <link rel="stylesheet" href="script/swipe/css/swiper.min.css">
     <script src="script/flexible.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/swipe/js/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/swipe/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <title>我的书架</title>
     <style type="text/css" media="screen">
     html {
         height: 100%;
     }
+    .main {
+        padding-bottom: 1.44rem;
+    }
     div.title {
         margin: 0 auto;
-    }
-    .book-frame {
-        background: none;
-    }
-    .content_wrap {
-        padding: 0 0.4rem;
-        text-align: center;
-    }
-    .icn_wrap {
-        padding-top: 4.146667rem;
-        padding-bottom: 2.346667rem;
-        background: url(style/images/emptyIcn_03.png) no-repeat center 2.36rem;
-        background-size: 0.906667rem 0.973333rem;
-        color: #333;
     }
     .font15 {
         font-size: 15px;
     }
-
     [data-dpr="2"] .font15 {
         font-size: 30px;
     }
-
     [data-dpr="3"] .font15 {
         font-size: 45px;
     }
-    a.subscribe {
-        display: block;
-        height: 0.986667rem;
+
+    .book-frame {
+        background: none;
+    }
+    .swiper-container {
+        height: 11.066667rem;
+        width: 10rem;
+        padding: 0.586667rem 0;
+    }
+    .swiper-slide {
+        height: 11.066667rem;
+    }
+    .swiper-button-prev, .swiper-button-next, .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+        background-size: 0.333333rem 0.586667rem;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        width: 0.786667rem;
+        height: 1.56rem;
         border-radius: 0.133333rem;
+        background-color: #f8e2e2;
+    }
+    .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+        background-color: #efefef;
+    }
+    .swiper-button-next.swiper-button-disabled {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23262523'%2F%3E%3C%2Fsvg%3E")
+    }
+    .swiper-button-prev.swiper-button-disabled {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23262523'%2F%3E%3C%2Fsvg%3E")
+    }
+    .swiper-button-next {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23bf5e58'%2F%3E%3C%2Fsvg%3E");
+        right: 0.4rem;
+    }
+    .swiper-button-prev {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23bf5e58'%2F%3E%3C%2Fsvg%3E");
+        left: 0.4rem;
+    }
+    .swiper-slide {
+        /*border: 1px solid;
+        box-sizing: border-box;*/
+        /*width: 8.24rem;*/
+    }
+    .img-wrap {
+        width: 8.24rem;
+        height: 100%;
+        margin: 0 auto;
+        box-shadow: 0 0 0.2rem #f8efef;
+        -webkit-box-shadow: 0 0 0.2rem #f8efef;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+    .journal-wrap {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 2.466667rem;
+        height: 2.133333rem;
+        background-image: url(style/images/bookframe_flag_03.png);
+        background-repeat: no-repeat;
+        background-size: 2.466667rem 2.133333rem;
+    }
+    .journal-wrap span {
         color: #fff;
-        line-height: 0.986667rem;
-        background-color: #f8606a;
+        line-height: 0.96rem;
+        transform: rotate(40deg);
+        display: inline-block;
+        /*margin-left: 0.24rem;*/
+        position: absolute;
+        right: -0.2rem;
+        top: 0.25rem;
+    }
+    p.intro {
+        padding: 0 1.706667rem;
+        line-height: 0.64rem;
+        color: #333;
+        text-align: center;
     }
     </style>
 </head>
@@ -60,12 +122,35 @@
         </div>
     </div>
     <section class="main">
-        <div class="content_wrap font15">
-            <div class="icn_wrap">您还未订阅任何杂志！</div>
-            <div>
-                <a href="#" class="subscribe">立即前往订阅</a>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img-wrap" style="background-image: url(style/images/bookframe.png);">
+                        <div class="journal-wrap font15">
+                            <span>2017第11期</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-wrap" style="background-image: url(style/images/bookframe.png);">
+                        <div class="journal-wrap font15">
+                            <span>2017第9期</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-wrap" style="background-image: url(style/images/bookframe.png);">
+                        <div class="journal-wrap font15">
+                            <span>2017第8期</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
+        <p class="intro font15">“百问在线”是由北京百问网信息技术有限公司全力打造的一个高垂直的政务服务平台。</p>
+        
     </section>
     <div class="footer">
         <ul class="foot-box">
@@ -89,5 +174,13 @@
     </div>
     <div class="bottom-bg"></div>
 </body>
-
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        //spaceBetween: 30
+    })
+</script>
 </html>
