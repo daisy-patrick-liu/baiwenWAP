@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style/css/index.css">
     <link rel="stylesheet" href="script/swipe/css/swiper.min.css">
     <script src="script/flexible.js" type="text/javascript" charset="utf-8"></script>
-    <script src="script/swipe/js/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="script/swipe/js/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>-->
     <script src="script/swipe/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <title>我的书架</title>
     <style type="text/css" media="screen">
@@ -131,23 +131,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="img-wrap" style="background-image: url(style/images/bookframe.png);">
-                        <div class="journal-wrap font15">
-                            <span>2017第9期</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-wrap" style="background-image: url(style/images/bookframe.png);">
-                        <div class="journal-wrap font15">
-                            <span>2017第8期</span>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <!-- 后翻按钮正常状态 -->
             <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <!-- 后翻按钮最后一张 -->
+            <!--<div class="swiper-button-next swiper-button-disabled"></div>-->
+            
+            <!-- 前翻按钮第一张 -->
+            <div class="swiper-button-prev swiper-button-disabled"></div>
+            <!-- 前翻按钮正常状态 -->
+            <!--<div class="swiper-button-prev"></div>-->
         </div>
         <p class="intro font15">“百问在线”是由北京百问网信息技术有限公司全力打造的一个高垂直的政务服务平台。</p>
         
@@ -175,6 +168,7 @@
     <div class="bottom-bg"></div>
 </body>
 <script>
+/* 去掉 swiper
     var mySwiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: '.swiper-pagination',
@@ -182,5 +176,6 @@
         prevButton: '.swiper-button-prev',
         //spaceBetween: 30
     })
+*/
 </script>
 </html>
