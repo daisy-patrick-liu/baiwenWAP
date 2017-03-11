@@ -12,46 +12,166 @@
     html {
         height: 100%;
     }
-
-    .font14 {
-        font-size: 14px;
+    
+    .content {
+        padding-top: 1.12rem;
+        padding-bottom: 0.8rem;
     }
-
-    [data-dpr="2"] .font14 {
-        font-size: 28px;
+    .banner_wrap {
+        height: 3.04rem;
+        background: url(style/images/banner_member.png) no-repeat center center;
+        background-size: cover;
+        position: relative;
     }
-
-    [data-dpr="3"] .font14 {
-        font-size: 42px;
-    }
-
-    .font15 {
-        font-size: 15px;
-    }
-
-    [data-dpr="2"] .font15 {
-        font-size: 30px;
-    }
-
-    [data-dpr="3"] .font15 {
-        font-size: 45px;
-    }
-
-    textarea {
-        -webkit-appearance: none;
-        margin: 0;
+    .base_info {
+        position: absolute;
+        bottom: 0;
+        height: 0.76rem;
         width: 100%;
-        resize: none;
+        box-sizing: border-box;
+        line-height: 0.76rem;
+        background: rgba(173,49,51,0.6);
+        font-size: 0.32rem;
+        color: #fff;
+        padding-left: 1.64rem;
+        padding-right: 0.293333rem;
+        display: -webkit-box;
+        -webkit-box-pack: justify;
+    }
+    .account_name {
+        margin-right: 0.2rem;
+    }
+    .avaster {
+        position: absolute;
+        width: 1.066667rem;
+        height: 1.066667rem;
+        border-radius: 50%;
+        left: 0.4rem;
+        bottom: 0.266667rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: 5px solid #fff;
+    }
+    .prices {
+        padding: 0.32rem 0.4rem;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+    .flexbox {
+        display: -webkit-box;
+        -webkit-box-pack: justify;
+        -webkit-box-align: center;
+    }
+    .flexbox .left {
+        display: inline-block;
+    }
+    .pricebox {
+        display: inline-block;
+        width: 4.44rem;
+        height: 1.586667rem;
         border: 1px solid #ebebeb;
         box-sizing: border-box;
+        margin-right: 0.2rem;
+        margin-bottom: 0.2rem;
+        text-align: center;
+        position: relative;
+        padding-top: 0.266667rem;
+        vertical-align: middle;
+        background-color: #fff;
+    }
+    .pricebox .type {
+        font-size: 0.4rem;
+        line-height: 0.346667rem;
+        color: #1a1a1a;
+    }
+    .pricebox .price {
+        font-size: 0.373333rem;
+        line-height: 1.066667rem;
+        color: #d33c3e;
+    }
+    .pricebox .flag {
+        position: absolute;
+        top:0;
+        right: 0;
+        height: 0.533333rem;
+        width: 0.533333rem;
+        background-image: url(style/images/price_flag.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 0.32rem 0.306667rem;
+        background-color: #ededed;
+    }
+    .pricebox .flag.active {
+        background-color: #d33c3e;
+    }
+
+    .mySection {
+        padding: 0 0.4rem;
+        padding-top: 0.266667rem;
+        background-color: #fff;
+        margin-bottom: 0.266667rem;
+    }
+    .mySection .title {
+        font-size: 0.373333rem;
+        line-height: 0.493333rem;
+        color: #999;
+        padding-left: 0.666667rem;
+    }
+    .mySection .title.paymethod {
+        background: url(style/images/icn_pay.png) no-repeat;
+        background-size: 0.506667rem 0.493333rem;
+        padding-bottom: 0.16rem;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .mySection .title.authority {
+        background: url(style/images/icn_vip.png) no-repeat;
+        background-size: 0.48rem 0.426667rem;
+        padding-bottom: 0.16rem;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .options .item {
+        height: 0.533333rem;
+        line-height: 0.533333rem;
+        padding: 0.266667rem 0 0.266667rem 1.013333rem;
+        font-size: 0.4rem;
+        color: #1a1a1a;
+    }
+    .item .alipay {
+        background: url(style/images/alipay.png) no-repeat 0.12rem center;
+    }
+    .item .is-chosen {
+        width: 0.533333rem;
+        height: 0.533333rem;
+        background-image: url(style/images/unchosen.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .item .is-chosen.chosen {
+        background-image: url(style/images/chosen.png);
+    }
+    
+    .list {
+        padding-top: 0.333333rem;
+        padding-bottom: 0.266667rem;
+    }
+    .list p {
+        font-size: 0.4rem;
+        padding-left: 0.453333rem;
+        background: url(style/images/icn_dot.png) no-repeat 0.133333rem center;
+        background-size: 0.106667rem 0.106667rem;
+        margin-bottom: 0.293333rem;
+    }
+
+    .btn_wrap {
         padding: 0.4rem;
     }
-    div.main {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    .header .title h2 {
+    .btn-buy {
+        line-height: 1.066667rem;
+        border-radius: 0.533333rem;
+        background-color: #d33c3e;
+        color: #fff;
         font-size: 0.48rem;
+        text-align: center;
     }
     </style>
 </head>
@@ -65,16 +185,66 @@
                 <i class="back"></i>
             </div>
             <div class="title">
-                <h2>意见反馈</h2>
+                <h2>会员信息</h2>
             </div>
         </div>
     </div>
-    
-    <div class="main">
-        <form action="#" method="post">
-            <textarea name="suggestion" id="suggestion" rows="10" placeholder="请您留下您的宝贵意见，谢谢！" class="font14"></textarea>
-        </form>
+    <div class="content">
+        <div class="banner_wrap">
+            <div class="base_info">
+                <span class="account_name">小妍妍</span>
+                <span class="level">VIP</span>
+                <p>有效期：2018-02-27</p>
+            </div>
+            <div class="avaster" style="background-image: url(style/images/account_avaster.png);"></div>
+        </div>
+        <div class="prices">
+            <div class="pricebox">
+                <p class="type">年度会员</p>
+                <p class="price">￥3980元</p>
+                <div class="flag active"></div>
+            </div>
+            <div class="pricebox">
+                <p class="type">半年会员</p>
+                <p class="price">￥1980元</p>
+                <div class="flag"></div>
+            </div>
+            <div class="pricebox">
+                <p class="type">季度会员</p>
+                <p class="price">￥3980元</p>
+                <div class="flag"></div>
+            </div>
+            <div class="pricebox">
+                <p class="type">月度会员</p>
+                <p class="price">￥198元</p>
+                <div class="flag"></div>
+            </div>
+        </div>
+
+        <div class="mySection">
+            <div class="title paymethod">支付方式</div>
+            <div class="options">
+                <div class="item alipay flexbox">
+                    <span>支付宝</span>
+                    <div class="is-chosen chosen">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySection">
+            <div class="title authority">会员特权</div>
+            <div class="list">
+                <p>每周订阅最新更新的大数据杂志</p>
+                <p>大数据报告更新实时短信推送</p>
+            </div>
+        </div>
+
+        <div class="btn_wrap">
+            <div class="btn-buy">购买</div>
+        </div>
     </div>
+    
     
     <div class="bottom-bg"></div>
     <div class="footer">
