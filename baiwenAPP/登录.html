@@ -62,28 +62,49 @@ div.form {
 	background: none;
 	border: none;
 }
-.font12 {
-    font-size: 12px;
+
+.font14 {
+    font-size: 14px;
+}
+[data-dpr="2"] .font14 {
+    font-size: 28px;
+}
+[data-dpr="3"] .font14 {
+    font-size: 42px;
 }
 
-[data-dpr="2"] .font12 {
-    font-size: 24px;
-}
-
-[data-dpr="3"] .font12 {
-    font-size: 36px;
-}
 .font15 {
     font-size: 15px;
 }
-
 [data-dpr="2"] .font15 {
     font-size: 30px;
 }
-
 [data-dpr="3"] .font15 {
     font-size: 45px;
 }
+
+.font16 {
+    font-size: 16px;
+}
+
+[data-dpr="2"] .font16 {
+    font-size: 32px;
+}
+
+[data-dpr="3"] .font16 {
+    font-size: 48px;
+}
+
+.font18 {
+    font-size: 18px;
+}
+[data-dpr="2"] .font18 {
+    font-size: 36px;
+}
+[data-dpr="3"] .font18 {
+    font-size: 54px;
+}
+
 div.code {
 	position: relative;
 }
@@ -129,17 +150,17 @@ span.timetip {
 		<div class="logo">
 			<img src="style/images/login_logo_03.png" alt="">
 		</div>
-		<div class="form font15">
+		<div class="form font16">
 			<form action="#" method="post">
 				<div class="inputwrap">
-					<i class="iconfont font15">&#xe60f;</i>
+					<i class="iconfont font18">&#xe60f;</i>
 					<input type="text" name="phone" placeholder="手机号/Phone Number">
 				</div>
 				<div class="inputwrap">
-					<i class="iconfont font15">&#xe616;</i>
+					<i class="iconfont font18">&#xe616;</i>
 					<input type="password" name="password" placeholder="密码/Password">
 				</div>
-				<div class="inputwrap font12 links">
+				<div class="inputwrap font15 links">
 					<div class="clearfix">
 						<div class="fl">
 							<a href="#">注册新账号</a>
