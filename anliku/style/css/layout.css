@@ -22,6 +22,22 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
+/* 后加iconfont */
+@font-face {
+  font-family: 'icon_new';  /* project id 253062 */
+  src: url('../../fonts/iconfont.eot');
+  src: url('../../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/iconfont.woff') format('woff'),
+  url('../../fonts/iconfont.ttf') format('truetype'),
+  url('../../fonts/iconfont.svg#iconfont') format('svg');
+}
+.icon_new{
+  font-family:"icon_new" !important;
+  font-size:inherit;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* 方正粗黑简体 */
 @font-face {
 	font-family: "fzch";
@@ -30,12 +46,29 @@
 /* 公共组件 */
 /* 头部 */
 body {
-	background:url(../images/index_bg.jpg) no-repeat;
+	/*background:url(../images/index_bg.jpg) no-repeat;*/
 	background-size:cover;
 	font-size:14px;
 }
-.header {
-	margin-top:15px;
+.welcome {
+	background-color: #f4f4f4;
+	height: 35px;
+	line-height: 35px;
+	font-size: 13px;
+	color: #999;
+}
+.welcome .icon_new {
+	vertical-align: top;
+}
+.welcome .fl span {
+	margin-right: 12px;
+}
+.welcome span.msg {
+	margin-right: 20px;
+}
+.welcome .icon_login {
+	font-size: 16px;
+	-webkit-text-stroke-width: 0;
 }
 .header .fr img {
 	margin-right:10px;
@@ -44,7 +77,11 @@ body {
 	margin-right:0;
 }
 .header .nav_wrap{
-	margin-top:25px;
+	height: 106px;
+	line-height: 106px;
+	background-image: url(../images/header_bg_03.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 /* 导航条 */
 .navbar {
@@ -598,6 +635,7 @@ body {
 	box-sizing: border-box;
 	text-align: center;
 }
+
 /**********************政务文献库列表******************/
 .list .header .base_name {
 	background: url(../images/base_icn_03.png) no-repeat;
