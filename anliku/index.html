@@ -600,11 +600,24 @@
   <div class="floatdiv">
     <div class="cell qr">
       <i class="icon_new">&#xe607;</i>
-      <div class="show-qr">
+      <div class="show-qr"
+      style="display: none;">
         <div class="clearfix">
-          <div class="fl"></div>
-          <div style="display: inline-block;"></div>
-          <div class="fr"></div>
+          <div class="fl" style="width: 70px;">
+            <p><img src="style/images/qr1_03.png" alt=""></p>
+            <p class="txt">微信公众号</p>
+            <p><i class="icon_new" style="color: #247f1d;">&#xe60a;</i></p>
+          </div>
+          <div style="display: inline-block; width: 70px;">
+            <p><img src="style/images/qr2_05.png" alt=""></p>
+            <p class="txt">百问网APP</p>
+            <p><i class="icon_new" style="color: #272636;">&#xe609;</i></p>
+          </div>
+          <div class="fr" style="width: 70px;">
+            <p><img src="style/images/qr3_07.png" alt=""></p>
+            <p class="txt">百问网APP</p>
+            <p><i class="icon_new" style="color: #93c147;">&#xe608;</i></p>
+          </div>
         </div>
       </div>
     </div>
@@ -698,6 +711,17 @@
       $(".area_ddl").hide();
       event.stopPropagation();
     });
+
+    // 二维码hover
+    $(".cell.qr").hover(function() {
+      $(".show-qr").show();
+    }, function() {
+      $(".show-qr").hide();
+    });
+
+    $(".floatdiv .cell").hover(function() {
+      $(this).addClass('active').siblings().removeClass('active');
+    })
   });
 </script>
 </html>

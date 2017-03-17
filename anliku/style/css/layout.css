@@ -740,6 +740,9 @@ body {
 	color: #fff;
 	font-size: 30px;
 }
+.index .floatdiv .cell.active {
+	background: #d33d3e;
+}
 .index .floatdiv .cell.qr {
 	position: relative;
 }
@@ -752,6 +755,15 @@ body {
 	box-shadow: 0 0 10px #ccc;
 	-moz-box-shadow: 0 0 10px #ccc;
 	-webkit-box-shadow: 0 0 10px #ccc;
+	text-align: center;
+	line-height: initial;
+	box-sizing: border-box;
+	top: 0;
+}
+.index .show-qr p.txt {
+	font-size: 14px;
+	color: #333;
+	margin-top: 15px;
 }
 .index .floatdiv .label {
 	margin-top: 10px;
