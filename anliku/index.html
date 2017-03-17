@@ -5,9 +5,9 @@
 <title>案例库首页</title>
 <link rel="stylesheet" href="style/css/reset.css">
 <link rel="stylesheet" href="style/css/layout.css">
-<link rel="stylesheet" href="package/swiper/css/idangerous.swiper2.7.6.css">
+<link rel="stylesheet" href="package/swiper/css/swiper.min.css">
 <script src="script/jquery-1.8.3.min.js"></script>
-<script src="package/swiper/js/idangerous.swiper2.7.6.js"></script>
+<script src="package/swiper/js/swiper.min.js"></script>
 </head>
 
 <body class="index">
@@ -17,7 +17,7 @@
         <div class="fl">
           <span><a href="#"><i class="icon_new">&#xe608;</i> 首页</a></span>
           <span><a href="#"><i class="icon_new">&#xe737;</i> 百问APP</a></span>
-          <span><a href="#"><i class="icon_new">&#xe64b;</i> 关注微信</a></span>
+          <span><a href="#"><i class="icon_new">&#xe63b;</i> 关注微信</a></span>
         </div>
         <div class="fr">
           <span class="msg">欢迎来到中国政府管理国际案例库！</span>
@@ -31,325 +31,254 @@
       <!--logo及导航-->
       <div class="nav_wrap">
         <a href="#"><img alt="" src="style/images/logo_13.png"></a>
-        <!--<div class="fr nav">
-          <a href="#"><span class="active">司法</span></a>
-          <a href="#"><span>政务</span></a>
-		      <a href="#"><span>公报</span></a>
-          <a href="#"><span>公务员</span></a>
-          <a href="#"><span>政务案例</span></a>
-          <a href="#"><div class="divider"></div></a>
-          <a href="#"><span>企业</span></a>
-          <a href="#"><span>决策</span></a>
-          <a href="#"><span>建设</span></a>
-          <a href="#"><span>研究</span></a>
-          <a href="#"><span>分析</span></a>
-          <div class="divider"></div>
-          <a href="#"><span>下载</span></a><br>
-          <a href="#"><span>保障</span></a>
-          <a href="#"><span>社会</span></a>
-          <a href="#"><span>创新</span></a>
-          <a href="#"><span>标准化</span></a>
-          <a href="#"><span>政务服务</span></a>
-          <div class="divider"></div>
-          <a href="#"><span>舆情</span></a>
-          <a href="#"><span>反腐</span></a>
-          <a href="#"><span>政情</span></a>
-          <a href="#"><span>新闻</span></a>
-          <a href="#"><span>信息</span></a>
-          <div class="divider"></div>
-          <a href="#"><span>更多</span></a>
-        </div>-->
       </div>
     </div>
   </div>
   <!-- 搜索 -->
-  <div class="bar_search">
-    <div class="clearfix">
-      <div class="fl"></div>
-      <div class="fr"></div>
+  <div class="bar_search w1000">
+    <div class="clearfix text-center">
+      <div class="fl">
+        <!-- 分类树 -->
+        <div class="tree_wrap fl">
+          <div class="clearfix">
+            <div class="fl"><i class="icon_new">&#xe611;</i>全部分类</div>
+            <div class="fr icn_wrap"><i class="icon_new">&#xe662;</i></div>
+          </div>
+          <div class="trees" style="display: none;">
+            <ul class="layer1">
+              <li>
+                <i class="icon_new">&#xe7b1;</i>政务服务
+              </li>
+              <li>
+                <i class="icon_new">&#xe677;</i>政务舆情
+                <div class="divlayer2">
+                  <dl>
+                    <dd>
+                      <p class="layer3">
+                        <b class="title2">政务服务标准化建设案例库 <i class="icon_new arrow-r">&#xe613;</i></b>
+                        <span><a href="#">基础设施服务建设标准案例 </a></span>
+                        <span><a href="#">技术服务支撑建设标准案例 </a></span>
+                        <span><a href="#">政务人员工资建设标准案例</a></span>
+                        <span><a href="#">政务内容规范建设标准案例</a></span>
+                      </p>
+                    </dd>
+                    <dd>
+                      <p class="layer3">
+                        <b class="title2">实体政务服务中心建设案例库 <i class="icon_new arrow-r">&#xe613;</i></b>
+                        <span><a href="#">基础设施服务建设案例</a></span>
+                        <span><a href="#">工作人员组织建设案例</a></span>
+                        <span><a href="#">业务事项流程建设案例</a></span>
+                        <span><a href="#">高新技术引入建设案例</a></span>
+                      </p>
+                    </dd>
+                    <dd>
+                      <p class="layer3">
+                        <b class="title2">网上政务服务平台建设案例库 <i class="icon_new arrow-r">&#xe613;</i></b>
+                        <span><a href="#">网上系统平台建设案例</a></span>
+                        <span><a href="#">在线智能服务建设案例</a></span>
+                        <span><a href="#">网上业务办理建设案例</a></span>
+                        <span><a href="#">系统互联互通建设案例</a></span>
+                      </p>
+                    </dd>
+                    <dd>
+                      <p class="layer3">
+                        <b class="title2">中国政务服务政策案例库 <i class="icon_new arrow-r">&#xe613;</i></b>
+                        <span><a href="#">按省、市、自治区分级政策库</a></span>
+                        <span><a href="#">按国、部、委办分级政策库</a></span>
+                      </p>
+                    </dd>
+                  </dl>
+                </div>
+              </li>
+              <li>
+                <i class="icon_new">&#xe722;</i>
+                政府管理
+                <div class="divlayer2">
+                  <ul>
+                    <a href="#"><li>sub of 3</li></a>
+                    <a href="#"><li>sub of 3</li></a>
+                    <a href="#"><li>sub of 3</li></a>
+                    <a href="#"><li>sub of 3</li></a>
+                    <a href="#"><li>sub of 3</li></a>
+                  </ul>
+                </div>
+              </li>
+              <li><i class="icon_new">&#xe65f;</i>党风廉政/反腐</li>
+              <li><i class="icon_new">&#xebd5;</i>政务文献/公务员</li>
+              <li><i class="icon_new">&#xe6a4;</i>司法案例</li>
+              <li><i class="icon_new">&#xe600;</i>政情数据</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bar_md" style="display: inline-block;">
+        <div class="search_box">
+          <div class="click_area clearfix fl">
+            <div class="fl">在</div>
+            <span class="base_name">全文</span>
+            <div class="fr icn_wrap"><i class="icon_new">&#xe662;</i></div>
+            <div class="area_ddl" style="display: none;">
+              <p>您还可以在下面的某个或多个库中搜索</p>
+              <div class="option_box bases">
+                <span class="active">全库</span>
+                <span>舆情案例库</span>
+                <span>政务服务案例库</span>
+                <span>司法案例库</span>
+                <span>政府管理案例库</span>
+                <span>国外案例库</span>
+                <span>政务文献库</span>
+                <span>党风廉政案例库</span>
+                <span>政情数据库</span>
+              </div>
+              <p>您可以进一步在下面某一项或多项内容中搜索</p>
+              <div class="option_box keys">
+                <span class="active">全文</span>
+                <span>标题</span>
+                <span>摘要</span>
+                <span>关键词</span>
+                <span>政府管理案例库</span>
+                <span>参考文献</span>
+                <span>作者</span>
+                <span>单位</span>
+                <span>主题</span>
+                <span>来源</span>
+              </div>
+              <p>您将在<span class="base_chosen">全库</span>中进行搜索</p>
+              <div class="btn_wrap">
+                <span class="button btn_cancel">取消</span>
+                <span class="button btn_ok">确认</span>
+              </div>
+            </div>
+          </div>
+          <div class="input_wrap">
+            中搜索
+            <input type="text" id="keyword" name="keyword" placeholder="在此输入关键字">
+          </div>
+          <div class="redbtn">检索</div>
+        </div>
+      </div>
+      <div class="fr">
+        <span class="sch_btn">
+          <i class="icon_new">&#xe604;</i>精确搜索
+        </span>
+      </div>
     </div>
   </div>
   <!--导航条-->
-  <div class="navbar">
-    <div class="nav_content w1000 clearfix">
-      <div class="fl">
-        <div class="categories">
-          <a href="#" style="position:relative;">
-            <span>文献</span>
-            <!-- 小三角 -->
-            <div class="triangle_top" style="position:absolute; bottom:0; margin:0 auto;"></div>
-          </a>
-          <div class="divide"></div>
-          <a href="#"><span>政情</span></a>
-          <div class="divide"></div>
-          <a href="#"><span>舆情</span></a>
-          <div class="divide"></div>
-          <a href="#"><span>反腐</span></a>
-          <div class="divide"></div>
-          <a href="#"><span>决策</span></a>
-          <div class="divide"></div>
-          <a href="#"><span>政务案例</span></a>
-          <div class="divide"></div>
-          <a href="#"><span>司法</span></a>
-          <div class="divide"></div>
-          <a href="#"><span>分析</span></a>
-          <div class="divide"></div>
-          <a href="#"><span>政务服务</span></a>
-        </div>
+  <div class="nav_bar w1000">
+    <div class="nav">
+        <a href="#"><span>司法</span></a>
+        <a href="#"><span>政务</span></a>
+        <a href="#"><span>公报</span></a>
+        <a href="#"><span>公务员</span></a>
+        <a href="#"><span>政务案例</span></a>
+        <a href="#"><div class="divider"></div></a>
+        <a href="#"><span>企业</span></a>
+        <a href="#"><span>决策</span></a>
+        <a href="#"><span>建设</span></a>
+        <a href="#"><span>研究</span></a>
+        <a href="#"><span>分析</span></a>
+        <div class="divider"></div>
+        <a href="#"><span>期刊</span></a>
+        <a href="#"><span>医院</span></a>
+        <a href="#"><span>采编</span></a>
+        <a href="#"><span>政府</span></a>
+        <a href="#"><span>优先出版</span></a>
+        <div class="divider"></div>
+        <a href="#"><span>企业</span></a>
+        <a href="#"><span>决策</span></a>
+        <a href="#"><span>建设</span></a>
+        <a href="#"><span>下载</span></a>
+        <br>
+        <a href="#"><span>保障</span></a>
+        <a href="#"><span>社会</span></a>
+        <a href="#"><span>创新</span></a>
+        <a href="#"><span>标准化</span></a>
+        <a href="#"><span>政务服务</span></a>
+        <div class="divider"></div>
+        <a href="#"><span>舆情</span></a>
+        <a href="#"><span>反腐</span></a>
+        <a href="#"><span>政情</span></a>
+        <a href="#"><span>新闻</span></a>
+        <a href="#"><span>信息</span></a>
+        <div class="divider"></div>
+        <a href="#"><span>项目</span></a>
+        <a href="#"><span>法律</span></a>
+        <a href="#"><span>教育</span></a>
+        <a href="#"><span>城建</span></a>
+        <a href="#"><span>国际出版</span></a>
+        <div class="divider"></div>
+        <a href="#"><span>反腐</span></a>
+        <a href="#"><span>政情</span></a>
+        <a href="#"><span>新闻</span></a>
+        <a href="#"><span>更多</span></a>
       </div>
-      <div class="fr"><a href="#">更多&nbsp;<i class="iconfont" style="transform: rotate(180deg);">&#xe8e2;</i></a></div>
-    </div>
   </div>
-  <!-- 搜索 分类树 -->
-  <div class="searchBar">
-    <div class="w1000 clearfix">
-      <!-- 分类树 -->
-      <div class="tree_wrap fl">
-        <div class="clearfix">
-          <div class="fl">中国政府管理国际案例库</div>
-          <div class="fr"><i class="iconfont">&#xe8e2;</i></div>
-        </div>
-        <div class="trees" style="display: none;">
-          <ul class="layer1">
-            <li>
-              党风廉政建设及反腐斗争案例库
-              <div class="divlayer2">
-                <dl>
-                  <dd>
-                    <p class="layer3">
-                      <b class="title2">高层声音</b>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                    </p>
-                  </dd>
-                  <dd>
-                    <p class="layer3">
-                      <b class="title2">廉政反腐要闻</b>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                    </p>
-                  </dd>
-                  <dd>
-                    <p class="layer3">
-                      <b class="title2">党纪法规</b>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                      <span><a href="#">layer3</a></span>
-                    </p>
-                  </dd>
-                </dl>
-              </div>
-            </li>
-            <li>
-              政府管理案例库
-              <div class="divlayer2">
-                <ul>
-                  <a href="#"><li>sub of 2</li></a>
-                  <a href="#"><li>sub of 2</li></a>
-                  <a href="#"><li>sub of 2</li></a>
-                  <a href="#"><li>sub of 2</li></a>
-                  <a href="#"><li>sub of 2</li></a>
-                </ul>
-              </div>
-            </li>
-            <li>
-              政情数据库
-              <div class="divlayer2">
-                <ul>
-                  <a href="#"><li>sub of 3</li></a>
-                  <a href="#"><li>sub of 3</li></a>
-                  <a href="#"><li>sub of 3</li></a>
-                  <a href="#"><li>sub of 3</li></a>
-                  <a href="#"><li>sub of 3</li></a>
-                </ul>
-              </div>
-            </li>
-            <li>政务舆情案例库</li>
-            <li>司法案例库</li>
-            <li>政务文献库</li>
-            <li>外语案例库</li>
-            <li>
-              政务服务案例库
-              <div class="divlayer2">
-                <dl>
-                  <dd>
-                    <p class="layer3">
-                      <b class="title2">政务服务标准化建设案例库</b>
-                      <span><a href="#">基础设施服务建设标准案例</a></span>
-                      <span><a href="#">技术服务支撑建设标准案例 </a></span>
-                      <span><a href="#">政务人员工资建设标准案例</a></span>
-                      <span><a href="#">政务内容规范建设标准案例</a></span>
-                    </p>
-                  </dd>
-                  <dd>
-                    <p class="layer3">
-                      <b class="title2">实体政务服务中心建设案例库</b>
-                      <span><a href="#">基础设施服务建设案例</a></span>
-                      <span><a href="#">工作人员组织建设案例</a></span>
-                      <span><a href="#">业务事项流程建设案例</a></span>
-                      <span><a href="#">高新技术引入建设案例</a></span>
-                    </p>
-                  </dd>
-                  <dd>
-                    <p class="layer3">
-                      <b class="title2">网上政务服务平台建设案例库</b>
-                      <span><a href="#">网上系统平台建设案例</a></span>
-                      <span><a href="#">在线智能服务建设案例</a></span>
-                      <span><a href="#">网上业务办理建设案例</a></span>
-                      <span><a href="#">系统互联互通建设案例</a></span>
-                    </p>
-                  </dd>
-                  <dd>
-                    <p class="layer3">
-                      <b class="title2">中国政务服务政策案例库</b>
-                      <span><a href="#">按省、市、自治区分级政策库</a></span>
-                      <span><a href="#">按国、部、委办分级政策库</a></span>
-                    </p>
-                  </dd>
-                </dl>
-              </div>
-            </li>
-          </ul>
-        </div>
-	    </div>
-      <div class="searchBox">
-        <input class="search" id="sch_txt" name="sch_txt" placeholder="在1100000条政务文献库中搜索" />
-        <span class="sch_btn">搜索&nbsp;&nbsp;<i class="iconfont">&#xe607;</i></span>
-        <!-- 搜索方式 -->
-        <div class="sch_type">
-          <span>跨库搜索</span>&nbsp;|
-          <span>高级检索</span>&nbsp;|
-          <span class="active">出版物检索</span>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <!--内容 -->
   <div class="w1000 pd10lr content">
     <!-- 两个swiper -->
     <div class="clearfix">
       <div class="fl swiper1">
-        <div class="whiteBox">
-          <p class="title">江苏省市县行政权力同权同名互联网+政务服务将有说明书</p>
-          <div class="action">
-            <span>
-              <a href="#"><i class="iconfont">&#xe638;</i>查看摘要</a>
-            </span>
-            <span>
-              <a href="#"><i class="iconfont">&#xe6b7;</i>下载pdf</a>
-            </span>
-          </div>
-          <!-- 案例库列表 -->
-          <div class="bases_box">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <p class="base_name">外源案例库</p>
-                          <p class="base_intro">海量数据库，数据技术支持</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p class="base_name">政务案例库</p>
-                          <p class="base_intro">知者行知使，行者知之成</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p class="base_name">政情案例库</p>
-                          <p class="base_intro">权威性、严谨性、决策支持</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <p class="base_name">外源案例库</p>
-                          <p class="base_intro">海量数据库，数据技术支持</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p class="base_name">政务案例库</p>
-                          <p class="base_intro">知者行知使，行者知之成</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p class="base_name">政情案例库</p>
-                          <p class="base_intro">权威性、严谨性、决策支持</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <p class="base_name">外源案例库</p>
-                          <p class="base_intro">海量数据库，数据技术支持</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p class="base_name">政务案例库</p>
-                          <p class="base_intro">知者行知使，行者知之成</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p class="base_name">政情案例库</p>
-                          <p class="base_intro">权威性、严谨性、决策支持</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-              </div>
-              <div class="swiper-pagination swiper-pagination-bullets"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(style/images/swiper1_slide_03.jpg);">
+                  <a href="#" style="display: block; height: 100%"></a>
+                </div>
+                <div class="swiper-slide" style="background-image: url(style/images/swiper1_slide_03.jpg);">
+                  <a href="#" style="display: block; height: 100%"></a>
+                </div>
+                <div class="swiper-slide" style="background-image: url(style/images/swiper1_slide_03.jpg);">
+                  <a href="#" style="display: block; height: 100%"></a>
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-        </div>
       </div>
       <div class="fr swiper2">
         <div class="swiper-container">
           <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="style/images/index_swiper_03.png">
+                <a href="#"><img src="style/images/swiper2_03.jpg"></a>
+                <div class="mask">
+                  <p class="title">政府管理国际案例库1</p>
+                  <p class="intro">最为有效的智慧支持、智库支持、决策支持、内容支持、学习支持、舆论支持和数据技术支持</p>
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="style/images/index_swiper_03.png">
+                <a href="#"><img src="style/images/swiper2_03.jpg"></a>
+                <div class="mask">
+                  <p class="title">政府管理国际案例库2</p>
+                  <p class="intro">最为有效的智慧支持、智库支持、决策支持、内容支持、学习支持、舆论支持和数据技术支持2</p>
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="style/images/index_swiper_03.png">
+                <a href="#"><img src="style/images/swiper2_03.jpg"></a>
+                <div class="mask">
+                  <p class="title">政府管理国际案例库3</p>
+                  <p class="intro">最为有效的智慧支持、智库支持、决策支持、内容支持、学习支持、舆论支持和数据技术支持3</p>
+                </div>
               </div>
           </div>
-          <div class="mask">
-            <p class="title">政府管理国际案例库</p>
-            <p class="intro">最为有效的智慧支持、智库支持、决策支持、内容支持、学习支持、舆论支持和数据技术支持</p>
-            <div class="direction">
-              <a class="arrow-left" href="#"><img src="style/images/left_btn_18.png" alt="" style="margin-right: 30px;"></a>
-              <a href="#" class="arrow-right"><img src="style/images/right_btn_20.png" alt=""></a>
-            </div>
-          </div>
+          
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </div>
     <!-- 三块内容 -->
     <div class="clearfix" style="text-align: center; margin-top: 20px;">
       <div class="fl subcontent">
+        <!-- 关于 -->
+        <div class="base_box">
+          <div class="head clearfix">
+            <div class="fl ttl">关于</div>
+            <div class="fr more">更多+</div>
+          </div>
+          <div><img src="style/images/aboutus_39.png" width="284" alt=""></div>
+          <p class="aboutus">中国政府管理国际案例库是通过大数据思维大规模集成整合国内、国际政府管理信息资源，利用大数据技术采集、分析、研究、呈现，以中国政府与世界各国政府、中央政府和地方政府、历史和现实、理论和实践相结合的维度，全面聚焦政府的宏观、中观和微观管理，政府管理的方式方法，政府管理生态以及全球化条件下的政府管理面临的机遇与挑战，提出政府管理创新的新思维、新路径，尤其关注各级政府在政务活动中最具典型意义和标本价值的管理模式与决策案例，为各级政府政务决策提供实时科学的管理与决策参考，为各级党政科研机关、大专院校及企事业单位领导提供领导力学习平台与决策参考。</p>
+        </div>
         <!-- 政务案例库 -->
         <div class="base_box">
           <div class="head clearfix">
@@ -376,23 +305,25 @@
                 <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
                 <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
                 <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
               </ul>
             </div>
           </div>
         </div>
-        <!-- 司法案例库 -->
+        <div class="ad">
+          <img src="style/images/index_ad_03.jpg" width="310" alt="">
+        </div>
+        <!-- 政府管理案例库 -->
         <div class="base_box">
           <div class="head clearfix">
-            <div class="fl ttl">司法案例库</div>
+            <div class="fl ttl">政府管理案例库</div>
             <div class="fr more">更多+</div>
           </div>
-          <p class="abstract">汇集社会发展中出现的各种典型司法案例和司法新闻的司法案例库，其中收录了婚姻继承、民商案例、消费维权、刑事案例、行政案例、医疗纠纷……</p>
+          <p class="abstract">指运用大数据集中搜集归纳社会生活富有意义的典型案例，进行系统的分析研究，把庞大的案例资源融合为方便运用的数据资源，形成系统的案例数据库……</p>
           <div>
             <div class="timebar clearfix">
               <div class="fl">最近更新 : 2017年01月19日</div>
-              <div class="fr">
-                <i class="iconfont">&#xe8e2;</i>
-              </div>
             </div>
             <div>
               <ul class="base_datas">
@@ -410,7 +341,34 @@
             </div>
           </div>
         </div>
-        <div class="ad"><img src="style/images/index_ad1.jpg" width="310" alt=""></div>
+        
+      </div>
+      <div class="subcontent">
+        <div class="ad"><img src="style/images/index_adlz_03.jpg" width="310" alt=""></div>
+        <!-- 党风廉政建设及反腐斗争 -->
+        <div class="base_box">
+          <div class="head clearfix">
+            <div class="fl ttl">党风廉政建设及反腐斗争</div>
+            <div class="fr more">更多+</div>
+          </div>
+          <p class="abstract">指廉政建设，属于政治道德范畴，即倡导廉政，反对腐败。通过对以往典型反腐工作舆情的搜集、整理，给政府工作人员提供研究，起到警醒作用，助推行政管理的廉洁高效。</p>
+          <div>
+            <div class="timebar clearfix">
+              <div class="fl">最近更新 : 2017年01月19日</div>
+            </div>
+            <div>
+              <ul class="base_datas">
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="ad"><img src="style/images/index_adyq.jpg" width="310" alt=""></div>
         <!-- 政务舆情案例库 -->
         <div class="base_box">
           <div class="head clearfix">
@@ -441,40 +399,13 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="subcontent">
-        <div class="ad"><img src="style/images/index_ad2_11.jpg" width="310" alt=""></div>
-        <!-- 党风廉政建设及反腐斗争 -->
-        <div class="base_box">
-          <div class="head clearfix">
-            <div class="fl ttl">党风廉政建设及反腐斗争</div>
-            <div class="fr more">更多+</div>
-          </div>
-          <p class="abstract">指廉政建设，属于政治道德范畴，即倡导廉政，反对腐败。通过对以往典型反腐工作舆情的搜集、整理，给政府工作人员提供研究，起到警醒作用，助推行政管理的廉洁高效。</p>
-          <div>
-            <div class="timebar clearfix">
-              <div class="fl">最近更新 : 2017年01月19日</div>
-            </div>
-            <div>
-              <ul class="base_datas">
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="ad"><img src="style/images/index_ad3_15.jpg" width="310" alt=""></div>
         <!-- 外语案例库 -->
         <div class="base_box">
           <div class="head clearfix">
             <div class="fl ttl">外语案例库</div>
             <div class="fr more">更多+</div>
           </div>
-          <p class="abstract">主要收录国外政府决策案例，主要包括日语国家决策案例库、俄语国家决策案例库、英语国家决策案例库。</p>
+          <p class="abstract">主要收录国外政府决策案例，主要包括<span class="point">日语国家决策案例库、俄语国家决策案例库、英语国家决策案例库</span>。</p>
           <div>
             <div class="timebar clearfix">
               <div class="fl">最近更新 : 2017年01月19日</div>
@@ -491,49 +422,19 @@
                 <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
                 <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
                 <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 政府管理案例库 -->
-        <div class="base_box">
-          <div class="head clearfix">
-            <div class="fl ttl">政府管理案例库</div>
-            <div class="fr more">更多+</div>
-          </div>
-          <p class="abstract">指运用大数据集中搜集归纳社会生活富有意义的典型案例，进行系统的分析研究，把庞大的案例资源融合为方便运用的数据资源，形成系统的案例数据库……</p>
-          <div>
-            <div class="timebar clearfix">
-              <div class="fl">最近更新 : 2017年01月19日</div>
-            </div>
-            <div>
-              <ul class="base_datas">
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
-                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
                 <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
               </ul>
             </div>
           </div>
         </div>
+        
       </div>
       <div class="fr subcontent">
         <!-- 热搜案例 -->
-        <div class="flag">
-          <div>
-            <div class="clearfix">
-              <div class="fl">
-                <span class="title">热搜案例</span>
-                <span class="title_en">TOPIC</span>
-              </div>
-              <div class="fr more">更多+</div>
-            </div>
+        <div class="base_box flag">
+          <div class="head clearfix">
+            <div class="fl ttl">热搜案例</div>
+            <div class="fr more">更多+</div>
           </div>
           <!-- 列表 -->
           <div class="list_wrap">
@@ -582,18 +483,25 @@
           </div>
         </div>
         <!-- 时政 -->
-        <div class="flag">
-          <div>
-            <div class="clearfix">
-              <div class="fl">
-                <span class="title">时政</span>
-                <span class="title_en">FAMILY EDUCATION</span>
-              </div>
-              <div class="fr more">更多+</div>
-            </div>
+        <div class="base_box flag">
+          <div class="head clearfix">
+            <div class="fl ttl">时政</div>
+            <div class="fr more">更多+</div>
           </div>
           <div>
               <ul class="base_datas">
+                <!-- 设计图上21条 -->
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
                 <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
                 <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
                 <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
@@ -607,46 +515,35 @@
               </ul>
             </div>
         </div>
-        <!-- 大数据 -->
-        <div class="flag">
+        <!-- 司法案例库 -->
+        <div class="base_box">
+          <div class="head clearfix">
+            <div class="fl ttl">司法案例库</div>
+            <div class="fr more">更多+</div>
+          </div>
+          <p class="abstract">汇集社会发展中出现的各种典型司法案例和司法新闻的司法案例库，其中收录了婚姻继承、民商案例、消费维权、刑事案例、行政案例、医疗纠纷……</p>
           <div>
-            <div class="clearfix">
-              <div class="fl">
-                <span class="title">大数据</span>
-                <span class="title_en">BIGDATA</span>
+            <div class="timebar clearfix">
+              <div class="fl">最近更新 : 2017年01月19日</div>
+              <div class="fr">
+                <i class="iconfont">&#xe8e2;</i>
               </div>
-              <div class="fr more">更多+</div>
+            </div>
+            <div>
+              <ul class="base_datas">
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+                <li><a href="#">创造更高效的政务环境 "宁波帮"涌动回归潮</a></li>
+              </ul>
             </div>
           </div>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="style/images/index_swiper3_23.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="style/images/index_swiper3_23.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="style/images/index_swiper3_23.png" alt="">
-                </div>
-            </div>
-            <!-- 如果需要分页器 -->
-          <div class="swiper-pagination"></div>
-          </div>
-        </div>
-        <!-- 关于 -->
-        <div class="flag">
-          <div>
-            <div class="clearfix">
-              <div class="fl">
-                <span class="title">关于</span>
-                <span class="title_en">ABOUT</span>
-              </div>
-              <div class="fr more">更多+</div>
-            </div>
-          </div>
-          <div><img src="style/images/aboutus_39.png" width="284" alt=""></div>
-          <p class="aboutus">中国政府管理国际案例库是通过大数据思维大规模集成整合国内、国际政府管理信息资源，利用大数据技术采集、分析、研究、呈现，以中国政府与世界各国政府、中央政府和地方政府、历史和现实、理论和实践相结合的维度，全面聚焦政府的宏观、中观和微观管理，政府管理的方式方法，政府管理生态以及全球化条件下的政府管理面临的机遇与挑战，提出政府管理创新的新思维、新路径，尤其关注各级政府在政务活动中最具典型意义和标本价值的管理模式与决策案例，为各级政府政务决策提供实时科学的管理……</p>
         </div>
       </div>
     </div>
@@ -701,55 +598,51 @@
   </div>
   /* 浮标 快捷通道 */
   <div class="floatdiv">
-    <div class="cell">
-      <a href="#">
-        <div><img src="style/images/float1_06.png" alt=""></div>
-        <p class="label">登录</p>
-      </a>
+    <div class="cell qr">
+      <i class="icon_new">&#xe607;</i>
+      <div class="show-qr">
+        <div class="clearfix">
+          <div class="fl"></div>
+          <div style="display: inline-block;"></div>
+          <div class="fr"></div>
+        </div>
+      </div>
     </div>
     <div class="cell">
-      <a href="#">
-        <div><img src="style/images/float2_08.png" alt=""></div>
-        <p class="label">注册</p>
-      </a>
+      <i class="icon_new">&#xe606;</i>
     </div>
     <div class="cell">
-      <img src="style/images/float3_11.png" alt="">
-      <p class="label">微信公众号</p>
+      <i class="icon_new">&#xe601;</i>
     </div>
     <div class="cell">
-      <img src="style/images/float4_16.png" alt="">
-      <p class="label">百问网APP</p>
-    </div>
-    <div class="cell">
-      <img src="style/images/float5_22.png" alt="">
-      <p class="label">百问网APP</p>
+      <i class="icon_new">&#xe7a9;</i>
     </div>
   </div>
-  /* 快捷通道 红色小标 */
-  <div class="float2">快捷通道</div>
 </body>
 <script>  
   $(function(){
     // 小轮播图
-    var mySwiper1 = new Swiper ('.bases_box .swiper-container', {
-      pagination: '.bases_box .swiper-pagination',
-      loop: true,
-      paginationClickable: true
+    var mySwiper1 = new Swiper ('.swiper1 .swiper-container', {
+      nextButton: '.swiper1 .swiper-button-next',
+      prevButton: '.swiper1 .swiper-button-prev',
     });
     // 大轮播图
     var mySwiper2 = new Swiper ('.swiper2 .swiper-container', {
-      loop: true,
       autoplay: 2000,
+      nextButton: '.swiper2 .swiper-button-next',
+      prevButton: '.swiper2 .swiper-button-prev',
+      /*
       onSlideChangeEnd: function(swiper){
-        var index = swiper.activeLoopIndex;
+        var index = swiper.activeIndex;
         //console.log(index);
         // 改变当前活动slide标题文字
         $(".mask .title").text("大标题大标题" + index);
         $(".mask .intro").text("介绍文字介绍文字" + index);
       }
+      */
     });
     /* 左右箭头点击事件 */
+    /*
     $('.arrow-left').on('click', function(e){
       e.preventDefault()
       mySwiper2.swipePrev()
@@ -758,13 +651,8 @@
       e.preventDefault()
       mySwiper2.swipeNext()
     })
+    */
 
-    // 搜索方式切换
-    $(".sch_type span").on('click', function(){
-      $(this).addClass('active').siblings().removeClass('active');
-    })
-  })      
-    
     // 大数据轮播图
     var mySwiper3 = new Swiper ('.flag .swiper-container', {
       pagination: '.flag .swiper-pagination',
@@ -788,5 +676,28 @@
         $(".trees").hide();
       }
     )
+
+    // 搜索选项切换
+    $(".option_box.bases span").on("click", function() {
+      $(this).addClass('active').siblings().removeClass('active');
+      $(".base_chosen").text($(this).text());
+    })
+    $(".option_box.keys span").on("click", function() {
+      $(this).addClass('active').siblings().removeClass('active');
+      $(".base_name").text($(this).text());
+    })
+
+    // 点击下拉搜索选项
+    $(".click_area").click(function(event) {
+      $(".area_ddl").show('400');
+    });
+
+    // 取消 确认 按钮收起下拉框
+    $(".btn_wrap .button").click(function(event) {
+      /* Act on the event */
+      $(".area_ddl").hide();
+      event.stopPropagation();
+    });
+  });
 </script>
 </html>
