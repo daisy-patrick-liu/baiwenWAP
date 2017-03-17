@@ -721,6 +721,8 @@
 
     $(".floatdiv .cell").hover(function() {
       $(this).addClass('active').siblings().removeClass('active');
+    }, function() {
+      $(this).removeClass('active');
     })
   });
 </script>
