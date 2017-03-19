@@ -1,0 +1,819 @@
+.w1050 {
+	width:1050px;
+	margin:0 auto;
+}
+.w1000 {
+	width:1000px;
+	margin:0 auto;
+}
+.w1180 {
+	width: 1180px;
+	margin:0 auto;
+}
+.pd10lr{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/* footer */
+.footer {
+	margin-top: 28px;
+	color: #666;
+}
+.footer .contact {
+	width: 550px;
+	font-size: 13px;
+}
+.footer .contact p{
+	line-height: 18px;
+}
+.footer .coop {
+	color: #414141;
+	font-size: 14px;
+	width: 434px;
+}
+.footer .coop img {
+	margin-bottom: 10px;
+}
+.footer .copyright {
+	text-align: center;
+	font-size: 12px;
+	color: #8d8d8d;
+	margin-top: 67px;
+	padding-bottom: 20px;
+}
+.ico{
+	background:url(../images/icons.png)no-repeat center center;
+	display:inline-block;
+	vertical-align: middle;
+}
+.header{
+	width:100%;
+	position: relative;
+	
+}
+.header .top-wrap{
+	background:#f4f4f4;
+	position: relative;
+	z-index: 10;
+}
+.header .top-tip .t-after{
+	font-size: 0;
+	line-height: 29px;
+	padding-top:10px;
+	padding-bottom: 4px;
+}
+.header .logo{
+	padding:28px 0;
+}
+.header .top-tip .fl a{
+	font-size: 0.173333rem;
+	color:#999;
+	display: inline-block;
+	padding-right:13px;
+}
+.header .top-tip .go-index i{
+	background-position:  1px -226px;
+	background-repeat: no-repeat;
+	width:10px;
+	height:13px;
+	background-size:auto;
+	padding-right:7px;
+}
+.header .top-tip .go-app i{
+	background-position:  1px -241px;
+	background-repeat: no-repeat;
+	width:13px;
+	height:13px;
+	background-size:auto;
+	padding-right:7px;
+}
+.header .top-tip .follow i{
+	background-position:  1px -256px;
+	background-repeat: no-repeat;
+	width:16px;
+	height:13px;
+	background-size:auto;
+	padding-right:7px;
+}
+.header .login-regist .userPic{
+		background-position:  1px 0px;
+	background-repeat: no-repeat;
+	width:15px;
+	height:16px;
+	background-size:auto;
+	padding-right:15px;
+	padding-left:10px;
+}
+.header .banner-wrap{
+	width:100%;
+	background-color:#fff;
+	box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+.header .top-tip .t-rbox{
+		line-height: 29px;
+	padding-top:10px;
+	padding-bottom: 4px;
+}
+.header .top-tip .t-rbox span{
+	font-size: 13px;
+	color:#999;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right:14px;
+}
+.header .top-tip .t-rbox .login-regist{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+}
+.header .top-tip .t-rbox  a{
+	display: inline-block;
+	vertical-align: middle;
+	color:#999;
+	font-size: 13px;
+	padding-right:8px;
+	border-right:1px solid #999; 
+	line-height: 13px;
+}
+.header .top-tip .t-rbox  a.re-regist{
+	padding-left:8px;
+	border:none;
+}
+.header .banner-box{
+	background:url(../images/banner-text.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:96px;
+
+
+}
+.header-bg{
+	background:url(../images/banner-bg-2.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	height:278px;
+	position: absolute;
+	width:957px;
+	left:300px;
+	top:-10px;
+}
+.header .banner-box .search-box{
+	width:365px;
+	height:40px;
+	font-size: 0;
+	position: relative;
+	padding:28px 0;
+}
+.header .banner-box .search-box input{
+	width:250px;
+	border:2px solid #eee;
+	border-right:none;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 38px;
+	padding:0 10px;
+	vertical-align: middle;
+}
+.header .banner-box .search-box  span{
+	display: inline-block;
+	font-size:16px;
+	color:#fff;
+	background:#d33c3e;
+	line-height:42px;
+	text-align: center;
+	padding:0 30px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	vertical-align: middle;
+}
+.container-box{
+	border:1px solid #eee;
+	margin-top:30px;
+}
+.container-box .left-wrap{
+	border-right:1px solid #eee;
+}
+.container-box .left-wrap .left-box .l-top .user-pic{
+	width:83px;
+	height:83px;
+	background:url(../images/icons.png);
+	background-position:0px -126px;
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: block;
+	margin:0 auto;
+	overflow: hidden;
+	position: relative;
+
+}
+.container-box .left-wrap .left-box .l-top .user-pic .camera{
+	background-position: 1px -104px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 23px;
+    height: 17px;
+	position: absolute;
+	right:0;
+	bottom:0;
+}
+.container-box .left-wrap .left-box .l-top .user-pic img{
+	width:83px;
+	height:83px;
+	border-radius: 50%;
+	margin:0 auto;
+
+}
+.container-box .left-wrap .left-box .l-top .username{
+	font-size: 14px;
+	padding-top:32px;
+	padding-bottom: 18px;
+	color:#1a1a1a;
+	text-align: center;
+	word-wrap: break-word;
+}
+.container-box .left-wrap .left-box .l-top  .menber-grade{
+	font-size: 12px;
+	color:#666;
+	text-align: center;
+}
+.container-box .left-wrap .left-box .l-top  .menber-grade i{
+	background-position: 1px -82px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 21px;
+    height: 20px;
+    padding-right:10px;
+}
+.container-box .left-wrap .left-box .l-top .men-status-btn{
+	font-size: 14px;
+	color:#fff;
+	width:126px;
+	height:36px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 3px;
+	margin-top:20px;
+	margin-bottom: 28px;
+	background-color:#d33c3e;
+}
+.container-box .left-wrap  .left-box .l-top {
+
+	border-bottom: 1px  dashed #EEE;
+}
+.container-box .left-wrap  .left-box {
+		padding:0 34px;
+		padding-top:44px;
+		padding-bottom: 600px;
+}
+.container-box .left-wrap  .left-box .l-bottom a{
+	font-size: 14px;
+	color:#1a1a1a;
+	display:block;
+	text-align: center;
+	line-height: 24px;
+	padding:12px 0;
+}
+.container-box .left-wrap {
+	width:202px;
+	background:#fdfdfd;
+}
+.container-box .left-wrap  .left-box .l-bottom a.active{
+	color:#d33c3e;
+}
+.container-box  .right-wrap .r-title {
+	font-size: 14px;
+	color:#1a1a1a;
+	line-height: 15px;
+	padding:12px 0;
+	border-bottom: 1px solid #eee;
+	font-weight: 600;
+}
+.container-box  .right-wrap {
+	width:847px;
+	position: relative;
+}
+.container-box  .right-wrap .r-title .ico{
+	    background-position: 1px -212px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 20px;
+    height: 12px;
+	margin-left:25px;
+	margin-right:10px;
+}
+.container-box  .right-wrap  .r-main{
+	padding:30px  25px;
+}
+.container-box  .right-wrap  .r-main .r-main-box .r-main-title{
+	font-size:14px;
+	line-height: 15px;
+	padding-left:13px;
+	border-left:3px solid #d33c3e;
+	vertical-align: middle;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail .ico-wrap{
+	border:1px solid #eee;
+	border-radius: 50%;
+	width:60px;
+	height:60px;
+	margin:0 auto;
+		margin-bottom: 22px;
+		line-height: 60px;
+		text-align: center;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail .ico-wrap .ico{
+	background-position: 1px -17px;
+	background-repeat: no-repeat;
+	background-size:auto;
+	width:30px;
+	height:20px;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail .pay-money{
+	font-size: 18px;
+	color:#1a1a1a;
+	text-align:center;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail .pay-maoney .money{
+	font-size: 24px;
+	color:#d33c3e;
+	text-align:center;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail  .order-detail{
+	font-size: 0;
+	text-align:center;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail  .order-detail p{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	color:#1a1a1a;
+	padding-right:11px;
+	border-right: 1px solid #1a1a1a;
+	line-height: 14px;
+	margin-top:30px;
+
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail  .order-detail{
+	padding-bottom: 65px;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail  .order-detail p:nth-of-type(2){
+	padding-right:0;
+	border:none;
+	padding-left:11px;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail .btns{
+	text-align: center;
+	font-size: 0;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail .btns a{
+	display: inline-block;
+	vertical-align: middle;
+	width:126px;
+	height:36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 16px;
+	color:#1a1a1a;
+	border-radius: 4px;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail .btns a:first-of-type{
+	background:#f6f6f6;
+	border:1px solid #ededed;
+	margin-right:13px;
+}
+.container-box  .right-wrap  .r-main .r-main-box  .detail .btns a:last-of-type{
+	background:#d33c3e;
+	border:1px solid #d33c3e;
+	color:#fff;
+}
+.container-box  .myvip .r-title .ico{
+    background-position: -22px -210px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 16px;
+    height: 17px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+.container-box  .myvip  .r-main-box .menber-type .t-list-box{
+	padding-top:46px;
+	padding-bottom: 40px;
+	padding-left:90px;
+	padding-right:90px;
+
+}
+.container-box  .myvip  .r-main-box .menber-type .t-list-box .list{
+	padding-right:55px;
+	border-right:1px solid #f0f0f0;
+}
+.container-box  .myvip  .r-main-box .menber-type .t-list-box .list .go-upgrade{
+	display: inline-block;
+	background:#f8f8f8;
+	font-size: 14px;
+	color:#1a1a1a;
+	text-align: center;
+	border:1px solid #eee;
+	border-radius: 2px;
+	margin-left:10px;
+	vertical-align: middle;
+	padding:4px 8px;
+}
+.container-box  .myvip  .r-main-box .menber-type .t-list-box .list p:nth-of-type(2){
+	font-size: 14px;
+	color:#d33c3e;
+	padding-left:53px;
+	font-weight: normal;
+	padding-bottom: 0;
+}
+.container-box  .myvip  .r-main-box .menber-type .t-list-box .list:nth-of-type(2){
+	padding-left:55px;
+}
+.container-box  .myvip  .r-main-box .menber-type .t-list-box .list:nth-of-type(3){
+	border:none;
+	padding-left:55px;
+}
+.container-box  .myvip  .r-main-box .menber-type .t-list-box .list p{
+	font-size: 14px;
+	color:#1a1a1a;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.container-box  .myvip  .r-main-box .menber-type .t-list-box .list p.p-mymenber  i{
+	background-position: 1px -271px;
+	background-repeat: no-repeat;
+	background-size:auto;
+	width:28px;
+	height:26px;
+	margin-right:25px;
+	vertical-align: top;
+}
+.container-box  .myvip  .r-main-box .menber-type .t-list-box .list p.mygarade  i{
+	background-position: 1px -299px;
+	background-repeat: no-repeat;
+	background-size:auto;
+	width:28px;
+	height:26px;
+	margin-right:25px;
+	vertical-align: top;
+}
+.container-box  .myvip  .r-main-box .menber-type .t-list-box .list p.overdate  i{
+	background-position: 1px -329px;
+	background-repeat: no-repeat;
+	background-size:auto;
+	width:28px;
+	height:26px;
+	margin-right:25px;
+	vertical-align: top;
+}
+
+.container-box  .myvip  .r-main-box  .r-title-bg{
+	background:#f7f7f7;
+	border-top:1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.container-box  .myvip .r-main{
+	padding-right:0;
+	padding-left:0;
+}
+.container-box  .myvip .ican-use .user-box{
+	padding-left:50px;
+	padding-right:70px;
+	padding-top:44px;
+
+}
+.container-box  .myvip .ican-use .user-box .user-list .ico-wrap{
+	width:63px;
+	height:63px;
+	border:1px solid #eee;
+	line-height: 63px;
+	text-align: center	border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	margin-right:34px;
+}
+.container-box  .myvip .ican-use .user-box .user-list i{
+	background-position: 1px -357px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 35px;
+    height: 27px;
+    vertical-align: middle;
+}
+.container-box  .myvip .ican-use .user-box .user-list{
+	font-size: 0;
+	padding-bottom: 63px;
+}
+.container-box  .myvip .ican-use .user-box .user-list .r-intro p:nth-of-type(2){
+	color:#999;
+	font-size: 12px;
+
+}
+.container-box  .myvip .ican-use .user-box .user-list .r-intro{
+	display: inline-block;
+	vertical-align: top;
+	width:620px;
+}
+.container-box  .myvip .ican-use .user-box .user-list .r-intro p{
+	line-height: 18px;
+}
+.container-box  .myvip .ican-use .user-box .user-list .r-intro p:nth-of-type(1){
+	color:#1a1a1a;
+	font-size: 16px;
+	padding-bottom: 15px;
+
+}
+.container-box  .myvip .ican-use .user-box .user-list:nth-of-type(1) i{
+	background-position: 1px -357px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 35px;
+    height: 27px;
+    vertical-align: middle;
+}
+.container-box  .myvip .ican-use .user-box .user-list:nth-of-type(2) i{
+	background-position: 1px -386px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 30px;
+    height: 31px;
+    vertical-align: middle;
+}
+.container-box  .myvip .ican-use .user-box .user-list:nth-of-type(3) i{
+	background-position: 1px -419px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 32px;
+    height: 28px;
+    vertical-align: middle;
+}
+.container-box  .myvip .ican-use .user-box .user-list:nth-of-type(4) i{
+	background-position: 1px -449px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 32px;
+    height: 33px;
+    vertical-align: middle;
+}
+.container-box  .myvip .ican-use .user-box .user-list:nth-of-type(5) i{
+	background-position: -67px -0px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 36px;
+    height: 32px;
+    vertical-align: middle;
+}
+.container-box  .myvip .ican-use .user-box .user-list:nth-of-type(6) i{
+	background-position:-1px -51px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 39px;
+    height: 31px;
+    vertical-align: middle;
+}
+.container-box  .collect .r-title .ico {
+	background-position: -23px -211px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 16px;
+    height: 15px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+.container-box  .collect  table{
+	width:100%;
+}
+
+.container-box  .collect  table thead tr td{
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	padding:10px 0;
+
+}
+.container-box  .collect  table thead tr td:nth-of-type(1){
+		width:350px;
+		text-align: left;
+		position: relative;
+		left:80px;
+}
+.container-box  .collect  table thead tr td:nth-of-type(2){
+		
+
+}
+.container-box  .collect  table tbody tr td:nth-of-type(1){
+	width:350px;
+		overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+	display: block;
+
+}
+.container-box  .collect  table tbody tr td:nth-of-type(1) a{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+	display: block;
+	text-align: left;
+	padding-left:50px;
+}
+.container-box  .collect  table tbody tr td {
+	text-align: center;
+	padding:12px 0;
+	font-size: 12px;
+	color:#1a1a1a;
+}
+.container-box  .collect  table tbody tr td  a{
+		font-size: 12px;
+	color:#1a1a1a;
+}
+.container-box  .collect  .r-main{
+	padding-left:0;
+	padding-right:0;
+}
+
+.container-box  .collect  table tbody tr:hover td{
+	background:#f2f2f2;
+	cursor:pointer;
+}
+.container-box  .title-wrap {
+	border-bottom: 1px solid #eee;
+}
+.container-box  .title-wrap .r-title{
+	border:none;
+}
+.container-box  .title-wrap .count{
+	font-size: 14px;
+	color:#999;
+	padding: 12px 0;
+	padding-right:25px;
+}
+.page{
+	font-size: 0;
+	border:1px solid #e2e2e2;;
+	width:718px;
+	margin:0 auto;
+	background:#f8f8f8;
+	margin-top:60px;
+}
+.page span{
+	display: inline-block;
+	border-right:1px solid #e2e2e2;
+	font-size: 14px;
+	color:#333;
+	padding:0 20px;
+	line-height: 44px;
+	background:#fff;
+	box-sizing: border-box;
+	vertical-align: middle;
+	cursor:pointer;
+}
+.page span.first,.page span.last{
+	padding:0 30px;
+}
+.page span.first{
+	margin-right:108px;
+}
+.page span.last{
+	margin-left:108px;
+	border-right: none;
+
+}
+.page span.last.disabled{
+	background:#e2e2e2;
+	color:#999;
+}
+.page span.first.disabled{
+	background:#e2e2e2;
+	color:#999;
+}
+.page span.active{
+	background:#f6f6f6;
+	color:#d33c3e;
+}
+.page span:nth-of-type(2){
+	border-left:1px solid #e2e2e2;;
+}
+.container-box  .collect .down-title .ico{
+	background-position: -41px -211px!important;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 14px;
+    height: 15px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+.container-box   .accountSet .r-title .ico{
+	background-position: -23px -211px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 16px;
+    height: 15px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+.container-box   .accountSet ul li span{
+	font-size: 15px;
+	color:#999;
+	display: inline-block;
+	width:auto;
+	text-align: left;
+	vertical-align:middle;
+	line-height:35px;
+}
+.container-box   .accountSet ul li span.input-tag{
+	width:142px;
+	color:#1a1a1a;
+}
+.container-box   .accountSet ul li {
+	padding:10px 0;
+	border-bottom: 1px solid #eee;
+}
+.container-box   .accountSet ul li input{
+	font-size: 14px;
+	color:#333;
+	width:550px;
+	line-height:35px;
+	border:none;
+	vertical-align:middle;
+}
+.container-box   .accountSet ul li.user-pic .pic-wrap{
+	display: inline-block;
+	border:1px solid #eee;
+	border-radius: 50%;
+	width:33px;
+	height:33px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.container-box   .accountSet ul li.user-pic .pic-wrap img{
+	width:100%;
+	height:100%;
+}
+.container-box   .accountSet ul li .imgs{
+	display: inline-block;
+}
+.container-box   .accountSet ul li .imgs .img-wrap{
+	display: inline-block;
+}
+.container-box   .accountSet ul li .imgs .img-wrap .qq{
+	background-position: -108px 0px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 21px;
+    height: 21px;
+}
+
+.container-box   .accountSet ul li .imgs .img-wrap .weixin{
+	background-position: -134px 0px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 21px;
+    height: 21px;
+}
+.container-box   .accountSet ul li .imgs .img-wrap .xingliang{
+	background-position: -160px 0px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 21px;
+    height: 21px;
+}
+.container-box   .accountSet ul li .imgs .img-wrap .qqkongjian{
+	background-position: -186px 0px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 21px;
+    height: 21px;
+}
+.container-box   .accountSet ul li .imgs .img-wrap .renren{
+	background-position: -212px 0px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 21px;
+    height: 21px;
+}
+.container-box   .accountSet ul li .imgs .img-wrap .pengyouquan{
+	background-position: -239px 0px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 21px;
+    height: 21px;
+
+}
+.container-box   .accountSet ul li .edit{
+	    vertical-align: middle;
+    line-height: 35px;
+    display: inline-block;
+}
+.container-box   .accountSet ul li .edit .ico{
+		background-position: -266px -5px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width:11px;
+    height: 11px;
+    margin-left:5px;
+}
+
