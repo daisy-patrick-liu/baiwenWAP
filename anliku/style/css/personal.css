@@ -62,11 +62,14 @@
 	padding-top:10px;
 	padding-bottom: 4px;
 }
+.header .top-tip .t-after a:hover{
+	color:#d33c3e;
+}
 .header .logo{
 	padding:28px 0;
 }
 .header .top-tip .fl a{
-	font-size: 0.173333rem;
+	font-size: 12px;
 	color:#999;
 	display: inline-block;
 	padding-right:13px;
@@ -78,6 +81,7 @@
 	height:13px;
 	background-size:auto;
 	padding-right:7px;
+	margin-bottom: 3px;
 }
 .header .top-tip .go-app i{
 	background-position:  1px -241px;
@@ -86,6 +90,7 @@
 	height:13px;
 	background-size:auto;
 	padding-right:7px;
+	margin-bottom: 2px;
 }
 .header .top-tip .follow i{
 	background-position:  1px -256px;
@@ -103,6 +108,9 @@
 	background-size:auto;
 	padding-right:15px;
 	padding-left:10px;
+}
+.header .top-tip .t-rbox   a:hover{
+	color:#d33c3e;
 }
 .header .banner-wrap{
 	width:100%;
@@ -203,8 +211,8 @@
 	background-size: auto;
 	display: block;
 	margin:0 auto;
-	overflow: hidden;
 	position: relative;
+	border-radius: 50%;
 
 }
 .container-box .left-wrap .left-box .l-top .user-pic .camera{
@@ -222,7 +230,7 @@
 	height:83px;
 	border-radius: 50%;
 	margin:0 auto;
-
+	padding:0;
 }
 .container-box .left-wrap .left-box .l-top .username{
 	font-size: 14px;
@@ -273,6 +281,9 @@
 	text-align: center;
 	line-height: 24px;
 	padding:12px 0;
+}
+.container-box .left-wrap  .left-box .l-bottom a:hover{
+	color:#d33c3e;
 }
 .container-box .left-wrap {
 	width:202px;
@@ -557,7 +568,7 @@
     vertical-align: middle;
 }
 .container-box  .myvip .ican-use .user-box .user-list:nth-of-type(5) i{
-	background-position: -67px -0px;
+	background-position: -65px 1px;
     background-repeat: no-repeat;
     background-size: auto;
     width: 36px;
@@ -565,7 +576,7 @@
     vertical-align: middle;
 }
 .container-box  .myvip .ican-use .user-box .user-list:nth-of-type(6) i{
-	background-position:-1px -51px;
+	background-position:-1px -50px;
     background-repeat: no-repeat;
     background-size: auto;
     width: 39px;
@@ -670,6 +681,10 @@
 	box-sizing: border-box;
 	vertical-align: middle;
 	cursor:pointer;
+}
+.page span:hover{
+	    background: #f6f6f6;
+    color: #d33c3e;
 }
 .page span.first,.page span.last{
 	padding:0 30px;
