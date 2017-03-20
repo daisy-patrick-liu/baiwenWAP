@@ -971,3 +971,88 @@ a:hover li {
 	background: #f6f6f6;
 	color: #d33c3e;
 }
+
+.search .head {
+	position: initial;
+}
+.search .base_box .head .ttl {
+	position: initial;
+	display: inline-block;
+}
+.search .base_box p {
+	line-height: 25px;
+	margin-top: 25px;
+}
+.search .link_more {
+	color: #d33c3e;
+}
+.search .tj-wrap {
+	padding-top: 25px;
+}
+.search .bar_search .sch_btn {
+	border: none;
+}
+/************************** 政情数据库***************************/
+.zq .tips .icon_new {
+	color: #de6c6e;
+	margin-right: 11px;
+}
+.zq .tips i.tip {
+	color: #999;
+}
+.zq .container-box {
+	border: none;
+}
+.zq .flex_box {
+	display: flex;
+	display: -webkit-flex;
+	text-align: justify;
+}
+.zq .flex_box .flex_cell {
+	flex: 1;
+	-webkit-flex: 1
+}
+.zq .pics {
+	padding: 55px 0;
+}
+.zq .pics .flex_cell {
+	padding-top: 210px;
+	background-repeat: no-repeat;
+	background-size: auto 196px;
+	background-position: center 0;
+	text-align: center;
+	width: 154px;
+	font-size: 16px;
+}
+.zq .intro_wrap {
+	padding: 0 50px;
+}
+/* 介绍文字 */
+.zq .intro {
+	padding-bottom: 67px;
+	border-bottom: 1px solid #f4f4f4;
+}
+.zq .intro p {
+	line-height: 25px;
+}
+/* 各种字段 */
+.zq .intro_wrap .infos {
+	padding-top: 38px;
+	padding-bottom: 210px;
+	border-bottom: 1px solid #f4f4f4;
+}
+.zq .intro_wrap .infos .info-left {
+	width: 438px;
+	overflow: hidden;
+}
+.zq .infos span.key {
+	display: inline-block;
+	width: 100px;
+	position: absolute;
+	left: 0;
+}
+.zq .key-value {
+	position: relative;
+	padding-left: 100px;
+	line-height: 25px;
+}
