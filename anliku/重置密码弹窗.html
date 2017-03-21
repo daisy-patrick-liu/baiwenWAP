@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>重置密码</title>
+<link rel="stylesheet" href="style/css/reset.css">
+<link rel="stylesheet" href="style/css/layout.css">
+<script src="script/jquery-1.8.3.min.js"></script>
+<script src="script/Validform_v5.3.2.js"></script>
+<style>
+  #valid_code {
+    background-image: url(style/images/icn_code.png);
+  }
+</style>
+</head>
+
+<body class="layer_reg">
+  <div class="content">
+    <div class="logo_wrap clearfix">
+      <img src="style/images/logo_13.png" alt="" class="fl">
+      <img src="style/images/close.png" alt="" class="fr">
+    </div>
+    <form id="frm_login" class="frm_login_reg" action="#" method="post">
+      <div class="title clearfix">
+        <hr size="1" width="100%" color="#eee" style="margin-top: 18px;" noshade>
+        <span class="abs_txt">重置密码</span>
+      </div>
+
+      <div class="input-group">
+        <div class="input-wrap">
+          466458916@qq.com，您好！请设置您的新密码
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-wrap">
+          <input type="password" id="pwd" name="pwd" placeholder="请输入密码" datatype="*" nullmsg="请输入密码">
+        </div>
+        <div class="Validform_checktip"></div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-wrap">
+          <input type="password" id="pwd2" name="pwd2" placeholder="请重复输入密码" datatype="*" recheck="pwd" errormsg="您两次输入的账号密码不一致！">
+        </div>
+        <div class="Validform_checktip"></div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-wrap">
+          <input type="text" id="valid_code" name="valid_code" placeholder="请输入右侧验证码" datatype="*" nullmsg="请输入验证码" style="width: 316px; margin-right: 23px;">
+          <img src="style/images/valid_code_03.jpg" alt="">
+        </div>
+        <div class="Validform_checktip"></div>
+      </div>
+
+      <div class="button">确 认</div>
+
+    </form>
+    
+  </div>
+</body>
+<script>  
+$(function() {
+  $(".frm_login_reg").Validform({
+    tiptype:2
+  });
+})
+</script>
+</html>
