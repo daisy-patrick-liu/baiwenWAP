@@ -191,6 +191,13 @@
                 <li>新闻（123）</li>
                 <li>案例（12）</li>
                 <li>人物档案（25134）</li>
+                <li>新闻（123）</li>
+                <li>案例（12）</li>
+                <li>人物档案（25134）</li>
+                <li>新闻（123）</li>
+                <li>案例（12）</li>
+                <li>人物档案（25134）</li>
+                <li>案例（12）</li>
               </ul>
             </div>
             <div class="cell">
@@ -220,7 +227,9 @@
                 <div class="fl"><span>地区</span></div>
                 <div class="fr unfold">+</div>
               </div>
-              <div>请先选择行政级别</div>
+              <ul class="filter_item">
+              <div class="tip">请先选择行政级别</div>
+              </ul>
             </div>
             <div class="cell">
               <div class="ttl clearfix">
@@ -375,6 +384,33 @@
       $(this).addClass('active');
     }, function() {
       $(this).removeClass('active');
+    });
+
+    // 搜索选项展开折叠
+    // 初始：遍历所有选项块，超过3个折叠，少于3个隐藏展开按钮
+    $(".filter_item").each(function(index, el) {
+      var lis = $(this).find('li');
+      console.log(lis.length);
+      if (lis.length > 3) {
+        $(this).find("li").each(function(index, el) {
+          if (index > 2) {
+            $(this).hide();
+          }
+        });
+      } else {
+        $(this).prev().find(".unfold").hide();
+      }
+      
+    });
+
+    $(".unfold").click(function(event) {
+      /* Act on the event */
+      var lis = $(this).parent().next().find('li');
+      lis.each(function(index, el) {
+        if (index > 2) {
+          $(this).show();
+        }
+      });
     });
   })
 </script>
