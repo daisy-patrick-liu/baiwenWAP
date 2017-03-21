@@ -1074,7 +1074,7 @@ a:hover li {
 }
 .layer_reg .abs_txt {
 	position: absolute;
-	left: 50%;
+	left: 40%;
 	display: inline-block;
 	background-color: #fff;
 	padding: 0 15px;
@@ -1123,6 +1123,9 @@ a:hover li {
 }
 .layer_reg .login_link {
 	text-align: center;
+}
+.layer_reg .login_link:hover {
+	text-decoration: underline;
 }
 .frm_login_reg {
 	padding: 0 105px;

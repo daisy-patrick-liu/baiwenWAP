@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="package/swiper/css/swiper.min.css">
 <script src="script/jquery-1.8.3.min.js"></script>
 <script src="package/swiper/js/swiper.min.js"></script>
+<script src="package/layer/layer.js"></script>
 </head>
 
 <body class="index">
@@ -21,7 +22,7 @@
         </div>
         <div class="fr">
           <span class="msg">欢迎来到中国政府管理国际案例库！</span>
-          <span><i class="icon_new icon_login">&#xe6c5;</i>  <a href="#">登录</a>  |  <a href="#">注册</a></span>
+          <span><i class="icon_new icon_login">&#xe6c5;</i>  <a id="link_login" href="#">登录</a>  |  <a id="link_register" href="#">注册</a></span>
         </div>
       </div>
     </div>
@@ -643,28 +644,8 @@
     var mySwiper2 = new Swiper ('.swiper2 .swiper-container', {
       autoplay: 2000,
       nextButton: '.swiper2 .swiper-button-next',
-      prevButton: '.swiper2 .swiper-button-prev',
-      /*
-      onSlideChangeEnd: function(swiper){
-        var index = swiper.activeIndex;
-        //console.log(index);
-        // 改变当前活动slide标题文字
-        $(".mask .title").text("大标题大标题" + index);
-        $(".mask .intro").text("介绍文字介绍文字" + index);
-      }
-      */
+      prevButton: '.swiper2 .swiper-button-prev'
     });
-    /* 左右箭头点击事件 */
-    /*
-    $('.arrow-left').on('click', function(e){
-      e.preventDefault()
-      mySwiper2.swipePrev()
-    })
-    $('.arrow-right').on('click', function(e){
-      e.preventDefault()
-      mySwiper2.swipeNext()
-    })
-    */
 
     // 大数据轮播图
     var mySwiper3 = new Swiper ('.flag .swiper-container', {
@@ -723,7 +704,33 @@
       $(this).addClass('active').siblings().removeClass('active');
     }, function() {
       $(this).removeClass('active');
-    })
+    });
+
+    // login 弹出层
+    $("#link_login").on('click', function(event) {
+      /* Act on the event */
+      event.preventDefault();
+      layer.open({
+        type: 2,
+        shadeClose: true,
+        title: false,
+        area: ['678px','630px'],
+        content: '登录弹窗.html'
+      })
+    });
+
+    // 注册 弹出层
+    $("#link_register").on('click', function(event) {
+      /* Act on the event */
+      event.preventDefault();
+      layer.open({
+        type: 2,
+        shadeClose: true,
+        title: false,
+        area: ['678px','630px'],
+        content: '注册弹窗.html'
+      })
+    });
   });
 </script>
 </html>
