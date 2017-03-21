@@ -1146,3 +1146,40 @@ a:hover li {
 .layer_reg .link_txt {
 	color: #d33c3e;
 }
+/******************* 公务员详情 *****************************/
+.gwyxq .container-box {
+	border: none;
+}
+.gwyxq .content_left {
+	width: 612px;
+}
+.gwyxq .content_right {
+	width: 400px;
+}
+.gwyxq .gwy_name {
+	font-size: 16px;
+	color: #d33c3e;
+	margin-bottom: 15px;
+}
+.gwyxq p.normal {
+	line-height: 25px;
+}
+.gwyxq .cell .title {
+	color: #1a1a1a;
+	border-left: 3px solid #d33c3e;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	padding-left: 5px;
+}
+.gwyxq .cell .textarea {
+	height: 340px;
+	border: 1px solid #eee;
+	overflow-y: scroll;
+	padding: 15px 20px;
+	box-sizing: border-box;
+}
+.gwyxq .textarea p.text_from {
+	text-align: right;
+	font-size: 13px;
+	color: #999;
+}
