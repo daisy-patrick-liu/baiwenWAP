@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -27,7 +27,7 @@ a:hover{
 	text-decoration: underline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -63,6 +63,6 @@ a:hover{color:#406599}
 img{border:0; vertical-align: middle;}
 .relative{ position: relative;}
 .text-center{ text-align: center;}
-.text-left:{text-align:left;}
+.text-left{text-align:left;}
 .fl{float:left;}
 .fr{float:right;}
