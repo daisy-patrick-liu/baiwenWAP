@@ -1056,9 +1056,9 @@ a:hover li {
 	padding-left: 100px;
 	line-height: 25px;
 }
-/****************************** 注册弹窗 ********************/
+/****************************** 注册弹窗 & 登录弹窗 ********************/
 .layer_reg .content {
-	padding: 38px;
+	padding: 15px 24px;
 }
 .layer_reg .logo_wrap {
 	text-align: center;
@@ -1088,7 +1088,58 @@ a:hover li {
 	height: 49px;
 	border-radius: 3px;
 	line-height: 49px;
-	padding-left: 15px;
+	padding-left: 56px;
 	box-sizing: border-box;
 	border: 1px solid #eee;
+}
+.layer_reg .Validform_wrong {
+	font-size: 12px;
+	line-height: 36px;
+	color: #333;
+}
+/*
+.layer_reg .Validform_checktip:before {
+	display: inline-block;
+	content: '';
+	width: 25px;
+	line-height: 36px;
+	height: 36px;
+	background: url(../images/form_error_03.png) no-repeat 0 center;
+}
+*/
+.layer_reg .Validform_right {
+	display: none;
+}
+.layer_reg .button {
+	line-height: 50px;
+	border-radius: 3px;
+	background-color: #d33c3e;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	cursor: pointer;
+}
+.layer_reg .login_link {
+	text-align: center;
+}
+.frm_login_reg {
+	padding: 0 105px;
+}
+.frm_login_reg input:first-child {
+	background: url(../images/icn_phone.png) no-repeat 17px center;
+}
+.frm_login_reg .input-group:nth-child(3) input {
+	background: url(../images/icn_lock.png) no-repeat 17px center;
+}
+.frm_login_reg .input-group:nth-child(4) input {
+	background: url(../images/icn_lock.png) no-repeat 17px center;
+}
+.frm_login_reg .input-group:nth-child(5) input {
+	background: url(../images/icn_code.png) no-repeat 17px center;
+}
+
+.layer_reg .link_txt {
+	color: #d33c3e;
 }
