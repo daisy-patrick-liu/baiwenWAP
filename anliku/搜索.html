@@ -240,6 +240,7 @@
                 <li>迟子建（1259）</li>
                 <li>龙应台（964）</li>
                 <li>余秋雨（396421）</li>
+                <li>daisy（396421）</li>
               </ul>
             </div>
           </div>
@@ -390,7 +391,7 @@
     // 初始：遍历所有选项块，超过3个折叠，少于3个隐藏展开按钮
     $(".filter_item").each(function(index, el) {
       var lis = $(this).find('li');
-      console.log(lis.length);
+      //console.log(lis.length);
       if (lis.length > 3) {
         $(this).find("li").each(function(index, el) {
           if (index > 2) {
@@ -403,12 +404,19 @@
       
     });
 
-    $(".unfold").click(function(event) {
+    $(".unfold").toggle(function(event) {
       /* Act on the event */
       var lis = $(this).parent().next().find('li');
       lis.each(function(index, el) {
         if (index > 2) {
           $(this).show();
+        }
+      });
+    }, function() {
+      var lis = $(this).parent().next().find('li');
+      lis.each(function(index, el) {
+        if (index > 2) {
+          $(this).hide();
         }
       });
     });
