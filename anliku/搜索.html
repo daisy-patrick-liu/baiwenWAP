@@ -423,17 +423,34 @@
 
     // 对每一个选项集来说，选择一个选项后，其他兄弟选项收起，当前选项加"×"，点之释放当前选择，展开所有选项
     $(".filter_item li").on("click", function() {
+      if ($(this).hasClass('active')) return;
       var current_obj = $(this);
+      var folded = false;
+      if ($(this).siblings(":last").is(":visible") == false) {
+        folded = true;
+      }
       $(this).addClass('active');
       $(this).append('<span class="item_close" style="float: right; line-height: 25px;"><img src="style/images/close.png" height="10" alt=""></span>');
       $(this).siblings().hide();
 
       $(".item_close").on("click", function(event) {
         event.stopPropagation();
+        current_obj.siblings().show();
+        // 如果选择选项之前3条之后的隐藏，取消选择之后，该隐藏的继续隐藏
+        if (folded) {
+          var parentul = $(this).parents(".filter_item");
+          parentul.find("li").each(function(index, el) {
+            if (index > 2) {
+              $(this).hide();
+            }
+          });
+        }
         current_obj.removeClass('active');
         $(this).remove();
-        current_obj.siblings().show();
-      })
+        
+
+      });
+
     });
 
     
