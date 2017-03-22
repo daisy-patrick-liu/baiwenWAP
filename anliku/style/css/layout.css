@@ -906,6 +906,9 @@ a:hover li {
 	background-size: 5px;
 	cursor: pointer;
 }
+.search .filter_item li:hover {
+	background-color: #f5f5f5;
+}
 /* 中间筛选结果 */
 .search .results {
 	width: 688px;
