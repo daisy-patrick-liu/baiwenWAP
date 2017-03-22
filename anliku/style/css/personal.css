@@ -173,6 +173,7 @@
 	padding:28px 0;
 }
 .header .banner-box .search-box input{
+	height:39px;
 	width:250px;
 	border:2px solid #eee;
 	border-right:none;
