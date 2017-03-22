@@ -1,6 +1,6 @@
-$(function(){
+﻿$(function(){
     $.extend({
-        top:function(){//返回顶部
+        top:function(){//返回顶部不一样
             $("body,html").animate({scrollTop:0},300);
         },
         showCharts:{//封装echarts弹框于此对象
