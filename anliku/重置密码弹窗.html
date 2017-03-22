@@ -59,8 +59,12 @@
     
   </div>
 </body>
+<script src="script/jquery.enplaceholder.js"></script>
 <script>  
 $(function() {
+  // 兼容IE8
+  $('input').placeholder({isUseSpan:true});
+  
   $(".frm_login_reg").Validform({
     tiptype:2
   });

@@ -1136,21 +1136,31 @@ a:hover li {
 .frm_login_reg {
 	padding: 0 105px;
 }
-.frm_login_reg input:first-child {
+.frm_login_reg .input_user {
 	background: url(../images/icn_phone.png) no-repeat 17px center;
 }
-.frm_login_reg .input-group:nth-child(3) input {
+.frm_login_reg .input_pwd {
 	background: url(../images/icn_lock.png) no-repeat 17px center;
 }
-.frm_login_reg .input-group:nth-child(4) input {
-	background: url(../images/icn_lock.png) no-repeat 17px center;
-}
-.frm_login_reg .input-group:nth-child(5) input {
+.frm_login_reg .input_verify {
 	background: url(../images/icn_code.png) no-repeat 17px center;
 }
 
 .layer_reg .link_txt {
 	color: #d33c3e;
+}
+
+.layer_reg .send {
+    background: #a1ce83;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
 }
 /******************* 公务员详情 *****************************/
 .gwyxq .container-box {

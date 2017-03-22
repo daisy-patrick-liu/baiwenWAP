@@ -27,21 +27,21 @@
 
       <div class="input-group">
         <div class="input-wrap">
-          <input type="text" id="userid" name="userid" placeholder="请输入您的邮箱/手机号码" datatype="*" nullmsg="请输入用户名">
+          <input type="text" class="input_user" id="userid" name="userid" placeholder="请输入您的邮箱/手机号码" datatype="*" nullmsg="请输入用户名">
         </div>
         <div class="Validform_checktip"></div>
       </div>
 
       <div class="input-group">
         <div class="input-wrap">
-          <input type="password" id="pwd" name="pwd" placeholder="请输入密码" datatype="*" nullmsg="请输入密码">
+          <input type="password" class="input_pwd" id="pwd" name="pwd" placeholder="请输入密码" datatype="*" nullmsg="请输入密码">
         </div>
         <div class="Validform_checktip"></div>
       </div>
 
       <div class="input-group">
         <div class="input-wrap">
-          <input type="text" id="valid_code" name="valid_code" placeholder="请输入右侧验证码" datatype="*" nullmsg="请输入验证码" style="width: 260px;">
+          <input type="text" class="input_verify" id="valid_code" name="valid_code" placeholder="请输入右侧验证码" datatype="*" nullmsg="请输入验证码" style="width: 260px;">
           <img src="style/images/valid_code_03.jpg" alt="">
         </div>
         <div class="Validform_checktip"></div>
@@ -57,8 +57,12 @@
     
   </div>
 </body>
+<script src="script/jquery.enplaceholder.js"></script>
 <script>  
 $(function() {
+  // 兼容IE8
+  $('input').placeholder({isUseSpan:true});
+
   $(".frm_login_reg").Validform({
     tiptype:2
   });
