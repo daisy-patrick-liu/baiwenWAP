@@ -422,6 +422,20 @@
     });
 
     // 对每一个选项集来说，选择一个选项后，其他兄弟选项收起，当前选项加"×"，点之释放当前选择，展开所有选项
+    $(".filter_item li").on("click", function() {
+      var current_obj = $(this);
+      $(this).addClass('active');
+      $(this).append('<span class="item_close" style="float: right; line-height: 25px;"><img src="style/images/close.png" height="10" alt=""></span>');
+      $(this).siblings().hide();
+
+      $(".item_close").on("click", function(event) {
+        event.stopPropagation();
+        current_obj.removeClass('active');
+        $(this).remove();
+        current_obj.siblings().show();
+      })
+    });
+
     
 
   })
