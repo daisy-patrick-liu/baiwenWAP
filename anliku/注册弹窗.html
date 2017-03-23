@@ -76,6 +76,7 @@
   </div>
 </body>
 <script src="script/jquery.enplaceholder.js"></script>
+<script src="script/mock.js"></script>
 <script>  
 $(function() {
   $('input').placeholder({isUseSpan:true});
@@ -118,6 +119,31 @@ $(function() {
   var btnGetCodeNum = document.getElementById("btnGetCodeNum");
   //测试倒计时
   //time(btnGetCodeNum);
+  btnGetCodeNum.onclick = function() {
+
+    Mock.mock("http://g.cn", {
+      'status': 200,
+      'msg': 'success'
+    })
+    $.ajax({
+      url: 'http://g.cn',
+      dataType: 'json',
+      error: function() {
+        /* Act on the event */
+        alert("请勿刷新接口");
+      },
+      success: function(data) {
+        if (data.status != 200) {
+          isClick = false;
+          alert(data.msg);                
+        } else {
+          //如果能够点击，触发发短信的事件
+           time(btnGetCodeNum);
+        }
+
+      }
+    })
+  }
 
 
   var temp = document.getElementById("userid");
