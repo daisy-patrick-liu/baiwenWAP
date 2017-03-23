@@ -392,6 +392,8 @@ body {
 .footer {
 	margin-top: 28px;
 	color: #666;
+	border-top: 1px solid #e7e7e7;
+    padding-top: 28px;
 }
 .footer .contact {
 	width: 550px;
@@ -1166,7 +1168,6 @@ a:hover li {
 .gwyxq .container-box {
 	border: none;
 	padding-bottom: 120px;
-	border-bottom: 1px solid #e2e2e2;
 }
 .gwyxq .content_left {
 	width: 612px;

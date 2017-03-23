@@ -31,6 +31,14 @@
 .simple{box-sizing: border-box; width: 100%; background: rgb(230,230,230);  margin-top: 25px; padding: 30px 18px; line-height: 30px; font-size: 16px;}
 .simple>span{font-weight: bold; font-size: 18px;}
 .article{font-size: 16px; line-height: 30px; padding: 25px 0px;}
+.article p {
+    margin-bottom: 30px;
+}
+.article img {
+    max-width: 745px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .mybtn{display: block; width: 214px; height: 43px; background:rgb(210,62,62); color: white; border: none; border-radius: 10px; font-size: 16px; margin: 40px auto;}
 .mybtn:hover{transform: scale(1.05);}
 /*中部右侧*/
@@ -56,3 +64,136 @@
 #btn_group>a:nth-child(4){box-sizing: border-box; border: 1px rgb(247,247,247) solid; border-top: none; width: 100%; height: 40px; line-height: 40px; color:rgb(210,62,62);}
 #btn_group>a:nth-child(4):hover{color:rgb(210,62,62);}
 
+/* 详情页公共模块--热门推荐 */
+.recommend .head {
+    border-bottom: 1px solid #efefef;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+.recommend .head span {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c1242f;
+    display: inline-block;
+}
+.recommend .results .item {
+    padding: 30px 0;
+    border-bottom: 1px solid #ececec;
+}
+.recommend .results .item:last-child {
+    border: none;
+}
+.recommend .results .item:hover {
+    background: #f4f4f4;
+}
+.recommend .results .item a:hover {
+    text-decoration: underline;
+}
+.recommend .results .item .title {
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+.recommend .results .keyword {
+    color: #d33c3e;
+}
+.recommend .results .item .abstract {
+    line-height: 24px;
+}
+.recommend .results .item .info {
+    font-size: 12px;
+    color: #999;
+    margin-top: 18px;
+}
+.recommend .load_more {
+    line-height: 51px;
+    border: 1px solid #f3f3f3;
+    background: #fbfbfb;
+    text-align: center;
+    cursor: pointer;
+}
+/* 公共模块--相关新闻 */
+ul.related_list {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+ul.related_list li {
+    background: url(../images/icn_dot.png) no-repeat 0 center;
+    background-size: 4px;
+    padding-left: 15px;
+    color: #999;
+    line-height: 36px;
+}
+ul.related_list li:hover {
+    color: #406599;
+}
+ul.related_list span {
+    max-width: 225px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: initial;
+}
+/* 公共模块--图片盒子 */
+.pics_box {
+    padding-top: 20px;
+}
+.pics_box .cell {
+    display: inline-block;
+    margin-right: 19px;
+    margin-bottom: 15px;
+}
+.pics_box .cell:nth-child(3n) {
+    margin-right: 0;
+}
+.pics_box .cell .img_wrap {
+    width: 67px;
+    height: 67px;
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pics_box .cell p {
+    color: #999;
+    margin-top: 15px;
+    text-align: center;
+    line-height: initial;
+    padding: 0;
+}
+/* 公共模块--右下角按钮组 */
+.public_btns a {
+    display: block;
+    line-height: 39px;
+    text-align: center;
+    border: 1px solid #eee;
+    color: #1a1a1a;
+}
+.public_btns .btn_download {
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: rgb(210,62,62);
+    color: white;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+}
+.public_btns .btn_share {
+    color: #d33c3e;
+}
+/****************************** 内容页面-公文公报 特殊样式 *******************/
+.gwgb .c_l h1 {
+    font-size: 28px;
+    color: #f02020;
+    line-height: 48px;
+    text-align: center;
+}
+.gwgb .gw_num {
+    color: #1a1a1a;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
