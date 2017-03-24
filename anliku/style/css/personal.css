@@ -749,6 +749,7 @@
 	border-bottom: 1px solid #eee;
 }
 .container-box   .accountSet ul li input{
+	height: 34px;
 	font-size: 14px;
 	color:#333;
 	width:550px;
