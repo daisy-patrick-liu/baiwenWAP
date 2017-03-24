@@ -281,3 +281,6 @@ ul.related_list span {
     background-position: center center;
     margin-bottom: 20px;
 }
+.detail_geo .area_box .content p {
+    line-height: 24px;
+}
