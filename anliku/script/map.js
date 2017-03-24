@@ -28,7 +28,7 @@ $(function() {
               mapLocation: {
                   x: 'left',
                   y: 'top',
-                  width: '30%'
+                  width: '50%'
               },
               roam: true,
               selectedMode : 'single',
@@ -114,7 +114,9 @@ $(function() {
               emphasis:{label:{show:true}}
           },
           mapLocation: {
-              x: '35%'
+              x: 'right',
+              y: 'top',
+              width: '50%'
           },
           roam: true,
           data: cities
@@ -167,7 +169,9 @@ $(function() {
               emphasis:{label:{show:true}}
           },
           mapLocation: {
-              x: '35%'
+              x: 'right',
+              y: 'top',
+              width: '50%'
           },
           roam: true,
           data: cities
