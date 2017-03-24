@@ -197,3 +197,57 @@ ul.related_list span {
     margin-top: 24px;
     margin-bottom: 30px;
 }
+/**************************** 内容页面-地理详情 特殊样式 *******************/
+.detail_geo .header .banner-box {
+    background: none;
+    text-align: center;
+    position: relative;
+}
+.detail_geo .header .banner-box .middle {
+    line-height: 34px;
+    display: inline-block;
+    border-radius: 17px;
+    border: 1px solid #e1e1e1;
+    margin: 30px 0;
+    background: #fff;
+}
+.detail_geo .middle {
+    cursor: pointer;
+}
+.detail_geo .middle .cell {
+    padding: 0 26px;
+    border-right: 1px solid #e1e1e1;
+    display: inline-block;
+    line-height: 34px;
+}
+.detail_geo .middle .cell:last-of-type {
+    border-right: none;
+}
+.detail_geo .map_box {
+    position: absolute;
+    top: 76px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    -wekit-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 20px;
+}
+.map_wrap .tips {
+    text-align: justify;
+}
+.map_wrap .tips .icon_new {
+    color: #de6c6e;
+    margin-right: 11px;
+}
+.map_wrap .tips i.tip {
+    color: #999;
+}
+.detail_geo .location {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a1a;
+    line-height: 38px;
+}
+.detail_geo .area_box {
+    padding: 15px 0;
+}
