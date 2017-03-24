@@ -232,6 +232,17 @@ ul.related_list span {
     background: #fff;
     padding: 20px;
 }
+.map_wrap {
+    position: relative;
+}
+.map_wrap .triangle {
+    position: absolute;
+    left: 50%;
+    top: -33px;
+    color: #fff;
+    transform: rotate(180deg);
+    margin-left: -48px;
+}
 .map_wrap .tips {
     text-align: justify;
 }
