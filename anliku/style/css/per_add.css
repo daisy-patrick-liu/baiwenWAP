@@ -251,3 +251,33 @@ ul.related_list span {
 .detail_geo .area_box {
     padding: 15px 0;
 }
+.detail_geo .area_box .head {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ededed;
+}
+.detail_geo .area_box .head span {
+    border-left: 3px solid #d33c3e;
+    padding-left: 14px;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+.detail_geo .area_box .content {
+    padding: 20px 0;
+}
+.detail_geo  .pics>li {
+    display: inline-block;
+    margin-right: 33px;
+    width: 158px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.detail_geo  .pics li:nth-child(4n) {
+    margin-right: 0;
+}
+.detail_geo .pics .pic_wrap {
+    height: 196px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-bottom: 20px;
+}
