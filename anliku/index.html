@@ -731,6 +731,17 @@
         content: '注册弹窗.html'
       })
     });
+
+    // 反馈 弹窗层
+    $(".floatdiv .cell:nth-child(3)").on('click', function() {
+      layer.open({
+        type: 2,
+        shadeClose: true,
+        title: '<i class="icon_new" style="font-size:20px; margin-right:5px">&#xe601;</i>反馈',
+        area: ['678px','455px'],
+        content: '反馈.html'
+      })
+    })
   });
 </script>
 </html>
