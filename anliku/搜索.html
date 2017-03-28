@@ -465,7 +465,9 @@
       layer.open({
         type: 1,
         shadeClose: true,
-        content: '<div id="main" style="height:520px"></div>',
+        area: '1000px',
+        title: false,
+        content: '<div style="padding: 20px;"><div id="main" style="height:520px"></div></div>',
         success: function(layero, index) {
           var myChart = echarts.init(document.getElementById('main'));
           var option = {
@@ -484,12 +486,21 @@
                   {
                       type : 'category',
                       boundaryGap : false,
-                      data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+                      splitLine: {
+                        show: false
+                      },
+                      data : ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30'],
                   }
               ],
+              splitLine:{
+                  show:false
+                },
               yAxis : [
                   {
-                      type : 'value'
+                      type : 'value',
+                      splitLine: {
+                        show: false
+                      }
                   }
               ],
               series : [
@@ -501,22 +512,95 @@
                       data:[]
                   }
               ]
-          };
-        }
-        // 请求动态数据
-        $.ajax({
-          url: 'data/research.json',
-          type: 'get',
-          success: function(result) {
-            if(result) {
-              option.series[0].data = result;
-              myChart.setOption(option);
-            }
-          },
-          error: function(msg) {
-            alert("不好意思，图表数据请求失败");
           }
-        });
+          // 请求动态数据
+          $.ajax({
+            url: 'data/research.json',
+            type: 'get',
+            success: function(result) {
+              if(result) {
+                option.series[0].data = result;
+                myChart.setOption(option);
+              }
+            },
+            error: function(msg) {
+              alert("不好意思，图表数据请求失败");
+            }
+          });
+        }
+        
+      })
+    });
+
+    // 研究走势弹出echarts
+    $(".tj-wrap.author").on("click", function() {
+      layer.open({
+        type: 1,
+        shadeClose: true,
+        area: '1000px',
+        title: false,
+        content: '<div style="padding: 20px;"><div id="main" style="height:520px"></div></div>',
+        success: function(layero, index) {
+          var myChart = echarts.init(document.getElementById('main'));
+          var option = {
+              title : {
+                  text: '相关作者趋势',
+                  subtext: '体现该关键词在各个时间出现的相关作者数量的走势。'
+              },
+              tooltip : {
+                  trigger: 'axis'
+              },
+              legend: {
+                  data:['']
+              },
+              calculable : true,
+              xAxis : [
+                  {
+                      type : 'category',
+                      boundaryGap : false,
+                      splitLine: {
+                        show: false
+                      },
+                      data : ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30'],
+                  }
+              ],
+              splitLine:{
+                  show:false
+                },
+              yAxis : [
+                  {
+                      type : 'value',
+                      splitLine: {
+                        show: false
+                      }
+                  }
+              ],
+              series : [
+                  {
+                      name:'成交',
+                      type:'line',
+                      smooth:true,
+                      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                      data:[]
+                  }
+              ]
+          }
+          // 请求动态数据
+          $.ajax({
+            url: 'data/research.json',
+            type: 'get',
+            success: function(result) {
+              if(result) {
+                option.series[0].data = result;
+                myChart.setOption(option);
+              }
+            },
+            error: function(msg) {
+              alert("不好意思，图表数据请求失败");
+            }
+          });
+        }
+        
       })
     })
 
