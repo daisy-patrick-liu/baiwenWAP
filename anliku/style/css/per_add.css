@@ -302,3 +302,27 @@ ul.related_list span {
 .vedio .c_l>h1 {
     margin-top: 18px;
 }
+/**************************** pdfÎÄ¼þ ************************/
+.print_pdf .center {
+    width: auto;
+    padding: 0 18px;
+}
+.print_pdf .c_l {
+    width: auto;
+    float: initial;
+    padding: 0 50px;
+}
+.print_pdf .page_head {
+    line-height: 63px;
+    border-bottom: 1px rgb(200,200,200) solid;
+    margin-bottom: 37px;
+}
+.print_pdf .text_gray {
+    font-size: 10px;
+    color: #999;
+    margin-left: 14px;
+}
+.print_pdf .page_footer {
+    line-height: 63px;
+    border-top: 1px rgb(200,200,200) solid;
+}

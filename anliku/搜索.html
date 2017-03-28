@@ -6,6 +6,10 @@
 <link rel="stylesheet" href="style/css/reset.css">
 <link rel="stylesheet" href="style/css/layout.css">
 <script src="script/jquery-1.8.3.min.js"></script>
+<script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+<script src="package/echarts/config.js"></script>
+<script src="package/layer/layer.js"></script>
+<script src="script/mock.js"></script>
 </head>
 
 <body class="search">
@@ -315,7 +319,10 @@
             <div class="ttl">研究走势</div>
           </div>
           <p>“大数据”从1982年开始出现相关研究，2016年达到最热，至今共有37729篇相关论文…   <a class="link_more" href="#">更多>></a></p>
-          <div class="tj-wrap"><img src="style/images/search_tj_03.jpg" width="240" alt=""></div>
+          <div class="tj-wrap research" style="background: url(style/images/search_tj_03.png) no-repeat;">
+            <p class="ttl">研究走势</p>
+            <p>从1982到2017</p>
+          </div>
         </div>
 
         <div class="base_box">
@@ -323,7 +330,10 @@
             <div class="ttl">相关学者</div>
           </div>
           <p>“大数据”研究进程中，大量优秀文献源自于以下学者，他们推动并引领着学科的发展与进步…   <a class="link_more" href="#">更多>></a></p>
-          <div class="tj-wrap"><img src="style/images/search_tj_03.jpg" width="240" alt=""></div>
+          <div class="tj-wrap author" style="background: url(style/images/search_tj_03.png) no-repeat;">
+            <p class="ttl">相关学者</p>
+            <p><span id="num">14</span>个深度研究者</p>
+          </div>
         </div>
       </div>
     </div>
@@ -447,13 +457,56 @@
         }
         current_obj.removeClass('active');
         $(this).remove();
-        
-
       });
-
     });
 
-    
+    // 研究走势弹出echarts
+    $(".tj-wrap.research").on("click", function() {
+      layer.open({
+        type: 1,
+        shadeClose: true,
+        content: '<div id="main" style="height:520px"></div>',
+        success: function(layero, index) {
+          var myChart = echarts.init(document.getElementById('main'));
+          var option = {
+              title : {
+                  text: '相关内容趋势',
+                  subtext: '体现该关键词在各个时间出现的相关文档数量的走势。'
+              },
+              tooltip : {
+                  trigger: 'axis'
+              },
+              legend: {
+                  data:['']
+              },
+              calculable : true,
+              xAxis : [
+                  {
+                      type : 'category',
+                      boundaryGap : false,
+                      data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+                  }
+              ],
+              yAxis : [
+                  {
+                      type : 'value'
+                  }
+              ],
+              series : [
+                  {
+                      name:'成交',
+                      type:'line',
+                      smooth:true,
+                      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                      data:[]
+                  }
+              ]
+          };
+        }
+        // 请求动态数据
+        
+      })
+    })
 
   })
 </script>
