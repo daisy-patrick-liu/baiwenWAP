@@ -504,7 +504,19 @@
           };
         }
         // 请求动态数据
-        
+        $.ajax({
+          url: 'data/research.json',
+          type: 'get',
+          success: function(result) {
+            if(result) {
+              option.series[0].data = result;
+              myChart.setOption(option);
+            }
+          },
+          error: function(msg) {
+            alert("不好意思，图表数据请求失败");
+          }
+        });
       })
     })
 
