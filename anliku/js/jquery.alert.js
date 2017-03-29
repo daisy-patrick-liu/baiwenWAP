@@ -44,7 +44,7 @@ popHandler.prototype._init = function () {
 			opacity: "0.5",
 		},
 		_panelCss = {
-			width: "80%",
+			width: "400px",
 			margin: "10rem auto 0",
 			background: "#fff",
 			borderRadius: "0.5rem",
