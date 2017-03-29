@@ -388,6 +388,23 @@ body {
 	text-align: right;
 	color: #666;
 }
+/* 带红色左边框标题的区块 */
+.area_box {
+    padding: 15px 0;
+}
+.area_box .head {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ededed;
+}
+.area_box .head span {
+    border-left: 3px solid #d33c3e;
+    padding-left: 14px;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+.area_box .content {
+    padding: 20px 0;
+}
 /* footer */
 .footer {
 	margin-top: 28px;
@@ -1408,7 +1425,7 @@ a:hover li {
 .topic_gwy .header .banner-box {
 	background-image: url(../images/head_gwy.png);
 }
-.topic_gwy .content {
+.topic_gwy .main_content {
 	padding: 40px 0;
 }
 .topic_gwy .area_wrap {
@@ -1436,4 +1453,22 @@ a:hover li {
 .topic_gwy .areas li.active {
 	background: #f12a28;
 	color: #fff;
+}
+/* 头像列表 */
+.topic_gwy .pics>li {
+    display: inline-block;
+    margin-right: 56px;
+    width: 124px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.topic_gwy .pics>li:nth-child(6n) {
+	margin-right: 0;
+}
+.topic_gwy .pics .pic_wrap {
+    height: 156px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-bottom: 20px;
 }
