@@ -1472,3 +1472,17 @@ a:hover li {
     background-position: center center;
     margin-bottom: 20px;
 }
+/* table */
+.topic_gwy table {
+	border: 1px solid #eaeaea;
+}
+.topic_gwy table th, .topic_gwy table tr {
+	height: 33px;
+	line-height: 33px;
+}
+.topic_gwy table th {
+	background: #f9eaea;
+}
+.topic_gwy table tr:nth-child(odd) {
+	
+}

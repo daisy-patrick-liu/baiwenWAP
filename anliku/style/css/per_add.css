@@ -38,6 +38,7 @@
     max-width: 745px;
     margin: 0 auto;
     overflow: hidden;
+    display: block;
 }
 div.keywords {
     margin-top: 15px;
@@ -331,4 +332,7 @@ ul.related_list span {
 .print_pdf .page_footer {
     line-height: 63px;
     border-top: 1px rgb(200,200,200) solid;
+}
+.print_pdf .article img {
+    max-width: 100%;
 }
