@@ -21,7 +21,7 @@
     	vertical-align: top;
     }
     .input_group input, .input_group textarea {
-    	width: 477px;
+    	width: 100%;
     	border-radius: 3px;
     	border: 1px solid #eee;
     	padding: 5px 8px;
@@ -36,7 +36,8 @@
     	resize: none;
     }
     .btn_group {
-    	padding-left: 50px;
+    	/*padding-left: 50px;*/
+        float: right;
     }
     
     .btn_group a {
@@ -63,16 +64,14 @@
 	<div class="content">
 		<form action="" method="post">
 			<div class="input_group">
-				<label for="title">标题</label>
-				<input type="text" id="title" name="title">
+                <textarea name="input_content" id="input_content" cols="30" rows="5" placeholder="请描述您遇到的问题或您的意见、建议"></textarea>
 			</div>
 			<div class="input_group">
-				<label for="input_content">内容</label>
-				<textarea name="input_content" id="input_content" cols="30" rows="5"></textarea>
+				<input type="text" id="title" name="title" placeholder="请留下您的QQ、邮箱或电话，我们将第一时间联系您">
 			</div>
 			<div class="btn_group">
+                <a href="javascript:;" class="btn_cancel">取消</a>
 				<a class="btn_ok" href="javascript:;">确认</a>
-				<a href="javascript:;" class="btn_cancel">取消</a>
 			</div>
 		</form>
 	</div>

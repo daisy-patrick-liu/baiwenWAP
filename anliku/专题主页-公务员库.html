@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>专题-公务员库</title>
+    <link rel="stylesheet" href="style/css/reset.css">
+    <link rel="stylesheet" href="style/css/personal.css">
+    <link rel="stylesheet" href="style/css/layout.css">
+    <script src="script/jquery-1.8.3.min.js"></script>
+</head>
+
+<body class="topic_gwy">
+<!-- 头部 -->
+
+
+<div class="header">
+    <!-- 头部背景 -->
+
+    <div class="top-wrap">
+        <div class="top-tip clearfix w1050">
+            <div class="fl t-after">
+                <a class="go-index" href=""><i class="ico"></i>首页</a>
+                <a class="go-app" class="" href=""><i class="ico"></i>百问APP</a>
+                <a class="follow" href=""> <i class="ico"></i>关注微信</a>
+            </div>
+            <div class="fr t-rbox">
+                <span>欢迎来到中国政府管理国安全库!</span>
+                <div class="login-regist">
+                    <i class="ico userPic"></i>
+                    <a class="re-login" href="">登录</a>
+                    <a class="re-regist" href="">注册</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="header-bg"></div>
+    <div class="banner-wrap">
+        <div class="banner-box clearfix w1050">
+            <div class="logo fl">
+                <img src="style/images/logo3.png" alt="">
+            </div>
+            <div class="fr search-box">
+                <input type="text" placeholder="在此输关键字">
+                <span class="">检索</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content w1050">
+    <div class="area_wrap">
+        <ul class="areas">
+            <li>中央</li>
+            <li>天津</li>
+            <li>河北</li>
+            <li>山西</li>
+            <li>内蒙古</li>
+            <li>辽宁</li>
+            <li>吉林</li>
+            <li>黑龙江</li>
+            <li>上海</li>
+            <li>江苏</li>
+            <li>浙江</li>
+            <li>安徽</li>
+            <li>福建</li>
+            <li>江西</li>
+            <li>山东</li>
+            <li>河南</li>
+            <li>湖北</li>
+            <li>湖南</li>
+            <li>广东</li>
+            <li>广西</li>
+            <li>海南</li>
+            <li>重庆</li>
+            <li>四川</li>
+            <li>贵州</li>
+            <li>云南</li>
+            <li>西藏</li>
+            <li>陕西</li>
+            <li>甘肃</li>
+            <li>青海</li>
+            <li>宁夏</li>
+            <li>新疆</li>
+            <li>香港</li>
+            <li>澳门</li>
+            <li>台湾</li>
+            <li>北京</li>
+        </ul>
+    </div>
+</div>
+<div class="footer w1000">
+    <div class="clearfix">
+        <div class="fl">
+            <div class="links">
+                <a href="#"> 关于我们 </a>&nbsp;|
+                <a href="#"> 加入我们 </a>&nbsp;|
+                <a href="#"> 公司首页 </a>&nbsp;|
+                <a href="#"> 意见反馈 </a>&nbsp;|
+                <a href="#"> 帮助中心 </a>&nbsp;|
+                <a href="#"> 网站公告 </a>
+            </div>
+            <div style="margin:20px 0;"><a href="#">联系我们</a></div>
+            <div class="clearfix contact">
+                <div class="fl">
+                    <p>电 话：010-65936652</p>
+                    <p>邮 件：yu_qing_2008@163.com</p>
+                </div>
+                <div class="fr">
+                    <p>网 址：www.bwnews.org</p>
+                    <p>地 址：北京市朝阳区光华路15号泰达时代中心4号楼16层</p>
+                </div>
+            </div>
+        </div>
+        <div class="fr">
+            <div class="coop">
+                <p style="margin-bottom: 10px;">友情合作</p>
+                <div class="clearfix" style="text-align: center;">
+                    <div class="fl">
+                        <a href="#"><img src="style/images/footer1.jpg" alt=""></a>
+                        <p>清华大学</p>
+                    </div>
+                    <div style="display: inline-block;">
+                        <a href="#"><img src="style/images/footer2.jpg" alt=""></a>
+                        <p>国家行政学院</p>
+                    </div>
+                    <div class="fr">
+                        <a href="#"><img src="style/images/footer3.jpg" alt=""></a>
+                        <p>中共中央党校</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright">
+        <p>Copyright © 2016-2020 All rights reserved.ICP备16028853号北京百问网信息技术有限公司</p>
+    </div>
+</div>
+</body>
+<script>
+$(function() {
+    // 左侧菜单切换
+    $("ul.menus li").on("click", function() {
+        $(this).addClass('current').siblings().removeClass('current');
+    });
+
+    // 未读关闭
+    $(".unread .close").on("click", function(event) {
+        event.stopPropagation();
+        $(this).parent().remove();
+    })
+})
+</script>
+</html>
