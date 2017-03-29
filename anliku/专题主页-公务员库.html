@@ -72,7 +72,7 @@
             <li>广西</li>
             <li>海南</li>
             <li>重庆</li>
-            <li>四川</li>
+            <li class="active">四川</li>
             <li>贵州</li>
             <li>云南</li>
             <li>西藏</li>
@@ -148,6 +148,11 @@ $(function() {
     $(".unread .close").on("click", function(event) {
         event.stopPropagation();
         $(this).parent().remove();
+    });
+
+    // 地区列表切换
+    $("ul.areas>li").on("click", function() {
+        $(this).addClass('active').siblings().removeClass('active');
     })
 })
 </script>

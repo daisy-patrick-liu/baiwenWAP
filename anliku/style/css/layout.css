@@ -1405,6 +1405,9 @@ a:hover li {
 	background-image: url(../images/head_zwxw_03.png);
 }
 /*************************** 专题主页-公务员库 *******************/
+.topic_gwy .header .banner-box {
+	background-image: url(../images/head_gwy.png);
+}
 .topic_gwy .content {
 	padding: 40px 0;
 }
@@ -1429,4 +1432,8 @@ a:hover li {
 }
 .topic_gwy .areas li:nth-child(12n) {
 	margin-right: 0;
+}
+.topic_gwy .areas li.active {
+	background: #f12a28;
+	color: #fff;
 }
