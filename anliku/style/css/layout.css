@@ -204,7 +204,7 @@ body {
 	position: relative;
 }
 .bar_search .layer3 b.title2 {
-	width: 200px;
+	width: 210px;
 	text-align: right;
 	position: absolute;
 	left: 0;
@@ -219,7 +219,7 @@ body {
 }
 .bar_search .divlayer2 p.layer3 span {
 	padding: 0 5px;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 }
 .bar_search .sch_btn {
 	display: inline-block;
