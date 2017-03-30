@@ -1,4 +1,22 @@
 ﻿$(function(){
+    // 页面拖到下面，返回顶部fixed
+    $(window).scroll(function() {
+        if($(window).scrollTop()>500) {
+            $(".public_btns").css({
+                position: 'fixed',
+                top: '500px',
+                width: '250px',
+                background: '#fff'
+            });
+        } else {
+            $(".public_btns").css({
+                position: 'initial',
+                top: '500px',
+                width: '250px',
+                background: '#fff'
+            });
+        }
+    });
     $.extend({
         top:function(){//返回顶部不一样
             $("body,html").animate({scrollTop:0},300);
