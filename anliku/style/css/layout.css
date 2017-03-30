@@ -82,6 +82,7 @@ body {
 	position: relative;
 	box-sizing: border-box;
 	display: inline-block;
+	cursor: pointer;
 }
 .welcome .logined .user {
 	margin-right: 15px;
