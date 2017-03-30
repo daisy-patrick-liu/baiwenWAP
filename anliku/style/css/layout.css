@@ -1235,8 +1235,13 @@ a:hover li {
 .gwyxq .content_right {
 	width: 400px;
 }
-.gwyxq .img-wrap img {
-
+.gwyxq .img-wrap {
+	width: 105px;
+	height: 143px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }
 .gwyxq .gwy_name {
 	font-size: 16px;
@@ -1255,7 +1260,7 @@ a:hover li {
 }
 .gwyxq .cell .textarea {
 	border: 1px solid #eee;
-	padding: 15px 20px;
+	padding: 20px 15px;
 	box-sizing: border-box;
 	margin-top: 33px;
 }
