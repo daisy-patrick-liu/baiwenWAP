@@ -685,17 +685,21 @@
     // 分类树hover
     $(".layer1>li").hover(
       function(){
+        //$(this).find(".divlayer2").animate({width: '660px'}, 250);
         $(this).addClass('active');
+        
       }, 
       function(){
-      $(this).removeClass('active');
+        //$(this).find(".divlayer2").animate({width: '0'}, 250);
+        $(this).removeClass('active');
+        
     })
     $(".tree_wrap").hover(
       function() {
-        $(".trees").show();
+        $(".trees").slideDown('300');
       },
       function() {
-        $(".trees").hide();
+        $(".trees").slideUp('300');
       }
     )
 
