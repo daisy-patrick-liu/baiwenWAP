@@ -74,6 +74,39 @@ body {
 	font-size: 16px;
 	-webkit-text-stroke-width: 0;
 }
+.welcome .logined {
+	text-align: center;
+	width: 166px;
+	font-size: 13px;
+	color: #333;
+	position: relative;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.welcome .logined .user {
+	margin-right: 15px;
+}
+.welcome .logined .hover_menu {
+	width: 166px;
+	background: #fff;
+	z-index: 10;
+	position: absolute;
+	right: -1px;
+	border: 1px solid #e3e3e3;
+	box-sizing: border-box;
+	border-top: none;
+}
+.welcome .logined .hover_menu .icon_new {
+	margin-right: 12px;
+}
+.welcome .logined .hover_menu li {
+	color: #999;
+	line-height: 36px;
+	cursor: pointer;
+}
+.welcome .logined .hover_menu li:hover {
+	background: #e3e3e3;
+}
 .header .fr img {
 	margin-right:10px;
 }
@@ -1484,5 +1517,5 @@ a:hover li {
 	background: #f9eaea;
 }
 .topic_gwy table tr:nth-child(odd) {
-	
+
 }
