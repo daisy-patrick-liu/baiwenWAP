@@ -163,6 +163,9 @@ ul.related_list span {
     background-size: contain;
     background-position: center;
 }
+.pics_box.zones .cell .img_wrap {
+    background-size: cover;
+}
 .pics_box .cell p {
     color: #999;
     margin-top: 15px;
