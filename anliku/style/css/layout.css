@@ -1530,3 +1530,7 @@ a:hover li {
 .topic_gwy table tr:nth-child(odd) {
 
 }
+/*********************************** 关于我们 ************************/
+.aboutus .main_wrap {
+	border: 1px solid #eee;
+}

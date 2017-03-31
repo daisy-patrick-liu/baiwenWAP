@@ -704,25 +704,32 @@
     )
 
     // 搜索选项切换
-    $(".option_box.bases span").on("click", function() {
+    $(".option_box.bases span").on("click", function(event) {
       $(this).addClass('active').siblings().removeClass('active');
       $(".base_chosen").text($(this).text());
+      event.stopPropagation();
     })
-    $(".option_box.keys span").on("click", function() {
+    $(".option_box.keys span").on("click", function(event) {
       $(this).addClass('active').siblings().removeClass('active');
       $(".base_name").text($(this).text());
+      event.stopPropagation();
     })
 
     // 点击下拉搜索选项
     $(".click_area").click(function(event) {
-      $(".area_ddl").show('400');
+      //$(".area_ddl").toggle('400');
+      if($(".area_ddl").is(":hidden")) {
+        $(".area_ddl").slideDown('400');
+      } else {
+        $(".area_ddl").slideUp('400');
+      }
     });
 
     // 取消 确认 按钮收起下拉框
     $(".btn_wrap .button").click(function(event) {
       /* Act on the event */
-      $(".area_ddl").hide();
-      event.stopPropagation();
+      //$(".area_ddl").hide();
+      //event.stopPropagation();
     });
 
     // 二维码hover
