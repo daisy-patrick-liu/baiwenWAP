@@ -18,15 +18,15 @@
 
 .center{margin: 0 auto; width: 1050px; padding: 44px 0px; overflow: hidden;}
 
-/*中部左侧*/
+/*脰脨虏驴脳贸虏脿*/
 .c_l{float: left; width: 750px;}
 .c_l>h1{font-size: 28px;}
-.c_lh{border-bottom: 1px #eaeaea solid; padding: 18px 0px; overflow: hidden; color: rgb(100,100,100);}
+.c_lh{border-bottom: 1px #eaeaea solid; padding: 18px 0px; color: rgb(100,100,100);}
 .c_lh>p{float: left; padding-top:6px;}
 .c_lh>p>span{margin-right: 22px;}
 .c_lh>p mark{color:rgb(210,62,62); background: none;}
 .c_lh>div{float: right; word-spacing:8px;}
-.c_lh>div>a{display: inline-block; border-radius: 5px; border: 1px rgb(200,200,200) solid; padding: 5px 10px; cursor: pointer;}
+.c_lh>div>a, .c_lh .btn_share{display: inline-block; border-radius: 5px; border: 1px rgb(200,200,200) solid; padding: 5px 10px; cursor: pointer;}
 .c_lh>div>a:hover{color:rgb(210,62,62);}
 .c_lh>div>a.stored {
     color: rgb(210,62,62);
@@ -37,6 +37,92 @@
 }
 .c_lh>div>a.stored span {
     margin-left: 14px;
+}
+/* 路脰脧铆hover驴貌 */
+.share_hover {
+    position: absolute;
+    border: 1px solid #e2e2e2;
+    padding: 20px;
+    z-index: 999;
+}
+.share_hover.hover_down {
+    background-color: #fff;
+    left: 0;
+    top: 28px;
+}
+.share_hover.hover_down:before {
+    width: 11px;
+    height: 9px;
+    background: url(../images/triangle_top_03.png) no-repeat;
+    position: absolute;
+    top: -9px;
+    content: "";
+    left: 100px;
+}
+.share_hover.hover_left {
+    background-color: #fff;
+    left: -200px;
+    top: -10px;
+    width: 226px;
+    box-sizing: border-box;
+}
+.share_hover.hover_left a {
+    border: none !important;
+}
+.share_hover.hover_left:before {
+    width: 11px;
+    height: 9px;
+    background: url(../images/triangle_top_03.png) no-repeat;
+    position: absolute;
+    right: -10px;
+    content: "";
+    transform: rotate(90deg);
+}
+.bdshare-button-style0-32 a {
+    margin-right: 16px !important;
+}
+.bdshare-button-style0-32 a:nth-child(4n) {
+    margin-right: 0 !important;
+}
+.bdshare-button-style0-32 .bds_sqq {
+    background-image: url(../images/social_qq_03.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 .bds_weixin {
+    background-image: url(../images/social_wechat_05.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 .bds_tsina {
+    background-image: url(../images/social_weibo.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 .bds_douban {
+    background-image: url(../images/social_douban_09.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 .bds_qzone {
+    background-image: url(../images/social_qzone_15.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 .bds_renren {
+    background-image: url(../images/social_renren_16.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 a:nth-child(7) {
+    background-image: url(../images/social_pyq_18.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 .bds_tqq {
+    background-image: url(../images/social_tencent_20.png);
+    background-size: contain;
+    background-position: center !important;
 }
 .simple{box-sizing: border-box; width: 100%; background: #f3f3f3;  margin-top: 25px; padding: 30px 18px; line-height: 30px; font-size: 16px;}
 .simple>span{font-weight: bold; font-size: 18px;}
@@ -58,7 +144,7 @@ div.keywords .key {
 }
 .mybtn{display: block; width: 214px; height: 43px; background:rgb(210,62,62); color: white; border: none; border-radius: 10px; font-size: 16px; margin: 40px auto;}
 .mybtn:hover{transform: scale(1.05);}
-/*中部右侧*/
+/*脰脨虏驴脫脪虏脿*/
 .c_r{float: right;width: 250px; color: black;}
 .c_r>h2{font-size: 18px; border-bottom: 1px rgb(240,240,240) solid;}
 .c_r>h2>span{display: inline-block; border-bottom: 1px rgb(210,62,62) solid; padding-bottom: 10px;}
@@ -81,7 +167,7 @@ div.keywords .key {
 #btn_group>a:nth-child(4){box-sizing: border-box; border: 1px rgb(247,247,247) solid; border-top: none; width: 100%; height: 40px; line-height: 40px; color:rgb(210,62,62);}
 #btn_group>a:nth-child(4):hover{color:rgb(210,62,62);}
 
-/* 详情页公共模块--热门推荐 */
+/* 脧锚脟茅脪鲁鹿芦鹿虏脛拢驴茅--脠脠脙脜脥脝录枚 */
 .recommend .head {
     border-bottom: 1px solid #efefef;
     font-size: 16px;
@@ -129,7 +215,7 @@ div.keywords .key {
     text-align: center;
     cursor: pointer;
 }
-/* 公共模块--相关新闻 */
+/* 鹿芦鹿虏脛拢驴茅--脧脿鹿脴脨脗脦脜 */
 ul.related_list {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -152,7 +238,7 @@ ul.related_list span {
     text-overflow: ellipsis;
     line-height: initial;
 }
-/* 公共模块--图片盒子 */
+/* 鹿芦鹿虏脛拢驴茅--脥录脝卢潞脨脳脫 */
 .pics_box {
     padding-top: 20px;
 }
@@ -183,7 +269,7 @@ ul.related_list span {
     line-height: initial;
     padding: 0;
 }
-/* 公共模块--右下角按钮组 */
+/* 鹿芦鹿虏脛拢驴茅--脫脪脧脗陆脟掳麓脜楼脳茅 */
 .public_btns a {
     display: block;
     line-height: 39px;
@@ -203,8 +289,14 @@ ul.related_list span {
 }
 .public_btns .btn_share {
     color: #d33c3e;
+    display: block;
+    line-height: 39px;
+    text-align: center;
+    border: 1px solid #eee;
+    cursor: pointer;
+    position: relative;
 }
-/****************************** 内容页面-公文公报 特殊样式 *******************/
+/****************************** 脛脷脠脻脪鲁脙忙-鹿芦脦脛鹿芦卤篓 脤脴脢芒脩霉脢陆 *******************/
 .gwgb .c_l h1 {
     font-size: 28px;
     color: #f02020;
@@ -217,7 +309,7 @@ ul.related_list span {
     margin-top: 24px;
     margin-bottom: 30px;
 }
-/**************************** 内容页面-地理详情 特殊样式 *******************/
+/**************************** 脛脷脠脻脪鲁脙忙-碌脴脌铆脧锚脟茅 脤脴脢芒脩霉脢陆 *******************/
 .detail_geo .header .banner-box {
     background: none;
     text-align: center;
@@ -315,14 +407,14 @@ ul.related_list span {
 .detail_geo .area_box .content p {
     line-height: 24px;
 }
-/***************************** 视频详情 特殊格式 ***********************/
+/***************************** 脢脫脝碌脧锚脟茅 脤脴脢芒赂帽脢陆 ***********************/
 .vedio .c_lh {
     border: none;
 }
 .vedio .c_l>h1 {
     margin-top: 18px;
 }
-/**************************** pdf文件 ************************/
+/**************************** pdf脦脛录镁 ************************/
 .print_pdf .center {
     width: auto;
     padding: 0 18px;

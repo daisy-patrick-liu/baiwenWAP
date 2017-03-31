@@ -53,14 +53,29 @@
 <div class="center">
     <div class="c_l">
         <h1>政协委员：建议为独生子女设立带薪年假以便照顾父母</h1>
-        <div class="c_lh">
+        <div class="c_lh clearfix">
             <p>
                 <span>2017-03-13</span><span style="color: black;">小研研</span><span><mark>人民网</mark></span><span>收藏：123</span><span>下载：62150</span>
             </p>
-            <div>
+            <div style="position: relative;">
                 <a href="javascript:void(0)"><i class="icon iconfont">&#xe61f;</i>收藏</a>
-                <a class="stored" href="javascript:void(0)"><i class="icon iconfont">&#xe68d;</i><span>已收藏</span></a>
-                <a href="javascript:void(0)" style="color: rgb(210,62,62);"><i class="icon iconfont">&#xe627;</i>分享</a>
+                <a class="stored" href="javascript:void(0)" style="display: none;"><i class="icon iconfont">&#xe68d;</i><span>已收藏</span></a>
+                <div class="btn_share" href="javascript:void(0)" style="color: rgb(210,62,62); display: inline-block;">
+                    <i class="icon iconfont">&#xe627;</i>分享
+                    <div class="share_hover hover_down" style="display: none;">
+                        <div class="bdsharebuttonbox share-module">
+                            <a href="javascript:;" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a>
+                            <a href="javascript:;" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+                            <a href="javascript:;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+                            <a href="javascript:;" class="bds_douban" data-cmd="douban" title="分享到豆瓣">豆瓣</a>
+                            <a href="javascript:;" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+                            <a href="javascript:;" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+                            <a href="javascript:;" class="bds_weixin" data-cmd="weixin" title="分享到朋友圈">朋友圈</a>
+                            <a href="javascript:;" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+                        </div>
+                    </div>
+                </div>
+                
                 <a href="javascript:void(0)"><i class="icon iconfont">&#xe791;</i>下载</a>
             </div>
         </div>
@@ -181,10 +196,22 @@
                 <i class="icon iconfont">&#xe61f;</i>
                 收藏一下
             </a>
-            <a class="btn_share" href="javascript:void(0)">
+            <div class="btn_share" href="javascript:void(0)">
                 <i class="icon iconfont">&#xe627;</i>
                 分享给好友
-            </a>
+                <div class="share_hover hover_left" style="display: none;">
+                        <div class="bdsharebuttonbox share-module">
+                            <a href="javascript:;" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a>
+                            <a href="javascript:;" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+                            <a href="javascript:;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+                            <a href="javascript:;" class="bds_douban" data-cmd="douban" title="分享到豆瓣">豆瓣</a>
+                            <a href="javascript:;" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+                            <a href="javascript:;" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+                            <a href="javascript:;" class="bds_weixin" data-cmd="weixin" title="分享到朋友圈">朋友圈</a>
+                            <a href="javascript:;" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+                        </div>
+                    </div>
+            </div>
             <a href="javascript:void(0)">
                 <i class="icon_new">&#xe601;</i>
                 意见反馈
@@ -246,6 +273,30 @@
 </div>
 </body>
 <script>
+window._bd_share_config={
 
+"common":{
+"bdSnsKey":{},
+"bdText":"百问新闻",
+"bdComment":"百问新闻山山水水",
+"bdMini":"2",
+"bdPic":"http://www.bwnews.org/images/report/25/1.jpg",
+"bdStyle":"0",
+"bdSize":"32"
+},
+"share":{}
+}
+with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
+$(function() {
+    // 分享按钮hover
+    $(".btn_share").hover(function() {
+        /* Stuff to do when the mouse enters the element */
+        $(this).find(".share_hover").show();
+    }, function() {
+        /* Stuff to do when the mouse leaves the element */
+        $(this).find(".share_hover").hide();
+    });
+})
 </script>
 </html>
