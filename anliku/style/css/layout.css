@@ -251,6 +251,7 @@ body {
 	box-sizing: border-box;
 	cursor: pointer;
 	position: relative;
+	width: 178px;
 }
 .bar_search .area_ddl {
 	position: absolute;
