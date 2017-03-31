@@ -28,6 +28,16 @@
 .c_lh>div{float: right; word-spacing:8px;}
 .c_lh>div>a{display: inline-block; border-radius: 5px; border: 1px rgb(200,200,200) solid; padding: 5px 10px; cursor: pointer;}
 .c_lh>div>a:hover{color:rgb(210,62,62);}
+.c_lh>div>a.stored {
+    color: rgb(210,62,62);
+}
+.c_lh>div>a.stored .icon {
+    font-size: 13px;
+    position: absolute;
+}
+.c_lh>div>a.stored span {
+    margin-left: 14px;
+}
 .simple{box-sizing: border-box; width: 100%; background: #f3f3f3;  margin-top: 25px; padding: 30px 18px; line-height: 30px; font-size: 16px;}
 .simple>span{font-weight: bold; font-size: 18px;}
 .article{font-size: 16px; line-height: 30px; padding: 25px 0px;}
