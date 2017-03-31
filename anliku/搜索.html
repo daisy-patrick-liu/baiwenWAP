@@ -10,6 +10,7 @@
 <script src="package/echarts/config.js"></script>
 <script src="package/layer/layer.js"></script>
 <script src="script/mock.js"></script>
+<script src="script/jquery.dotdotdot.js"></script>
 </head>
 
 <body class="search">
@@ -252,7 +253,7 @@
             <div class="results">
               <div class="item">
                 <a href="#"><p class="title">【案例】<span class="keyword">国内网络</span>舆情<span class="keyword">研究的回顾与展望</span></p></a>
-                <p class="abstract">舆情研究是新兴的社会科学与自然科学交叉的研究领域,网络舆情研究作为舆情研究的热点问题之一更是备受重视。网络舆情研究是舆情基础理论的重要组成部分,对其进行深入研究是对舆情基础理论的深化和扩展。</p>
+                <p class="abstract">舆情研究是新兴的社会科学与自然科学交叉的研究领域,网络舆情研究作为舆情研究的热点问题之一更是备受重视。网络舆情研究是舆情基础理论的重要组成部分,对其进行深入研究是对舆情基础理论的深化和扩展。舆情研究是新兴的社会科学与自然科学交叉的研究领域,网络舆情研究作为舆情研究的热点问题之一更是备受重视。网络舆情研究是舆情基础理论的重要组成部分,对其进行深入研究是对舆情基础理论的深化和扩展。</p>
                 <p class="info">发表时间：2017-03-11     作者/来源：国际案例库     下载：16889     浏览：2009-03-30</p>
               </div>
               <div class="item">
@@ -604,6 +605,8 @@
       })
     })
 
+    // 简介行数限制
+    $(".abstract").dotdotdot();
   })
 </script>
 </html>
