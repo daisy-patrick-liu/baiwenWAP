@@ -699,6 +699,10 @@ body {
 	top: 327px;
 	left: 612px;
 }
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+	pointer-events: initial !important;
+	cursor: default;
+}
 .index .mask p.title {
 	font-size: 24px;
 	font-weight: bold;
@@ -1043,6 +1047,10 @@ a:hover li {
 .search .pager .page_btn:last-of-type {
 	right: 0;
 	top: 0;
+}
+.search .pager .page_btn.disabled {
+	color: #ccc;
+	cursor: default;
 }
 .search .pager .page_list {
 	display: inline-block;
