@@ -1017,14 +1017,32 @@ a:hover li {
 	background: #f8f8f8;
 	text-align: center;
 	margin-top: 15px;
+	position: relative;
 }
 .search .pager .page_btn {
-	width: 107px;
+	width: 80px;
 	text-align: center;
 	line-height: 46px;
 	border: 1px solid #e2e2e2;
 	box-sizing: border-box;
 	background: #fff;
+	position: absolute;
+}
+.search .pager .page_btn:nth-of-type(1) {
+	left: 0;
+	top: 0;
+}
+.search .pager .page_btn:nth-of-type(2) {
+	left: 80px;
+	top: 0;
+}
+.search .pager .page_btn:nth-last-of-type(2) {
+	right: 80px;
+	top: 0;
+}
+.search .pager .page_btn:last-of-type {
+	right: 0;
+	top: 0;
 }
 .search .pager .page_list {
 	display: inline-block;
