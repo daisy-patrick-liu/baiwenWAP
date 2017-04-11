@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style/css/index.css">
     <link rel="stylesheet" href="script/swipe/css/swiper.min.css">
+    <script src="script/jquery-1.8.3.min.js"></script>
     <script src="script/flexible.js" type="text/javascript" charset="utf-8"></script>
     <script src="script/swipe/js/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
     <script src="script/swipe/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
@@ -49,51 +50,64 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
+        <section class="tabs">
+            <span>政务服务大数据</span>
+            <span class="active">政务服务研究报告</span>
+        </section>
+        <h1 class="journal">2017年第4-5期合订刊</h1>
         <section class="pre-maga">
             <div class="wrap">
+                <!-- 4个边角图案 -->
+                <img src="style/images/border-img_03.jpg" alt="" class="border lt">
+                <img src="style/images/border-img_03.jpg" alt="" class="border rt">
+                <img src="style/images/border-img_03.jpg" alt="" class="border lb">
+                <img src="style/images/border-img_03.jpg" alt="" class="border rb">
                 <div class="box">
                     <div class="f-left">
                         <div class="maga-detail">
                             <img src="style/images/maga.png" alt="">
                         </div>
                         <div class="btns">
-                            <span><i class="ico"></i>订阅</span>
-                            <span><i class="ico"></i>收藏</span>
+                            <span><i class="ico"></i>订 阅</span>
                         </div>
                     </div>
                     <div class="intro">
                         <p>今年新任书记省长异地考察取了那些“真经”印度电子政务成功经验借鉴与启示</p>
                     </div>
-                    <div class="maga-data">
-                        <p>
-                            2017年第4-5期合同订刊
-                        </p>
-                        <i class="pre-tag"></i>
-                    </div>
+                    <i class="pre-tag"></i>
                 </div>
             </div>
         </section>
         <div class="maga-box">
             <div class="year-title">
                 <h2>2017年</h2>
+                <div class="more">更多
+                    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden; margin-bottom: 0.066667rem;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="438"><path d="M253.647872 911.81056l48.335872 48.336896 446.498816-446.589952L301.983744 67.017728 253.647872 115.3536l398.239744 398.232576L253.647872 911.81056z" p-id="439"></path></svg>
+                </div>
             </div>
             <div class="maga-list">
                 <ul>
                     <li>
                         <a href="javascript:;">
                             <img src="style/images/maga.png" alt="">
-                            <div class="right-data">
-                                <span class="maga-date">2017年第6期</span>
-                                <i class="logo-ico"></i>
+                            <div class="journalFlag">
+                                <span class="font11">2017年第6期</span>
                             </div>
                         </a>
                     </li>
                        <li>
                         <a href="javascript:;">
                             <img src="style/images/maga.png" alt="">
-                            <div class="right-data">
-                                <span class="maga-date">2017年第6期</span>
-                                <i class="logo-ico"></i>
+                            <div class="journalFlag">
+                                <span class="font11">2017年第5期</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="style/images/maga.png" alt="">
+                            <div class="journalFlag">
+                                <span class="font11">2017年第4期</span>
                             </div>
                         </a>
                     </li>
@@ -133,3 +147,11 @@
 </body>
 
 </html>
+<script>
+    $(function() {
+        // tabs切换
+        $(".tabs span").on("touchend", function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+    })
+</script>
