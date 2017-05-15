@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>案例网个人中心</title>
 <link rel="stylesheet" href="style/css/reset.css">
+<link rel="stylesheet" href="style/css/layout.css">
 <link rel="stylesheet" href="style/css/personal.css">
 <script src="script/jquery-1.8.3.min.js"></script>
 </head>
@@ -15,23 +16,28 @@
 <div class="header">
 <!-- 头部背景 -->
  
-<div class="top-wrap">
-<div class="top-tip clearfix w1050">
-  <div class="fl t-after">
-    <a class="go-index" href=""><i class="ico"></i>首页</a>
-    <a class="go-app" class="" href=""><i class="ico"></i>百问APP</a>
-    <a class="follow" href=""> <i class="ico"></i>关注微信</a>
+<div class="welcome clearfix">
+  <div class="w1050">
+    <div class="fl">
+      <span><a href="#"><i class="icon_new">&#xe608;</i> 首页</a></span>
+      <span><a href="#"><i class="icon_new">&#xe737;</i> 百问APP</a></span>
+      <span><a href="#"><i class="icon_new">&#xe63b;</i> 关注微信</a></span>
+    </div>
+    <div class="fr">
+      <span class="msg">欢迎来到中国政府管理国际案例库！</span>
+      <span><i class="icon_new icon_login">&#xe6c5;</i>  <a id="link_login" href="#">登录</a>  |  <a id="link_register" href="#">注册</a></span>
+      <span class="logined">
+        <span class="user">芥末chocolate</span><i class="icon_new">&#xe695;</i>
+        <div class="hover_menu" style="display: none;">
+          <ul>
+            <li><i class="icon_new">&#xe61f;</i>我的收藏</li>
+            <li><i class="icon_new">&#xe791;</i>我的下载</li>
+            <li><i class="icon_new">&#xe68e;</i>退出登录</li>
+          </ul>
+        </div>
+      </span>
+    </div>
   </div>
-  <div class="fr t-rbox">
-      <span>欢迎来到中国政府管理国安全库!</span>
-      <div class="login-regist">
-        <i class="ico userPic"></i>
-        <a class="re-login" href="">登录</a>
-        <a class="re-regist" href="">注册</a>
-      </div>
-  </div>
-
-</div>
 </div>
 <div class="header-bg"></div>
 <div class="banner-wrap">
@@ -256,6 +262,27 @@
   </div>
 </body>
 <script>  
-
+$(function() {
+  // 已登录状态，hover下拉
+    $(".logined").hover(function() {
+      /* Stuff to do when the mouse enters the element */
+      $(this).css({
+        background: '#fff',
+        border: '1px solid #e3e3e3',
+        'border-top': 'none',
+        'box-sizing': 'border-box',
+        'height': '35px',
+        'border-bottom': 'none'
+      });
+      $(".hover_menu").show();
+    }, function() {
+      /* Stuff to do when the mouse leaves the element */
+      $(this).css({
+        background: 'none',
+        border: 'none'
+      });
+      $(".hover_menu").hide();
+    });
+})
 </script>
 </html>

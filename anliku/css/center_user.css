@@ -1,0 +1,86 @@
+.icochange{
+    background:url(../style/images/iconchange.png)no-repeat center center;
+}
+
+.collapse{width: 100%; height: 0px; overflow: hidden;}
+
+/*个人资料*/
+#myF{overflow: hidden; box-sizing: border-box;border-top: 1px rgb(240,240,240) solid; padding: 20px 0px 100px 0px;}
+#myF>div{vertical-align: middle; margin-top: 15px;}
+#myF>div>span{display: inline-block; width: 102px; height:40px; text-align: right;}
+#myF>div>div{display: inline-block; width: 435px; height:40px; margin-left: 10px; font-size: 14px;}
+#myF>div>input{display: inline-block; width: 435px; height:40px; box-sizing: border-box;border: 1px rgb(240,240,240) solid; margin-left: 10px; font-size: 14px; padding-left: 10px;}
+#myF>div>input:focus{-moz-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    -ms-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    -webkit-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);}
+#myF .user_d>a{float:right; color:rgb(210,60,60);}
+#myF .user_d>a:hover{color:rgb(210,60,60);}
+#gender>input{display: inline; width: 10px; height: 10px;}
+#myF>div>#sub{width: 138px; height: 40px; border-radius: 5px; background:rgb(210,60,60); color: white; cursor: pointer;}
+.birth>select{width: 135px; height: 40px; border: 1px rgb(240,240,240) solid; margin-right: 6px;}
+/*用户头像*/
+#userImg{box-sizing:border-box; border-top: 1px rgb(240,240,240) solid;margin-top: 10px;}
+#userImg>div{width: 100%; padding: 78px 74px 180px 74px; vertical-align: middle; }
+#userImg>div>img{display: inline-block; width: 180px; height: 180px; border-radius: 50%; vertical-align: middle; border: 1px rgb(240,240,240) solid;}
+#userImg>div>div{display: inline-block; width: 350px; padding-left: 70px; overflow: hidden; vertical-align: middle;}
+#userImg>div>div>div{position: relative; width: 150px;height:40px; overflow: hidden; margin-bottom: 20px;}
+#userImg>div>div>p{color: rgb(150,150,150); background: url("../style/images/form_error_03.png") 0px 0px no-repeat; padding-left: 30px; line-height: 16px;}
+#userImg>div>div>div>label{position: absolute; z-index: 9; display: block; width: 150px;height:40px; line-height: 40px; background: rgb(245,245,245); text-align: center;
+    border: 1px rgb(230,230,230) solid; box-sizing: border-box; color: black; font-size: 14px;}
+#userImg>div>div>div>input{position: absolute; z-index: 1;}
+/*邮箱修改*/
+#myF2{overflow: hidden; box-sizing: border-box;border-top: 1px rgb(240,240,240) solid; padding: 60px 0px 100px 0px;}
+#myF2>div{vertical-align: middle; margin-top: 15px;}
+#myF2>div>span{display: inline-block; width: 102px; height:40px; text-align: right;}
+#myF2>div>div{display: inline-block; width: 435px; height:40px; margin-left: 10px; font-size: 14px; vertical-align: middle;}
+#myF2>div>input{display: inline-block; width: 370px; height:40px; box-sizing: border-box;border: 1px rgb(240,240,240) solid; margin-left: 10px; font-size: 14px; padding-left: 10px; vertical-align: middle;}
+#myF2>div>input:focus{-moz-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    -ms-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    -webkit-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);}
+#myF2>div>#sub1,.shut_sub{width: 87px; height: 40px; border-radius: 5px; background:rgb(210,60,60); color: white; vertical-align: middle; text-align: center; line-height: 40px; font-size: 14px; cursor: pointer;}
+.shut_sub,.shut_sub:hover{ background:rgb(240,240,240); color: black; display: inline-block; margin-left: 5px;}
+#myF2 p{color: rgb(90,90,90); background: url("../style/images/form_error_03.png") 0px 0px no-repeat; padding-left: 30px; height: 0px; overflow: hidden; line-height: 16px; margin:15px 0 0 112px; font-size: 14px;}
+#myF2 #emailCode{display: inline-block; margin-left: 10px; width: 118px; height: 40px; box-sizing: border-box; background: rgb(240,240,240); border: 1px rgb(230,230,230) solid; color:rgb(150,150,150);font-size: 14px; vertical-align: middle; cursor: pointer;}
+/*手机号绑定*/
+#myF3{overflow: hidden; box-sizing: border-box;border-top: 1px rgb(240,240,240) solid; padding: 60px 0px 100px 0px;}
+#myF3>div{vertical-align: middle; margin-top: 15px;}
+#myF3>div>span{display: inline-block; width: 102px; height:40px; text-align: right;}
+#myF3>div>div{display: inline-block; width: 435px; height:40px; margin-left: 10px; font-size: 14px; vertical-align: middle;}
+#myF3>div>input{display: inline-block; width: 370px; height:40px; box-sizing: border-box;border: 1px rgb(240,240,240) solid; margin-left: 10px; font-size: 14px; padding-left: 10px; vertical-align: middle;}
+#myF3>div>input:focus{-moz-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    -ms-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    -webkit-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);}
+#myF3>div>#sub2,.shut_sub{width: 87px; height: 40px; border-radius: 5px; background:rgb(210,60,60); color: white; vertical-align: middle; text-align: center; line-height: 40px; font-size: 14px; cursor: pointer;}
+.shut_sub,.shut_sub:hover{ background:rgb(240,240,240); color: black; display: inline-block; margin-left: 5px;}
+#myF3 p{color: rgb(90,90,90); background: url("../style/images/form_error_03.png") 0px 0px no-repeat; padding-left: 30px; height: 0px; overflow: hidden; line-height: 16px; margin:15px 0 0 112px; font-size: 14px;}
+#myF3 #phoneCode{display: inline-block; margin-left: 10px; width: 118px; height: 40px; box-sizing: border-box; background: rgb(240,240,240); border: 1px rgb(230,230,230) solid; color:rgb(150,150,150);font-size: 14px; vertical-align: middle; cursor: pointer;}
+/*密码修改*/
+#myF4{overflow: hidden; box-sizing: border-box;border-top: 1px rgb(240,240,240) solid; padding: 60px 0px 100px 0px;}
+#myF4>div{vertical-align: middle; margin-top: 15px;}
+#myF4>div>span{display: inline-block; width: 102px; height:40px; text-align: right;}
+#myF4>div>div{display: inline-block; width: 435px; height:40px; margin-left: 10px; font-size: 14px; vertical-align: middle;}
+#myF4>div>input{display: inline-block; width: 370px; height:40px; box-sizing: border-box;border: 1px rgb(240,240,240) solid; margin-left: 10px; font-size: 14px; padding-left: 10px; vertical-align: middle;}
+#myF4>div>input:focus{-moz-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    -ms-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    -webkit-box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);
+    box-shadow:0 1px 5px rgb(210,60,60),0 -1px 5px rgb(210,60,60),1px 0 5px rgb(210,60,60),-1px 0 5px rgb(210,60,60);}
+#myF4>div>#sub3,.shut_sub{width: 87px; height: 40px; border-radius: 5px; background:rgb(210,60,60); color: white; vertical-align: middle; text-align: center; line-height: 40px; font-size: 14px; cursor: pointer;}
+.shut_sub,.shut_sub:hover{ background:rgb(240,240,240); color: black; display: inline-block; margin-left: 5px;}
+#myF4 p{color: rgb(90,90,90); background: url("../style/images/form_error_03.png") 0px 0px no-repeat; padding-left: 30px; line-height: 16px; height: 0px; overflow: hidden; margin:15px 0 0 112px; font-size: 14px;}
+#myF4 button{display: inline-block; margin-left: 10px; width: 118px; height: 40px; box-sizing: border-box; background: rgb(240,240,240); border: 1px rgb(230,230,230) solid; color:rgb(150,150,150);font-size: 14px; vertical-align: middle; cursor: pointer;}
+/*第三方账号绑定*/
+.myBind{overflow: hidden; box-sizing: border-box;border-top: 1px rgb(240,240,240) solid; padding: 25px 0 15px 0; margin-top: 10px;}
+.myBind>.b_span{display: inline-block; width: 195px; height: 40px; line-height: 40px; padding-left: 64px; background: url("../style/images/gwyxq.jpg") 5px 0px no-repeat; background-size: 40px 40px;}
+.myBind>a{display: inline-block; text-align: center; width: 140px; height: 32px; line-height: 32px; box-sizing: border-box; background: rgb(240,240,240); border: 1px rgb(230,230,230) solid; color:black;font-size: 14px; vertical-align: middle; cursor: pointer;}
+.myBind>button{display: inline-block; margin-left: 10px; text-align: center; width: 98px;  height: 32px; line-height: 32px; box-sizing: border-box; background: rgb(240,240,240); border: 1px rgb(230,230,230) solid; color:black;font-size: 14px; vertical-align: middle; cursor: pointer;}
+/*杂志订阅*/
+.magazine>div{overflow: hidden; box-sizing: border-box;border-top: 1px rgb(240,240,240) solid; padding: 60px 0px 100px 0px;}
+.magazine>div>span{display: inline-block; color:rgb(150,150,150); width: 90px; margin-left: 20px; margin-right: 60px; vertical-align: top; text-align: right;}
+.magazine>div>div{display: inline-block; width: 530px; vertical-align: top; font-size: 14px; padding-top: 10px;}
+.magazine>div>div #checkboxM{display: inline-block; width: 15px; height: 15px; margin-right: 10px; color: black;}
+.magazine>div>div label>a,.magazine>div>div label>a:hover{color:rgb(210,60,60); cursor: pointer;}
+.magazine>div>div>p{line-height: 24px; margin:12px 0 33px 0;}
+.magazine>div>div>#Msave{width: 132px; height: 40px; border-radius: 5px; background:rgb(210,60,60); color: white; vertical-align: middle; text-align: center; line-height: 40px; font-size: 14px; cursor: pointer; border: none;}

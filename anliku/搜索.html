@@ -6,6 +6,11 @@
 <link rel="stylesheet" href="style/css/reset.css">
 <link rel="stylesheet" href="style/css/layout.css">
 <script src="script/jquery-1.8.3.min.js"></script>
+<script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+<script src="package/echarts/config.js"></script>
+<script src="package/layer/layer.js"></script>
+<script src="script/mock.js"></script>
+<script src="script/jquery.dotdotdot.js"></script>
 </head>
 
 <body class="search">
@@ -191,6 +196,13 @@
                 <li>新闻（123）</li>
                 <li>案例（12）</li>
                 <li>人物档案（25134）</li>
+                <li>新闻（123）</li>
+                <li>案例（12）</li>
+                <li>人物档案（25134）</li>
+                <li>新闻（123）</li>
+                <li>案例（12）</li>
+                <li>人物档案（25134）</li>
+                <li>案例（12）</li>
               </ul>
             </div>
             <div class="cell">
@@ -220,7 +232,9 @@
                 <div class="fl"><span>地区</span></div>
                 <div class="fr unfold">+</div>
               </div>
-              <div>请先选择行政级别</div>
+              <ul class="filter_item">
+              <div class="tip">请先选择行政级别</div>
+              </ul>
             </div>
             <div class="cell">
               <div class="ttl clearfix">
@@ -231,6 +245,7 @@
                 <li>迟子建（1259）</li>
                 <li>龙应台（964）</li>
                 <li>余秋雨（396421）</li>
+                <li>daisy（396421）</li>
               </ul>
             </div>
           </div>
@@ -238,7 +253,7 @@
             <div class="results">
               <div class="item">
                 <a href="#"><p class="title">【案例】<span class="keyword">国内网络</span>舆情<span class="keyword">研究的回顾与展望</span></p></a>
-                <p class="abstract">舆情研究是新兴的社会科学与自然科学交叉的研究领域,网络舆情研究作为舆情研究的热点问题之一更是备受重视。网络舆情研究是舆情基础理论的重要组成部分,对其进行深入研究是对舆情基础理论的深化和扩展。</p>
+                <p class="abstract">舆情研究是新兴的社会科学与自然科学交叉的研究领域,网络舆情研究作为舆情研究的热点问题之一更是备受重视。网络舆情研究是舆情基础理论的重要组成部分,对其进行深入研究是对舆情基础理论的深化和扩展。舆情研究是新兴的社会科学与自然科学交叉的研究领域,网络舆情研究作为舆情研究的热点问题之一更是备受重视。网络舆情研究是舆情基础理论的重要组成部分,对其进行深入研究是对舆情基础理论的深化和扩展。</p>
                 <p class="info">发表时间：2017-03-11     作者/来源：国际案例库     下载：16889     浏览：2009-03-30</p>
               </div>
               <div class="item">
@@ -278,16 +293,17 @@
               </div>
             </div>
             <div class="pager clearfix">
-              <a href="#" class="page_btn fl">上一页</a>
+              <a href="#" class="page_btn">首页</a>
+              <a href="#" class="page_btn disabled">上一页</a>
               <div class="page_list">
                 <a href="#" class="page_num current">1</a>
                 <a href="#" class="page_num">2</a>
                 <a href="#" class="page_num">3</a>
                 <a href="#" class="page_num">4</a>
                 <a href="#" class="page_num">5</a>
-                <a href="#" class="page_num">6</a>
               </div>
-              <a href="#" class="page_btn fr">下一页</a>
+              <a href="#" class="page_btn">下一页</a>
+              <a href="#" class="page_btn">尾页</a>
             </div>
           </div>
         </div>
@@ -305,7 +321,10 @@
             <div class="ttl">研究走势</div>
           </div>
           <p>“大数据”从1982年开始出现相关研究，2016年达到最热，至今共有37729篇相关论文…   <a class="link_more" href="#">更多>></a></p>
-          <div class="tj-wrap"><img src="style/images/search_tj_03.jpg" width="240" alt=""></div>
+          <div class="tj-wrap research" style="background: url(style/images/search_tj_03.png) no-repeat;">
+            <p class="ttl">研究走势</p>
+            <p>从1982到2017</p>
+          </div>
         </div>
 
         <div class="base_box">
@@ -313,7 +332,10 @@
             <div class="ttl">相关学者</div>
           </div>
           <p>“大数据”研究进程中，大量优秀文献源自于以下学者，他们推动并引领着学科的发展与进步…   <a class="link_more" href="#">更多>></a></p>
-          <div class="tj-wrap"><img src="style/images/search_tj_03.jpg" width="240" alt=""></div>
+          <div class="tj-wrap author" style="background: url(style/images/search_tj_03.png) no-repeat;">
+            <p class="ttl">相关学者</p>
+            <p><span id="num">14</span>个深度研究者</p>
+          </div>
         </div>
       </div>
     </div>
@@ -376,6 +398,216 @@
     }, function() {
       $(this).removeClass('active');
     });
+
+    // 搜索选项展开折叠
+    // 初始：遍历所有选项块，超过3个折叠，少于3个隐藏展开按钮
+    $(".filter_item").each(function(index, el) {
+      var lis = $(this).find('li');
+      //console.log(lis.length);
+      if (lis.length > 3) {
+        $(this).find("li").each(function(index, el) {
+          if (index > 2) {
+            $(this).hide();
+          }
+        });
+      } else {
+        $(this).prev().find(".unfold").hide();
+      }
+      
+    });
+
+    $(".unfold").toggle(function(event) {
+      /* Act on the event */
+      var lis = $(this).parent().next().find('li');
+      lis.each(function(index, el) {
+        if (index > 2) {
+          $(this).show();
+        }
+      });
+    }, function() {
+      var lis = $(this).parent().next().find('li');
+      lis.each(function(index, el) {
+        if (index > 2) {
+          $(this).hide();
+        }
+      });
+    });
+
+    // 对每一个选项集来说，选择一个选项后，其他兄弟选项收起，当前选项加"×"，点之释放当前选择，展开所有选项
+    $(".filter_item li").on("click", function() {
+      if ($(this).hasClass('active')) return;
+      var current_obj = $(this);
+      var folded = false;
+      if ($(this).siblings(":last").is(":visible") == false) {
+        folded = true;
+      }
+      $(this).addClass('active');
+      $(this).append('<span class="item_close" style="float: right; line-height: 25px;"><img src="style/images/close.png" height="10" alt=""></span>');
+      $(this).siblings().hide();
+
+      $(".item_close").on("click", function(event) {
+        event.stopPropagation();
+        current_obj.siblings().show();
+        // 如果选择选项之前3条之后的隐藏，取消选择之后，该隐藏的继续隐藏
+        if (folded) {
+          var parentul = $(this).parents(".filter_item");
+          parentul.find("li").each(function(index, el) {
+            if (index > 2) {
+              $(this).hide();
+            }
+          });
+        }
+        current_obj.removeClass('active');
+        $(this).remove();
+      });
+    });
+
+    // 研究走势弹出echarts
+    $(".tj-wrap.research").on("click", function() {
+      layer.open({
+        type: 1,
+        shadeClose: true,
+        area: '1000px',
+        title: false,
+        content: '<div style="padding: 20px;"><div id="main" style="height:520px"></div></div>',
+        success: function(layero, index) {
+          var myChart = echarts.init(document.getElementById('main'));
+          var option = {
+              title : {
+                  text: '相关内容趋势',
+                  subtext: '体现该关键词在各个时间出现的相关文档数量的走势。'
+              },
+              tooltip : {
+                  trigger: 'axis'
+              },
+              legend: {
+                  data:['']
+              },
+              calculable : true,
+              xAxis : [
+                  {
+                      type : 'category',
+                      boundaryGap : false,
+                      splitLine: {
+                        show: false
+                      },
+                      data : ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30'],
+                  }
+              ],
+              splitLine:{
+                  show:false
+                },
+              yAxis : [
+                  {
+                      type : 'value',
+                      splitLine: {
+                        show: false
+                      }
+                  }
+              ],
+              series : [
+                  {
+                      name:'成交',
+                      type:'line',
+                      smooth:true,
+                      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                      data:[]
+                  }
+              ]
+          }
+          // 请求动态数据
+          $.ajax({
+            url: 'data/research.json',
+            type: 'get',
+            success: function(result) {
+              if(result) {
+                option.series[0].data = result;
+                myChart.setOption(option);
+              }
+            },
+            error: function(msg) {
+              alert("不好意思，图表数据请求失败");
+            }
+          });
+        }
+        
+      })
+    });
+
+    // 研究走势弹出echarts
+    $(".tj-wrap.author").on("click", function() {
+      layer.open({
+        type: 1,
+        shadeClose: true,
+        area: '1000px',
+        title: false,
+        content: '<div style="padding: 20px;"><div id="main" style="height:520px"></div></div>',
+        success: function(layero, index) {
+          var myChart = echarts.init(document.getElementById('main'));
+          var option = {
+              title : {
+                  text: '相关作者趋势',
+                  subtext: '体现该关键词在各个时间出现的相关作者数量的走势。'
+              },
+              tooltip : {
+                  trigger: 'axis'
+              },
+              legend: {
+                  data:['']
+              },
+              calculable : true,
+              xAxis : [
+                  {
+                      type : 'category',
+                      boundaryGap : false,
+                      splitLine: {
+                        show: false
+                      },
+                      data : ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30'],
+                  }
+              ],
+              splitLine:{
+                  show:false
+                },
+              yAxis : [
+                  {
+                      type : 'value',
+                      splitLine: {
+                        show: false
+                      }
+                  }
+              ],
+              series : [
+                  {
+                      name:'成交',
+                      type:'line',
+                      smooth:true,
+                      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                      data:[]
+                  }
+              ]
+          }
+          // 请求动态数据
+          $.ajax({
+            url: 'data/research.json',
+            type: 'get',
+            success: function(result) {
+              if(result) {
+                option.series[0].data = result;
+                myChart.setOption(option);
+              }
+            },
+            error: function(msg) {
+              alert("不好意思，图表数据请求失败");
+            }
+          });
+        }
+        
+      })
+    })
+
+    // 简介行数限制
+    $(".abstract").dotdotdot();
   })
 </script>
 </html>

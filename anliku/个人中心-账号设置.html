@@ -1,11 +1,15 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>案例网个人中心-账号设置</title>
-<link rel="stylesheet" href="style/css/reset.css">
-<link rel="stylesheet" href="style/css/personal.css">
-<script src="script/jquery-1.8.3.min.js"></script>
+  <meta charset="utf-8">
+  <title>案例网个人中心-账号设置</title>
+  <link rel="stylesheet" href="style/css/reset.css">
+  <link rel="stylesheet" href="style/css/personal.css">
+  <link rel="stylesheet" href="css/center_user.css"/>
+  <script src="script/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.alert.js"></script>
+  <script type="text/javascript" src="js/center_user.js"></script>
+  <script type="text/javascript" src="js/dom-to-image.min.js"></script>
 </head>
 
 <body class="index">
@@ -13,60 +17,60 @@
 
 
 <div class="header">
-<!-- 头部背景 -->
- 
-<div class="top-wrap">
-<div class="top-tip clearfix w1050">
-  <div class="fl t-after">
-    <a class="go-index" href=""><i class="ico"></i>首页</a>
-    <a class="go-app" class="" href=""><i class="ico"></i>百问APP</a>
-    <a class="follow" href=""> <i class="ico"></i>关注微信</a>
-  </div>
-  <div class="fr t-rbox">
-      <span>欢迎来到中国政府管理国安全库!</span>
-      <div class="login-regist">
-        <i class="ico userPic"></i>
-        <a class="re-login" href="">登录</a>
-        <a class="re-regist" href="">注册</a>
-      </div>
-  </div>
+  <!-- 头部背景 -->
 
+  <div class="top-wrap">
+    <div class="top-tip clearfix w1050">
+      <div class="fl t-after">
+        <a class="go-index" href="javascript:void(0)"><i class="ico"></i>首页</a>
+        <a class="go-app" class="" href="javascript:void(0)"><i class="ico"></i>百问APP</a>
+        <a class="follow" href="javascript:void(0)"> <i class="ico"></i>关注微信</a>
+      </div>
+      <div class="fr t-rbox">
+        <span>欢迎来到中国政府管理国安全库!</span>
+        <div class="login-regist">
+          <i class="ico userPic"></i>
+          <a class="re-login" href="javascript:void(0)">登录</a>
+          <a class="re-regist" href="javascript:void(0)">注册</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="header-bg"></div>
+  <div class="banner-wrap">
+    <div class="banner-box clearfix w1050">
+      <div class="logo fl">
+        <img src="style/images/logo3.png" alt="">
+      </div>
+      <div class="fr search-box">
+        <input type="text" placeholder="在此输关键字">
+        <span class="">检索</span>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="header-bg"></div>
-<div class="banner-wrap">
-  <div class="banner-box clearfix w1050">
-    <div class="logo fl">
-      <img src="style/images/logo3.png" alt="">
+<!-- 左导航 -->
+<div class="container-box w1050 clearfix">
+  <div class="left-wrap fl">
+    <div class="left-box">
+      <div class="l-top">
+        <div class="user-pic">
+          <img src="http://h.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=5fa6656350e736d158138b0ea36b28ff/728da9773912b31b57f9e6968218367adbb4e1fc.jpg" alt="">
+          <i class="ico camera"></i>
+        </div>
+        <div class="username">sahara_sand</div>
+        <div class="menber-grade"><i class="ico"></i>青铜会员</div>
+        <div class="men-status-btn">续费/升级会员</div>
+      </div>
+      <div class="l-bottom">
+        <a href="个人中心-vip.html">我的VIP</a>
+        <a class="active"  href="个人中心-账号设置.html">帐号设置</a>
+        <a  href="个人中心-我的下载.html">我的下载</a>
+        <a  href="个人中心-我的收藏.html">我的收藏</a>
+        <a  href="个人中心-会员充值.html">充值中心</a>
+      </div>
     </div>
-    <div class="fr search-box"> 
-      <input type="text" placeholder="在此输关键字">
-      <span class="">检索</span>
-    </div>
-  </div>
-  </div>
- </div>
- <!-- 左导航 -->
- <div class="container-box w1050 clearfix">
-<div class="left-wrap fl">
-  <div class="left-box">
-    <div class="l-top">
-      <div class="user-pic">
-        <img src="http://h.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=5fa6656350e736d158138b0ea36b28ff/728da9773912b31b57f9e6968218367adbb4e1fc.jpg" alt="">
-        <i class="ico camera"></i>
-       </div>
-       <div class="username">sahara_sand</div>
-       <div class="menber-grade"><i class="ico"></i>青铜会员</div>
-       <div class="men-status-btn">续费/升级会员</div>
-    </div>
-    <div class="l-bottom">
-      <a href="个人中心-vip.html">我的VIP</a>
-      <a class="active"  href="个人中心-账号设置.html">帐号设置</a>
-      <a  href="个人中心-我的下载.html">我的下载</a>
-      <a  href="个人中心-我的收藏.html">我的收藏</a>
-      <a  href="个人中心-会员充值.html">充值中心</a>
-    </div>
-  </div>
   </div>
   <div class="right-wrap fr accountSet">
     <div class="r-title">
@@ -75,21 +79,143 @@
     </div>
     <div class="r-main">
       <div class="r-main-box">
-        <ul>
+        <ul id="all_data">
           <li class="clearfix">
             <span class="input-tag">个人资料</span>
-            <input type="text" value="个人资料个人资料个人资料个人资料个人资料个人资料" readonly>
-            <a class="edit fr" href="">编辑<i class="ico"></i></a>
+            <input type="text" value="政务服务决策参考&治国政策高级智库" readonly style="color: rgb(150,150,150);">
+            <a class="edit fr" href="javascript:void(0)" isCan="false">编辑<i class="ico"></i></a>
+            <div class="collapse">
+              <div class="userdata">
+                <div>
+                  <form action="" method="post" id="myF">
+                    <div>
+                      <span>登录名：</span><div class="user_d" id="user_d"><label>123456789@qq.com</label><a href="javascript:void(0)" id="pointer">修改邮箱>></a></div>
+                    </div>
+                    <div>
+                      <span>昵称：</span><input type="text" name="nickname" id="nickname"/>
+                    </div>
+                    <div>
+                      <span>所在城市：</span><input type="text" name="address" id="address"/>
+                    </div>
+                    <div>
+                      <span>性别：</span><div id="gender"><input type="radio" name="gender" id="gender1" checked="checked"/><label for="gender1">男</label><input type="radio" name="gender" id="gender2"/><label for="gender2">女</label></div>
+                    </div>
+                    <div>
+                      <span>生日：</span>
+                      <div class="birth">
+                        <select name='year' id="year">
+                          <option>请选择</option>
+                        </select>
+                        <select name='month' id="month">
+                          <option>请选择</option>
+                        </select>
+                        <select name='day' id="day">
+                          <option>请选择</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div>
+                      <span>职业：</span><input type="text" name="job" id="job"/>
+                    </div>
+                    <div>
+                      <span></span><input type="button" id="sub" value="提交"/>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </li>
-          <li class="user-pic clearfix"><span class="input-tag">头像</span><span class="pic-wrap"><img src="http://h.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=5fa6656350e736d158138b0ea36b28ff/728da9773912b31b57f9e6968218367adbb4e1fc.jpg" alt=""></span>
-          <a class="edit fr" href="">编辑<i class="ico"></i></a></li>
-          <li class="email clearfix"><span class="input-tag">登录邮箱</span><input type="text" value="290113667@qq.com" readonly>
-          <a class="edit fr" href="">编辑<i class="ico"></i></a></li>
-          <li class="email clearfix"><span class="input-tag">绑定手机</span><span>未绑定</span></li>
+          <li class="user-pic clearfix">
+            <span class="input-tag">头像</span>
+            <span class="pic-wrap">
+            <img src="http://h.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=5fa6656350e736d158138b0ea36b28ff/728da9773912b31b57f9e6968218367adbb4e1fc.jpg" alt="">
+            </span>
+            <a class="edit fr" href="javascript:void(0)" isCan="false">编辑<i class="ico"></i></a>
+            <div class="collapse">
+              <div id="userImg">
+                <div>
+                  <img src="http://h.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=5fa6656350e736d158138b0ea36b28ff/728da9773912b31b57f9e6968218367adbb4e1fc.jpg" alt="img"/>
+                  <div>
+                    <div>
+                      <label for="sendImg">上传头像</label><input type="file" id="sendImg" accept="image/jpeg,image/png"/>
+                    </div>
+                    <p>仅支持JPG、PNG格式，文件小于1M（方形图）</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="email clearfix">
+            <span class="input-tag">登录邮箱</span>
+            <input type="text" value="290113667@qq.com" id="checkemail" readonly>
+            <a class="edit fr" href="javascript:void(0)" isCan="false" id="pointed">编辑<i class="ico"></i></a>
+            <div class="collapse">
+              <div class="email">
+                <div>
+                  <form action="#" method="post" id="myF2">
+                    <div>
+                      <span>邮箱：</span><input type="text" name="user" id="checkemail2" placeholder="请输入你的邮箱"/>
+                      <p>邮箱格式错误，请重新输入</p>
+                    </div>
+                    <div>
+                      <span>验证码：</span><input type="text" name="code" style="width: 240px;" placeholder="请输入验证码"/><input type="button" id="emailCode" value="发送验证码"/>
+                    </div>
+                    <div>
+                      <span></span><input type="button" id="sub1" value="验证"/><a href="javascript:void(0)" class="shut_sub">取消</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="email clearfix">
+            <span class="input-tag">绑定手机</span>
+            <span id="phoneB" style="color: black;">未绑定</span>
+            <a class="edit fr" href="javascript:void(0)" isCan="false">编辑<i class="ico"></i></a>
+            <div class="collapse">
+              <div class="phone">
+                <div>
+                  <form action="#" method="post" id="myF3">
+                    <div>
+                      <span>手机：</span><input type="text" name="phone" id="phoneB2" placeholder="请输入你的手机号"/>
+                      <p>手机号码格式错误，请重新输入</p>
+                    </div>
+                    <div>
+                      <span>验证码：</span><input type="text" name="code" style="width: 240px;" placeholder="请输入你手机收到的验证码"/><input type="button" id="phoneCode" value="发送验证码"/>
+                    </div>
+                    <div>
+                      <span></span><input type="button" id="sub2" value="验证"/><a href="javascript:void(0)" class="shut_sub">取消</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="password clearfix">
             <span class="input-tag">密码</span>
-            <input type="text" value="ddddddd" readonly>
-            <a class="edit fr" href="">编辑<i class="ico"></i></a>
+            <input type="text" value="******" readonly>
+            <a class="edit fr" href="javascript:void(0)" isCan="false">编辑<i class="ico"></i></a>
+            <div class="collapse">
+              <div class="pwd">
+                <div>
+                  <form action="#" method="post" id="myF4">
+                    <div>
+                      <span>当前密码：</span><input type="password" name="pwd" placeholder="请输入原始密码" id="pwd1"/>
+                      <p>密码输入错误，请重新输入</p>
+                    </div>
+                    <div>
+                      <span>新密码：</span><input type="password" placeholder="请输入新密码" id="pwd2"/>
+                    </div>
+                    <div>
+                      <span>确认密码：</span><input type="password" name="newPwd" placeholder="请再次输入新密码" id="pwd3"/>
+                    </div>
+                    <div>
+                      <span></span><input type="button" id="sub3" value="保存"/><a href="javascript:void(0)" class="shut_sub">取消</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="other clearfix">
             <span class="input-tag">第三方账号绑定</span>
@@ -97,152 +223,165 @@
               <div class="img-wrap">
                 <i class="qq ico"></i>
               </div>
-            <div class="img-wrap">
+              <div class="img-wrap">
                 <i class="weixin ico"></i>
               </div>
-            <div class="img-wrap">
+              <div class="img-wrap">
                 <i class="xingliang ico"></i>
               </div>
-            <div class="img-wrap">
+              <div class="img-wrap">
                 <i class="qqkongjian ico"></i>
               </div>
-            <div class="img-wrap">
+              <div class="img-wrap">
                 <i class="renren ico"></i>
               </div>
-            <div class="img-wrap">
+              <div class="img-wrap">
                 <i class="pengyouquan ico"></i>
               </div>
             </div>
-            <a class="edit fr" href="">编辑<i class="ico"></i></a>
+            <a class="edit fr" href="javascript:void(0)" isCan="false">编辑<i class="ico"></i></a>
+            <div class="collapse">
+              <div class="userBind">
+                <div>
+                  <div class="myBind">
+                    <span class="b_span" style="width: 195px;">用户名</span><a href="javascript:void(0)"><label>绑定</label>QQ号码</a><button>解除绑定</button>
+                  </div>
+                  <div class="myBind">
+                    <span class="b_span" style="width: 195px;">用户名</span><a href="javascript:void(0)"><label>绑定</label>新浪微博</a><button>解除绑定</button>
+                  </div>
+                  <div class="myBind">
+                    <span class="b_span" style="width: 195px;">用户名</span><a href="javascript:void(0)"><label>绑定</label>微信</a><button>解除绑定</button>
+                  </div>
+                  <div class="myBind">
+                    <span class="b_span" style="width: 195px;">用户名</span><a href="javascript:void(0)"><label>绑定</label>QQ空间</a><button>解除绑定</button>
+                  </div>
+                  <div class="myBind">
+                    <span class="b_span" style="width: 195px;">用户名</span><a href="javascript:void(0)"><label>绑定</label>人人</a><button>解除绑定</button>
+                  </div>
+                  <div class="myBind">
+                    <span class="b_span" style="width: 195px;">用户名</span><a href="javascript:void(0)"><label>绑定</label>豆瓣</a><button>解除绑定</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
-          <li class="user-show clearfix">
-            <span class="input-tag">认证用户</span>
-            <span>不显示</span>
-            <a class="edit fr" href="">编辑<i class="ico"></i></a>
-          </li>
-          <li class="sub-info clearfix">
+          <li class="sub-info clearfix" style="border-bottom: none;">
             <span class="input-tag">订阅/退订周刊</span>
-            <span>已订阅中国政务大数据</span>
-            <a class="edit fr" href="">编辑<i class="ico"></i></a>
+            <span id="magz">已订阅中国政务大数据报告</span>
+            <a class="edit fr" href="javascript:void(0)" isCan="false">编辑<i class="ico"></i></a>
+            <div class="collapse">
+              <div class="magazine">
+                <div>
+                  <span>当前状态：</span>
+                  <div>
+                    <input type="checkbox" id="checkboxM"/><label>订阅<a>《中国政务服务大数据报告》</a></label>
+                    <p>
+                      注：有可能在你修改订阅状态时，当期周刊的邮寄发送队列已经生成，知道下一周刊发送的时候，你的更改才能生效。<span style="display: block; color: black;">当前订阅邮箱地址：<mark style="background: none; color: rgb(150,150,150);" id="userE">123456789@qq.com</mark></span>
+                    </p>
+                    <input type="button" value="报存" id="Msave"/>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
 
-     </div>
+      </div>
 
- </div>
+    </div>
 
- </div>
- </div>
- </div>
+  </div>
+</div>
+</div>
 
 </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="footer w1000">
-    <div class="clearfix">
-      <div class="fl">
-        <div class="links">
-          <a href="#"> 关于我们 </a>&nbsp;|
-          <a href="#"> 加入我们 </a>&nbsp;|
-          <a href="#"> 公司首页 </a>&nbsp;|
-          <a href="#"> 意见反馈 </a>&nbsp;|
-          <a href="#"> 帮助中心 </a>&nbsp;|
-          <a href="#"> 网站公告 </a>
+<div class="footer w1000">
+  <div class="clearfix">
+    <div class="fl">
+      <div class="links">
+        <a href="#"> 关于我们 </a>&nbsp;|
+        <a href="#"> 加入我们 </a>&nbsp;|
+        <a href="#"> 公司首页 </a>&nbsp;|
+        <a href="#"> 意见反馈 </a>&nbsp;|
+        <a href="#"> 帮助中心 </a>&nbsp;|
+        <a href="#"> 网站公告 </a>
+      </div>
+      <div style="margin:20px 0;"><a href="#">联系我们</a></div>
+      <div class="clearfix contact">
+        <div class="fl">
+          <p>电 话：010-65936652</p>
+          <p>邮 件：yu_qing_2008@163.com</p>
         </div>
-        <div style="margin:20px 0;"><a href="#">联系我们</a></div>
-        <div class="clearfix contact">
+        <div class="fr">
+          <p>网 址：www.bwnews.org</p>
+          <p>地 址：北京市朝阳区光华路15号泰达时代中心4号楼16层</p>
+        </div>
+      </div>
+    </div>
+    <div class="fr">
+      <div class="coop">
+        <p style="margin-bottom: 10px;">友情合作</p>
+        <div class="clearfix" style="text-align: center;">
           <div class="fl">
-            <p>电 话：010-65936652</p>
-            <p>邮 件：yu_qing_2008@163.com</p>
+            <a href="#"><img src="style/images/footer1.jpg" alt=""></a>
+            <p>清华大学</p>
+          </div>
+          <div style="display: inline-block;">
+            <a href="#"><img src="style/images/footer2.jpg" alt=""></a>
+            <p>国家行政学院</p>
           </div>
           <div class="fr">
-            <p>网 址：www.bwnews.org</p>
-            <p>地 址：北京市朝阳区光华路15号泰达时代中心4号楼16层</p>
+            <a href="#"><img src="style/images/footer3.jpg" alt=""></a>
+            <p>中共中央党校</p>
           </div>
         </div>
       </div>
-      <div class="fr">
-        <div class="coop">
-          <p style="margin-bottom: 10px;">友情合作</p>
-          <div class="clearfix" style="text-align: center;">
-            <div class="fl">
-              <a href="#"><img src="style/images/footer1.jpg" alt=""></a>
-              <p>清华大学</p>
-            </div>
-            <div style="display: inline-block;">
-              <a href="#"><img src="style/images/footer2.jpg" alt=""></a>
-              <p>国家行政学院</p>
-            </div>
-            <div class="fr">
-              <a href="#"><img src="style/images/footer3.jpg" alt=""></a>
-              <p>中共中央党校</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- copyright -->
-    <div class="copyright">
-      <p>Copyright © 2016-2020 All rights reserved.ICP备16028853号北京百问网信息技术有限公司</p>
     </div>
   </div>
-  <div class="floatdiv">
-    <div class="cell qr">
-      <i class="icon_new">&#xe607;</i>
-      <div class="show-qr"
-      style="display: none;">
-        <div class="clearfix">
-          <div class="fl" style="width: 70px;">
-            <p><img src="style/images/qr1_03.png" alt=""></p>
-            <p class="txt">微信公众号</p>
-            <p><i class="icon_new" style="color: #247f1d;">&#xe60a;</i></p>
-          </div>
-          <div style="display: inline-block; width: 70px;">
-            <p><img src="style/images/qr2_05.png" alt=""></p>
-            <p class="txt">百问网APP</p>
-            <p><i class="icon_new" style="color: #272636;">&#xe609;</i></p>
-          </div>
-          <div class="fr" style="width: 70px;">
-            <p><img src="style/images/qr3_07.png" alt=""></p>
-            <p class="txt">百问网APP</p>
-            <p><i class="icon_new" style="color: #93c147;">&#xe608;</i></p>
-          </div>
+  <!-- copyright -->
+  <div class="copyright">
+    <p>Copyright © 2016-2020 All rights reserved.ICP备16028853号北京百问网信息技术有限公司</p>
+  </div>
+</div>
+<div class="floatdiv">
+  <div class="cell qr">
+    <i class="icon_new">&#xe607;</i>
+    <div class="show-qr"
+         style="display: none;">
+      <div class="clearfix">
+        <div class="fl" style="width: 70px;">
+          <p><img src="style/images/qr1_03.png" alt=""></p>
+          <p class="txt">微信公众号</p>
+          <p><i class="icon_new" style="color: #247f1d;">&#xe60a;</i></p>
+        </div>
+        <div style="display: inline-block; width: 70px;">
+          <p><img src="style/images/qr2_05.png" alt=""></p>
+          <p class="txt">百问网APP</p>
+          <p><i class="icon_new" style="color: #272636;">&#xe609;</i></p>
+        </div>
+        <div class="fr" style="width: 70px;">
+          <p><img src="style/images/qr3_07.png" alt=""></p>
+          <p class="txt">百问网APP</p>
+          <p><i class="icon_new" style="color: #93c147;">&#xe608;</i></p>
         </div>
       </div>
     </div>
-    <div class="cell">
-      <i class="icon_new">&#xe606;</i>
-    </div>
-    <div class="cell">
-      <i class="icon_new">&#xe601;</i>
-    </div>
-    <div class="cell">
-      <i class="icon_new">&#xe7a9;</i>
-    </div>
   </div>
+  <div class="cell">
+    <i class="icon_new">&#xe606;</i>
+  </div>
+  <div class="cell">
+    <i class="icon_new">&#xe601;</i>
+  </div>
+  <div class="cell">
+    <i class="icon_new">&#xe7a9;</i>
+  </div>
+</div>
 </body>
-<script>  
+<script>
 
 </script>
 </html>

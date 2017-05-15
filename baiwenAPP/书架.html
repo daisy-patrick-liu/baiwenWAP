@@ -120,6 +120,26 @@
         position: absolute;
         z-index: 10;
     }
+    .book-frame .header .title span {
+        display: inline-block;
+        width: 4.0rem;
+        text-align: center;
+        position: relative;
+        font-weight: 500;
+        color: #1a1a1a;
+    }
+    .book-frame .header .title span.active {
+        color: #d33c3e;
+    }
+    .book-frame .header .title span.active:after {
+        content: '';
+        position: absolute;
+        width: 0.826667rem;
+        border-bottom: 0.04rem solid #d33c3e;
+        left: 50%;
+        bottom: -0.026667rem;
+        margin-left: -0.4133335rem;
+    }
     </style>
 </head>
 
@@ -128,11 +148,9 @@
     <!-- 头部 -->
     <div class="header">
         <div class="head-box">
-            <div class="logo ico-wrap">
-                <i class="ico"></i>
-            </div>
             <div class="title">
-                <h2>我的书架</h2>
+                <span class="active">政务服务大数据报告</span>
+                <span>政务服务研究报告</span>
             </div>
         </div>
     </div>

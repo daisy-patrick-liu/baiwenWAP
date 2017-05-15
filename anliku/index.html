@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="package/swiper/css/swiper.min.css">
 <script src="script/jquery-1.8.3.min.js"></script>
 <script src="package/swiper/js/swiper.min.js"></script>
+<script src="package/layer/layer.js"></script>
 </head>
 
 <body class="index">
@@ -15,13 +16,24 @@
     <div class="welcome clearfix">
       <div class="w1000">
         <div class="fl">
-          <span><a href="#"><i class="icon_new">&#xe608;</i> 首页</a></span>
-          <span><a href="#"><i class="icon_new">&#xe737;</i> 百问APP</a></span>
-          <span><a href="#"><i class="icon_new">&#xe63b;</i> 关注微信</a></span>
+          <span class="msg">欢迎来到中国政府管理国际案例库！</span>
+          
+          <span style="display: none;"><a href="#"><i class="icon_new">&#xe737;</i> 百问APP</a></span>
+          <span style="display: none;"><a href="#"><i class="icon_new">&#xe63b;</i> 关注微信</a></span>
         </div>
         <div class="fr">
-          <span class="msg">欢迎来到中国政府管理国际案例库！</span>
-          <span><i class="icon_new icon_login">&#xe6c5;</i>  <a href="#">登录</a>  |  <a href="#">注册</a></span>
+          <span style="margin-right: 10px;"><a href="#"><i class="icon_new">&#xe6e6;</i> 首页</a></span>
+          <span><i class="icon_new icon_login">&#xe6c5;</i>  <a id="link_login" href="#">登录</a>  |  <a id="link_register" href="#">注册</a></span>
+          <span class="logined" style="display: none;">
+            <span class="user">芥末chocolate</span><i class="icon_new">&#xe695;</i>
+            <div class="hover_menu" style="display: none;">
+              <ul>
+                <li><i class="icon_new">&#xe61f;</i>我的收藏</li>
+                <li><i class="icon_new">&#xe791;</i>我的下载</li>
+                <li><i class="icon_new">&#xe68e;</i>退出登录</li>
+              </ul>
+            </div>
+          </span>
         </div>
       </div>
     </div>
@@ -240,25 +252,26 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="#"><img src="style/images/swiper2_03.jpg"></a>
+                <a href="#"><img src="style/images/swiper2_03.jpg">
                 <div class="mask">
-                  <p class="title">政府管理国际案例库1</p>
-                  <p class="intro">最为有效的智慧支持、智库支持、决策支持、内容支持、学习支持、舆论支持和数据技术支持</p>
+                  <p class="title">政府管理国际案例库1政府管理国际案例库1政府管理国际案例库1</p>
+                  <!--<p class="intro">最为有效的智慧支持、智库支持、决策支持、内容支持、学习支持、舆论支持和数据技术支持</p>-->
                 </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <a href="#"><img src="style/images/swiper2_03.jpg"></a>
+                <a href="#"><img src="style/images/swiper2_03.jpg">
                 <div class="mask">
-                  <p class="title">政府管理国际案例库2</p>
-                  <p class="intro">最为有效的智慧支持、智库支持、决策支持、内容支持、学习支持、舆论支持和数据技术支持2</p>
+                  <p class="title">政府管理国际案例库2政府管理国际案例库1政府管理国际案例库2</p>
                 </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <a href="#"><img src="style/images/swiper2_03.jpg"></a>
+                <a href="#"><img src="style/images/swiper2_03.jpg">
                 <div class="mask">
-                  <p class="title">政府管理国际案例库3</p>
-                  <p class="intro">最为有效的智慧支持、智库支持、决策支持、内容支持、学习支持、舆论支持和数据技术支持3</p>
+                  <p class="title">政府管理国际案例库3政府管理国际案例库3</p>
                 </div>
+                </a>
               </div>
           </div>
           
@@ -634,6 +647,23 @@
 </body>
 <script>  
   $(function(){
+    // 已登录状态，hover下拉
+    $(".logined").hover(function() {
+      /* Stuff to do when the mouse enters the element */
+      $(this).css({
+        background: '#fff',
+        border: '1px solid #e3e3e3',
+        'border-top': 'none'
+      });
+      $(".hover_menu").show();
+    }, function() {
+      /* Stuff to do when the mouse leaves the element */
+      $(this).css({
+        background: 'none',
+        border: 'none'
+      });
+      $(".hover_menu").hide();
+    });
     // 小轮播图
     var mySwiper1 = new Swiper ('.swiper1 .swiper-container', {
       nextButton: '.swiper1 .swiper-button-next',
@@ -643,28 +673,8 @@
     var mySwiper2 = new Swiper ('.swiper2 .swiper-container', {
       autoplay: 2000,
       nextButton: '.swiper2 .swiper-button-next',
-      prevButton: '.swiper2 .swiper-button-prev',
-      /*
-      onSlideChangeEnd: function(swiper){
-        var index = swiper.activeIndex;
-        //console.log(index);
-        // 改变当前活动slide标题文字
-        $(".mask .title").text("大标题大标题" + index);
-        $(".mask .intro").text("介绍文字介绍文字" + index);
-      }
-      */
+      prevButton: '.swiper2 .swiper-button-prev'
     });
-    /* 左右箭头点击事件 */
-    /*
-    $('.arrow-left').on('click', function(e){
-      e.preventDefault()
-      mySwiper2.swipePrev()
-    })
-    $('.arrow-right').on('click', function(e){
-      e.preventDefault()
-      mySwiper2.swipeNext()
-    })
-    */
 
     // 大数据轮播图
     var mySwiper3 = new Swiper ('.flag .swiper-container', {
@@ -676,40 +686,51 @@
     // 分类树hover
     $(".layer1>li").hover(
       function(){
+        //$(this).find(".divlayer2").animate({width: '660px'}, 250);
         $(this).addClass('active');
+        
       }, 
       function(){
-      $(this).removeClass('active');
+        //$(this).find(".divlayer2").animate({width: '0'}, 250);
+        $(this).removeClass('active');
+        
     })
     $(".tree_wrap").hover(
       function() {
-        $(".trees").show();
+        $(".trees").slideDown('300');
       },
       function() {
-        $(".trees").hide();
+        $(".trees").slideUp('300');
       }
     )
 
     // 搜索选项切换
-    $(".option_box.bases span").on("click", function() {
+    $(".option_box.bases span").on("click", function(event) {
       $(this).addClass('active').siblings().removeClass('active');
       $(".base_chosen").text($(this).text());
+      event.stopPropagation();
     })
-    $(".option_box.keys span").on("click", function() {
+    $(".option_box.keys span").on("click", function(event) {
       $(this).addClass('active').siblings().removeClass('active');
       $(".base_name").text($(this).text());
+      event.stopPropagation();
     })
 
     // 点击下拉搜索选项
     $(".click_area").click(function(event) {
-      $(".area_ddl").show('400');
+      //$(".area_ddl").toggle('400');
+      if($(".area_ddl").is(":hidden")) {
+        $(".area_ddl").slideDown('400');
+      } else {
+        $(".area_ddl").slideUp('400');
+      }
     });
 
     // 取消 确认 按钮收起下拉框
     $(".btn_wrap .button").click(function(event) {
       /* Act on the event */
-      $(".area_ddl").hide();
-      event.stopPropagation();
+      //$(".area_ddl").hide();
+      //event.stopPropagation();
     });
 
     // 二维码hover
@@ -723,6 +744,43 @@
       $(this).addClass('active').siblings().removeClass('active');
     }, function() {
       $(this).removeClass('active');
+    });
+
+    // login 弹出层
+    $("#link_login").on('click', function(event) {
+      /* Act on the event */
+      event.preventDefault();
+      layer.open({
+        type: 2,
+        shadeClose: true,
+        title: false,
+        area: ['678px','630px'],
+        content: '登录弹窗.html'
+      })
+    });
+
+    // 注册 弹出层
+    $("#link_register").on('click', function(event) {
+      /* Act on the event */
+      event.preventDefault();
+      layer.open({
+        type: 2,
+        shadeClose: true,
+        title: false,
+        area: ['678px','630px'],
+        content: '注册弹窗.html'
+      })
+    });
+
+    // 反馈 弹窗层
+    $(".floatdiv .cell:nth-child(3)").on('click', function() {
+      layer.open({
+        type: 2,
+        shadeClose: true,
+        title: '<i class="icon_new" style="font-size:20px; margin-right:5px">&#xe601;</i>反馈',
+        area: ['678px','455px'],
+        content: '反馈.html'
+      })
     })
   });
 </script>

@@ -159,7 +159,7 @@
 	background:url(../images/banner-bg-2.png);
 	background-repeat: no-repeat;
 	background-position: top center;
-	height:278px;
+	height:150px;
 	position: absolute;
 	width:957px;
 	left:300px;
@@ -173,6 +173,7 @@
 	padding:28px 0;
 }
 .header .banner-box .search-box input{
+	height:39px;
 	width:250px;
 	border:2px solid #eee;
 	border-right:none;
@@ -748,6 +749,7 @@
 	border-bottom: 1px solid #eee;
 }
 .container-box   .accountSet ul li input{
+	height: 34px;
 	font-size: 14px;
 	color:#333;
 	width:550px;

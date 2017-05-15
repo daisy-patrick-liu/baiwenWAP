@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="style/css/index.css">
 <link rel="stylesheet" href="script/swipe/css/swiper.min.css">
 <script src="script/flexible.js" type="text/javascript" charset="utf-8"></script>
+<script src="script/jquery-1.8.3.min.js"></script>
 <script src="script/swipe/js/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
 <script src="script/swipe/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="script/zepto.min.js"></script>
@@ -171,6 +172,10 @@ html {
     <div class="main">
         <section class="banner" style="background:url(style/images/banner_fenlei_03.png) no-repeat center center; background-size: cover;">
         </section>
+        <section class="tabs">
+            <span>政务服务大数据</span>
+            <span class="active">政务服务研究报告</span>
+        </section>
         <div class="journal_list">
             <section class="journal">
                 <div class="year-title">
@@ -258,7 +263,10 @@ html {
                 }
             });
         });
-        
+        // tabs切换
+        $(".tabs span").on("touchend", function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
 
     })
     </script>
