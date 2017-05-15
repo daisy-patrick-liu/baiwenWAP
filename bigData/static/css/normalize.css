@@ -236,6 +236,7 @@ optgroup,
 select,
 textarea {
   margin: 0;
+  outline: none;
 }
 
 /**
