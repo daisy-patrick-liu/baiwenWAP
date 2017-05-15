@@ -457,3 +457,7 @@ h2 {
 .clearfix {
   *zoom: 1;
 }
+
+body {
+  margin: 0;
+}
