@@ -38,15 +38,54 @@ footer {
 	position: absolute;
 	bottom: 0;
 }
-
+/* 内容 */
+.content {
+	position: relative;
+	padding-bottom: 60px;
+}
+/* 右侧浮标 */
+.contact {
+	position: absolute;
+	right: -59px;
+	top: 257px;
+	width: 48px;
+}
+.contact .cell {
+	height: 48px;
+	border-radius: 2px;
+	align-items: center;
+	background-color: #6d91cf;
+	margin-bottom: 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.contact .cell.wechat {
+	background-image: url(../images/wechat.png);
+	position: relative;
+}
+.contact .cell.wechat .qrcode {
+	position: absolute;
+	width: 290px;
+	height: 149px;
+	border-radius: 3px;
+	left: -300px;
+}
+.contact .cell.qq {
+	background-image: url(../images/qq.png);
+}
+.contact .cell.message {
+	background-image: url(../images/message.png);
+}
+.contact .cell:hover {
+	background-color: #244496;
+}
 /* end public */
 /******************** 首页 **********************/
 .index {
 	font-size: 14px;
 }
-.index .content {
-	position: relative;
-}
+
 /* 轮播图 */
 .index .swiper-container {
 	width: 100%;
@@ -259,53 +298,21 @@ footer {
 	text-overflow: ellipsis;
 	max-height: 60px;
 }
-.index {
-	/*position: relative;*/
-}
-.index .content {
-	padding-bottom: 60px;
-}
 
-.index .contact {
-	position: absolute;
-	right: -59px;
-	top: 257px;
-	width: 48px;
-}
-.index .contact .cell {
-	height: 48px;
-	border-radius: 2px;
-	align-items: center;
-	background-color: #6d91cf;
-	margin-bottom: 3px;
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
-}
-.index .contact .cell.wechat {
-	background-image: url(../images/wechat.png);
-}
-.index .contact .cell.qq {
-	background-image: url(../images/qq.png);
-}
-.index .contact .cell.message {
-	background-image: url(../images/message.png);
-}
-.index .contact .cell:hover {
-	background-color: #244496;
-}
 /****************************** 研究成果 *****************/
 .research .content {
 	background: #fff;
 	margin-top: 44px;
 	padding: 30px 37px;
 	box-sizing: border-box;
+	margin-bottom: 60px;
 }
 .research .content .con_l {
 	width: 789px;
 }
 .research .content .con_r {
 	width: 248px;
+	padding-top: 54px;
 }
 .research h1 {
 	font-size: 18px;
@@ -357,6 +364,12 @@ footer {
 	padding: 30px 0;
 	border-bottom: 1px solid #f0f0f0;
 }
+.research .results .item:last-child {
+	border: none;
+}
+.research .results .item_r {
+	width: 678px;
+}
 .research .results .item .pic_wrap {
 	display: inline-block;
 	width: 81px;
@@ -364,4 +377,93 @@ footer {
 	background-position: center;
 	background-size: cover;
 	border-radius: 8px;
+}
+.research .results .item .title {
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.research .results .item .intro {
+	font-size: 14px;
+	color: #333;
+	line-height: 24px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 48px;
+}
+.research .results .item .info {
+	font-size: 14px;
+	color: #999;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.research .results .item .detail {
+	width: 85px;
+	height: 30px;
+	display: inline-block;
+	line-height: 30px;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 3px;
+	border: 1px solid #e7e7e7;
+	background: #f6f6f6;
+	font-size: 13px;
+	color: #333;
+}
+/* 分页 */
+.research .pager {
+	text-align: center;
+	align-items: center;
+}
+.research .pager .page_btn {
+	display: inline-block;
+	padding: 0 10px;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid #e7e7e7;
+	font-size: 14px;
+	color: #244496;
+	margin-right: 10px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.research .pager .page_btn.current {
+	border: none;
+	color: #1a1a1a;
+	font-weight: bold;
+}
+.research .pager .page_btn:hover {
+	background: #eff4fb;
+	border-color: #adc3ea;
+}
+.research .pager .page_list {
+	display: inline-block;
+}
+.research .pager .page_list .page_btn {
+	font-size: 12px;
+}
+.research .txt_gray {
+	font-size: 13px;
+	color: #999;
+	line-height: 22px;
+}
+.research .txt_red {
+	font-size: 13px;
+	color: #e55355;
+	line-height: 22px;
+}
+.research .request_btn {
+	display: block;
+	background: #244496;
+	height: 44px;
+	line-height: 44px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 30px;
 }
