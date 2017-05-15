@@ -29,6 +29,27 @@
 		<div class="clearfix">
 			<div class="fl con_l">
 				<h1>会议活动</h1>
+				<div class="options_wrap">
+					<ul class="options">
+						<li class="active">全部</li>
+						<li>学术著作</li>
+						<li>技术专利</li>
+						<li>软件著作</li>
+						<li>硬件发明</li>
+						<li>其他</li>
+					</ul>
+					<!-- 搜索框 -->
+					<input type="text" placeholder="搜索" class="search">
+				</div>
+				<!-- 搜索结果 -->
+				<div class="results">
+					<div class="item clearfix">
+						<div class="fl">
+							<div class="pic_wrap" style="background-image: url(static/images/result_pic.png);"></div>
+						</div>
+						<div class="fr"></div>
+					</div>
+				</div>
 			</div>
 			<div class="fr con_r"></div>
 		</div>
@@ -41,6 +62,9 @@
 </html>
 <script>
 	$(function() {
-		
+		// 类别切换
+		$(".options li").live('click', function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
 	});
 </script>
