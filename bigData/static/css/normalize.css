@@ -62,7 +62,9 @@ main { /* 1 */
  */
 
 figure {
-  margin: 1em 40px;
+  /*margin: 1em 40px;*/
+  margin: 0;
+  line-height: 1;
 }
 
 /**

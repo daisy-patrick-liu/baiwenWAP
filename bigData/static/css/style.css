@@ -159,6 +159,14 @@ footer {
 .feedback button.btn_cancel {
 	background: #ebd1d2;
 }
+/* 带红色左边边框的h1 */
+.myh1 {
+	font-size: 18px;
+	color: #1a1a1a;
+	padding-left: 10px;
+	border-left: 4px solid #e55355;
+	margin-bottom: 28px;
+}
 /* end public */
 /******************** 首页 **********************/
 .index {
@@ -393,13 +401,7 @@ footer {
 	width: 248px;
 	padding-top: 54px;
 }
-.research h1 {
-	font-size: 18px;
-	color: #1a1a1a;
-	padding-left: 10px;
-	border-left: 4px solid #e55355;
-	margin-bottom: 28px;
-}
+
 .research ul.options, .research ul.options>li {
 	display: inline-block;
 }
@@ -545,4 +547,87 @@ footer {
 	text-align: center;
 	font-size: 18px;
 	margin-top: 30px;
+}
+/***********************************研究成果-详情************************/
+.research_detail .content {
+    background: #fff;
+    margin-top: 44px;
+    padding: 30px 37px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+.research_detail .con_l {
+	width: 810px;
+}
+.research_detail .con_r {
+	width: 248px;
+}
+.research_detail .figure_r {
+	width: 659px;
+}
+.research_detail .figure_r .name {
+	font-size: 18px;
+	color: #e55355;
+	margin-bottom: 24px;
+}
+.research_detail .figure_r .intro {
+	font-size: 13px;
+	color: #999;
+	line-height: 24px;
+}
+.research_detail .article {
+	font-size: 14px;
+	color: #1a1a1a;
+	line-height: 25px;
+	text-align: justify;
+}
+.research_detail .article p {
+	text-indent: 2em;
+	margin-bottom: 35px;
+}
+.research_detail .qrbox {
+	padding: 28px 0;
+	text-align: center;
+	align-items: center;
+	border: 1px solid #e9e9e9;
+	margin-bottom: 9px;
+}
+.research_detail .qrbox img {
+	margin-bottom: 10px;
+}
+.research_detail .qrbox .txt {
+	font-size: 12px;
+	color: #1a1a1a;
+	line-height: 20px;
+}
+.research_detail .btns {
+	margin-bottom: 10px;
+}
+.research_detail .btns button {
+	display: block;
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	border: 1px solid #e9e9e9;
+	background: #f6f6f6;
+	text-align: center;
+	font-size: 14px;
+	color: #1a1a1a;
+	cursor: pointer;
+}
+.research_detail .btns button:hover {
+	box-shadow: inset 0 0 10px #d9d9d9;
+}
+.research_detail button.backward {
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	background: #244496;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+}
+.research_detail button.backward:hover {
+	box-shadow: 0 0 10px #244496;
 }
