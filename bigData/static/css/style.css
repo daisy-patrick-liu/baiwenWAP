@@ -69,16 +69,95 @@ footer {
 	width: 290px;
 	height: 149px;
 	border-radius: 3px;
-	left: -300px;
+	left: -289px;
+	z-index: 99;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 7px;
+	border: 1px solid #c7c7c7;
+	border-radius: 3px;
+	box-shadow: -2px 3px 8px #c7c7c7;
+}
+.contact .cell.wechat .qrcode .ttl {
+	font-size: 14px;
+	color: #1a1a1a;
+	margin-top: 37px;
+	margin-bottom: 10px;
+}
+.contact .qrcode .texts li {
+	color: #999;
+	font-size: 14px;
+	line-height: 24px;
+}
+.contact .qrcode .texts li:before {
+	display: inline-block;
+	content: "·";
+	font-size: 30px;
+	color: #e55355;
+	margin-right: 11px;
+	vertical-align: text-bottom;
 }
 .contact .cell.qq {
 	background-image: url(../images/qq.png);
+}
+.contact .cell.qq a {
+	display: block;
+	height: 100%;
 }
 .contact .cell.message {
 	background-image: url(../images/message.png);
 }
 .contact .cell:hover {
 	background-color: #244496;
+}
+/* 反馈弹窗 */
+.feedback {
+	padding: 28px 40px;
+}
+.feedback .control_group {
+	margin-bottom: 15px;
+}
+.feedback label {
+	font-size: 14px;
+	color: #1a1a1a;
+	line-height: 36px;
+	margin-right: 20px;
+	vertical-align: top;
+}
+.feedback input[type="text"] {
+	width: 294px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 2px;
+	border: 1px solid #eee;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.feedback textarea {
+	border-radius: 2px;
+	border: 1px solid #eee;
+	width: 294px;
+	resize: none;
+	padding-left: 10px;
+	padding-top: 8px;
+	box-sizing: border-box;
+}
+.feedback button {
+	width: 134px;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	border-radius: 2px;
+	font-size: 18px;
+	color: #fff;
+}
+.feedback button.btn_ok {
+	background: #d33c3e;
+	margin-left: 53px;
+	margin-right: 19px;
+}
+.feedback button.btn_cancel {
+	background: #ebd1d2;
 }
 /* end public */
 /******************** 首页 **********************/

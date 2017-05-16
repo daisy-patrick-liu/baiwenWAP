@@ -237,6 +237,7 @@ select,
 textarea {
   margin: 0;
   outline: none;
+  border: none;
 }
 
 /**
@@ -327,6 +328,7 @@ progress {
 
 textarea {
   overflow: auto;
+  font-family: inherit;
 }
 
 /**
@@ -465,4 +467,8 @@ body {
 
 p {
   margin: 0;
+}
+
+li {
+  list-style: none;
 }
