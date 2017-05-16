@@ -1,9 +1,19 @@
 html,body{padding: 0; margin: 0;}
+.w1180{width: 1180px; margin: 0 auto;}
 
-.index {font-size: 14px;}
-.index header {padding-top: 28px; width: 1180px; margin: 0 auto;}
-.index .nav  {line-height: 60px;}
-.index .nav a {color: #fff; display: inline-block; margin-left: 34px; box-sizing: border-box;}
-.index .nav a.active {border-bottom: 3px solid #e55355;}
+body{font-size: 14px;}
+header {padding-top: 28px; width: 1180px; margin: 0 auto;}
+.nav  {line-height: 60px;}
+.nav a {color: #fff; display: inline-block; margin-left: 34px; box-sizing: border-box;}
+.nav a:hover{color: #e55355;}
+.nav a.active{border-bottom: 3px solid #e55355;}
+.nav a.active:hover{color: white;}
 
-.index footer{width: 100%; height: 46px; line-height: 46px; background: #244496; text-align: center; font-size: 12px; color: #95a5cd; position: absolute; left: 0; bottom: 0;}
+footer{width: 100%; height: 46px; line-height: 46px; background: #244496; text-align: center; font-size: 12px; color: #95a5cd; position: absolute; left: 0; bottom: 0;}
+
+.content .contact{position: absolute; right: -59px; top: 0px; width: 48px;}
+.content .contact .cell {height: 48px; border-radius: 2px; align-items: center; background-color: #6d91cf; margin-bottom: 3px; background-repeat: no-repeat; background-position: center; cursor: pointer; }
+.content .contact .cell.wechat {background-image: url(../images/wechat.png);}
+.content .contact .cell.qq {background-image: url(../images/qq.png);}
+.content .contact .cell.message {background-image: url(../images/message.png);}
+.content .contact .cell:hover {background-color: #244496;}
