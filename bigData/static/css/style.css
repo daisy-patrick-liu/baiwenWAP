@@ -565,48 +565,54 @@ footer {
 	font-size: 18px;
 	margin-top: 30px;
 }
-/***********************************研究成果-详情************************/
-.research_detail .content {
+/***********************************研究成果-详情 & 公告详情************************/
+.detail_page .content {
     background: #fff;
     margin-top: 44px;
     padding: 30px 37px;
     box-sizing: border-box;
     margin-bottom: 60px;
 }
-.research_detail .con_l {
+.detail_page .con_l {
 	width: 810px;
 }
-.research_detail .con_r {
+.detail_page .con_r {
 	width: 248px;
 }
-.research_detail .figure_r {
+.detail_page .figure_r {
 	width: 659px;
 }
-.research_detail .figure_r .name {
+.detail_page .figure_r .name {
 	font-size: 18px;
 	color: #e55355;
 	margin-bottom: 24px;
 }
-.research_detail .figure_r .intro {
+.detail_page .figure_r .intro {
 	font-size: 13px;
 	color: #999;
 	line-height: 24px;
 }
-.research_detail .article {
+.detail_page .article {
 	font-size: 14px;
 	color: #1a1a1a;
 	line-height: 25px;
 	text-align: justify;
 }
-.research_detail .article p {
+.detail_page .article img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.detail_page .article p {
 	text-indent: 2em;
-	margin-bottom: 35px;
+	margin-bottom: 17px;
+	margin-top: 17px;
 }
 
-.research_detail .btns {
+.detail_page .btns {
 	margin-bottom: 10px;
 }
-.research_detail .btns button {
+.detail_page .btns button {
 	display: block;
 	width: 100%;
 	height: 48px;
@@ -618,10 +624,10 @@ footer {
 	color: #1a1a1a;
 	cursor: pointer;
 }
-.research_detail .btns button:hover {
+.detail_page .btns button:hover {
 	box-shadow: inset 0 0 10px #d9d9d9;
 }
-.research_detail button.backward {
+.detail_page button.backward {
 	width: 100%;
 	height: 48px;
 	line-height: 48px;
@@ -631,8 +637,81 @@ footer {
 	font-size: 14px;
 	cursor: pointer;
 }
-.research_detail button.backward:hover {
+.detail_page button.backward:hover {
 	box-shadow: 0 0 10px #244496;
+}
+/* 公告详情特殊样式 */
+.detail_page .htitle {
+	font-size: 36px;
+	color: #1a1a1a;
+	line-height: 42px;
+	text-align: justify;
+	margin-bottom: 26px;
+}
+.detail_page .bullinfo {
+	line-height: 26px;
+	padding-bottom: 17px;
+	border-bottom: 1px solid #ededed;
+	margin-bottom: 40px;
+}
+.detail_page .bullinfo .info_l {
+	font-size: 13px;
+	color: #999;
+}
+button.btn_font {
+	width: 50px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	margin-left: 7px;
+	color: #333;
+	background: transparent;
+	cursor: pointer;
+	font-size: 18px;
+}
+button.btn_font.active {
+	color: #e1322e;
+	border-color: #dd3635;
+}
+.detail_page .share {
+	line-height: 44px;
+}
+.bdshare-button-style0-32 {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.bdshare-button-style0-32 .bds_sqq {
+    background-image: url(../images/social_qq_03.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 .bds_weixin {
+    background-image: url(../images/social_wechat_05.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 .bds_tsina {
+    background-image: url(../images/social_weibo.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 .bds_qzone {
+    background-image: url(../images/social_qzone_15.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 .bds_renren {
+    background-image: url(../images/social_renren_16.png);
+    background-size: contain;
+    background-position: center !important;
+}
+.bdshare-button-style0-32 a:nth-child(7) {
+    background-image: url(../images/social_pyq_18.png);
+    background-size: contain;
+    background-position: center !important;
 }
 /********************** 公告动态 ***********************/
 .bulletin .content {
@@ -657,6 +736,9 @@ footer {
 .bulletin .results li {
 	padding: 24px 0;
 	border-bottom: 1px solid #f0f0f0;
+}
+.bulletin .results li:hover {
+	background-color: #f0f0f0;
 }
 .bulletin .results li .img_wrap {
 	width: 142px;
@@ -691,4 +773,46 @@ footer {
 }
 .bulletin .results li .info .time {
 	margin-right: 16px;
+}
+
+.bulletin .recommend a {
+	display: block;
+	border: 1px solid #e9e9e9;
+	border-bottom: none;
+	padding: 16px;
+}
+.bulletin .recommend a:hover {
+	background-color: #e9e9e9;
+}
+.bulletin .recommend a:last-child {
+	border-bottom: 1px solid #e9e9e9;
+}
+.bulletin .recommend .img_wrap {
+	width: 79px;
+	height: 59px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bulletin .recommend .rec_r {
+	width: 114px;
+}
+.bulletin .recommend .rec_r h1 {
+	font-size: 14px;
+	color: #1a1a1a;
+	margin-bottom: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.bulletin .recommend .rec_r h2 {
+	font-size: 12px;
+	line-height: 20px;
+	color: #999;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 40px;
 }
