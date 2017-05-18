@@ -228,11 +228,11 @@
 .applyVip .progress>span{float: left; display: block; width: 107px; height: 80px; background: url("../images/jiantou.png") center center no-repeat;}
 .applyVip .progress>.sb>span{display: block; width: 100px; height: 68px; margin-bottom: 35px;}
 .applyVip .progress>.sb>p{text-align: center;}
-.applyVip .result{width: 1128px; height: 660px; background: url("../images/dialogK.png") 0 0 no-repeat; margin-top: 48px; margin-bottom: 60px; padding: 43px 15px;}
+.applyVip .result{width: 1128px; height: 660px; background: url("../images/dialogK.png") 0 0 no-repeat; margin-top: 48px; margin-bottom: 60px; padding: 43px 10px;}
 .applyVip .result.d2{background: url("../images/kuang2.png") 10px 0 no-repeat;}
 .applyVip .result>div{overflow: hidden; width: 100%; box-sizing: border-box;}
-.applyVip .result>div>.RSIT{width: 344px; height: 189px; color: rgb(153,153,153); padding: 22px; background: white; border: 1px rgb(233,233,233) solid; box-sizing: border-box; float: left; margin-left: 16px; margin-bottom: 16px;}
-.applyVip .result>div>.RSIT:nth-child(1+3n){margin-left: 0;}
+.applyVip .result>div>.RSIT{width: 344px; height: 189px; color: rgb(153,153,153); padding: 22px; background: white; border: 1px rgb(233,233,233) solid; box-sizing: border-box; float: left; margin-right: 16px; margin-bottom: 16px;}
+.applyVip .result>div>.RSIT:nth-child(3n){margin-right: 0;}
 .applyVip .result>div>.RSIT.active{border: 1px rgb(229,83,85) solid; background: url("../images/gougou.png") right bottom no-repeat; }
 .applyVip .result>div>.RSIT>h3{font-size: 20px; line-height: 22px; color: black; height: 22px; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}
 .applyVip .result>div>.RSIT>p{font-size: 12px; line-height: 25px; margin-top: 8px; height: 100px; overflow: hidden;}
