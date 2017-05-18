@@ -130,6 +130,8 @@ $(function() {
 	var unit = 2; // 增加/缩小单位
 	var size_max = 20;
 	var size_min = 12;
+	var ratio = 1; // 放大比率，用于相应行高
+	var lineH = parseInt($(".article").css("line-height").slice(0, -2));
 	$(".btn_font").click(function(event) {
 		if ($(this).hasClass('font_enlarge')) {
 			// 放大
@@ -144,6 +146,9 @@ $(function() {
 			}
 		}
 		$(".article").css({"font-size": size_current+"px"});
+		ratio = size_current / size_original;
+		$(".article").css({"line-height": lineH*ratio+"px"});
+		$(".article").css({"line-height": +"px"});
 		if (size_current > size_original) {
 			$(".font_enlarge").addClass('active').siblings().removeClass('active');
 		} else if (size_current < size_original) {

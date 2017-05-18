@@ -7,6 +7,22 @@
 	font-family: 'fzch';
 	src: url(../fonts/FZZCHJW-GB1-0.otf);
 }
+/* iconfont */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont/iconfont.eot');
+  src: url('../fonts/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/iconfont/iconfont.woff') format('woff'),
+  url('../fonts/iconfont/iconfont.ttf') format('truetype'),
+  url('../fonts/iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  /*-webkit-text-stroke-width: 0.2px;*/
+  -moz-osx-font-smoothing: grayscale;
+}
 a:hover {
 	color: #e55355 !important;
 }
@@ -184,6 +200,10 @@ footer {
 	margin-right: 9px;
 	box-sizing: border-box;
 	cursor: pointer;
+}
+.filter ul.options>li:hover {
+	border-color: #e55355;
+	color: #e55355;
 }
 .filter ul.options>li.active {
 	color: #fff;
@@ -531,7 +551,7 @@ footer {
 	line-height: 24px;
 	margin-bottom: 20px;
 }
-.research .results .item .detail {
+.results .item .detail {
 	width: 85px;
 	height: 30px;
 	display: inline-block;
@@ -544,18 +564,22 @@ footer {
 	font-size: 13px;
 	color: #333;
 }
+.results .item .detail:hover {
+	box-shadow: inset 0 0 10px #e7e7e7;
+	color: #333 !important;
+}
 
-.research .txt_gray {
+.txt_gray {
 	font-size: 13px;
 	color: #999;
 	line-height: 22px;
 }
-.research .txt_red {
+.txt_red {
 	font-size: 13px;
 	color: #e55355;
 	line-height: 22px;
 }
-.research .request_btn {
+.request_btn {
 	display: block;
 	background: #244496;
 	height: 44px;
@@ -564,6 +588,10 @@ footer {
 	text-align: center;
 	font-size: 18px;
 	margin-top: 30px;
+}
+.request_btn:hover {
+	box-shadow: 0 0 10px #244496;
+	color: #fff !important;
 }
 /***********************************研究成果-详情 & 公告详情************************/
 .detail_page .content {
@@ -815,4 +843,138 @@ button.btn_font.active {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-height: 40px;
+}
+/************************** 关于我们 ************************/
+.aboutus .con_l {
+	width: 164px;
+}
+.aboutus .con_r {
+	width: 880px;
+}
+.aboutus .content {
+    background: #fff;
+    margin-top: 44px;
+    padding: 30px 37px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+/* 左侧导航 */
+.aboutus .nav li {
+	font-size: 16px;
+	color: #1a1a1a;
+	line-height: 48px;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.aboutus .nav li i:first-child {
+	margin-right: 20px;
+}
+.aboutus .nav li.active {
+	color: #e55355;
+}
+
+.aboutus .content_box {
+	height: 880px;
+	overflow: auto;
+	font-size: 14px;
+	color: #1a1a1a;
+	line-height: 25px;
+	padding: 0 35px;
+}
+.aboutus .content_box h1 {
+	font-size: 24px;
+	color: #1a1a1a;
+	margin-bottom: 38px;
+}
+.aboutus .content_box img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.aboutus .content_box p {
+	text-indent: 2em;
+    margin-bottom: 17px;
+    margin-top: 17px;
+}
+.aboutus .tables {
+	position: relative;
+	width: 100%;
+}
+.aboutus .tables table {
+	width: 398px;
+	border-collapse: collapse;
+}
+.aboutus .tables table:last-child {
+	position: absolute;
+	top: 0;
+	left: 400px;
+}
+.aboutus .tables table caption {
+	font-weight: bold;
+	line-height: 80px;
+}
+.aboutus .tables table tr {
+	height: 38px;
+	line-height: 38px;
+	text-align: left;
+}
+.aboutus .tables table tbody>tr:nth-child(odd) {
+	background-color: #f6f6f6;
+}
+/****************************** 会议活动 ******************************/
+.meeting .content {
+    background: #fff;
+    margin-top: 44px;
+    padding: 30px 37px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+.meeting .content .con_l {
+    width: 789px;
+}
+.meeting .content .con_r {
+    width: 248px;
+    padding-top: 54px;
+}
+.meeting .results .item_r {
+    width: 569px;
+}
+.meeting .results .item {
+    padding: 30px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.meeting .results .item:last-child {
+    border: none;
+}
+.meeting .results .item .pic_wrap {
+    display: inline-block;
+    width: 188px;
+    height: 141px;
+    background-position: center;
+    background-size: cover;
+}
+.meeting .results .item .title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.meeting .results .item .info {
+	font-size: 14px;
+	color: #999;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.meeting .results .info p {
+	padding-left: 28px;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+}
+.meeting .results .info p.time {
+	background-image: url(../images/calinder.png);
+}
+.meeting .results .info p.location {
+	background-image: url(../images/location.png);
 }
