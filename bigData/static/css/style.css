@@ -279,7 +279,9 @@ footer {
 .index {
 	font-size: 14px;
 }
-
+.index .content {
+	margin-top: 44px;
+}
 /* 轮播图 */
 .index .swiper-container {
 	width: 100%;
@@ -499,7 +501,7 @@ footer {
 	margin-top: 44px;
 	padding: 30px 37px;
 	box-sizing: border-box;
-	margin-bottom: 60px;
+	margin-bottom: 100px;
 }
 .research .content .con_l {
 	width: 789px;
@@ -600,7 +602,7 @@ footer {
     margin-top: 44px;
     padding: 30px 37px;
     box-sizing: border-box;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 .detail_page .con_l {
 	width: 810px;
@@ -748,7 +750,7 @@ button.btn_font.active {
     margin-top: 44px;
     padding: 30px 37px;
     box-sizing: border-box;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 .bulletin .con_l {
 	width: 810px;
@@ -857,7 +859,7 @@ button.btn_font.active {
     margin-top: 44px;
     padding: 30px 37px;
     box-sizing: border-box;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 /* 左侧导航 */
 .aboutus .nav li {
@@ -929,7 +931,7 @@ button.btn_font.active {
     margin-top: 44px;
     padding: 30px 37px;
     box-sizing: border-box;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 .meeting .content .con_l {
     width: 789px;
