@@ -32,6 +32,7 @@ header {
 }
 header .nav  {
 	line-height: 60px;
+	font-size: 16px;
 }
 header .nav a {
 	color: #fff;
@@ -63,7 +64,7 @@ footer {
 .contact {
 	position: absolute;
 	right: -59px;
-	top: 257px;
+	top: 0;
 	width: 48px;
 }
 .contact .cell {
