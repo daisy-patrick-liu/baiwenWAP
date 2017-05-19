@@ -586,7 +586,7 @@ footer{width: 100%; height: 46px; line-height: 46px; text-align: center; font-si
 	margin-top: 30px;
 }
 .request_btn:hover {
-	box-shadow: 0 0 10px #244496;
+	background: rgb(30,56,114);
 	color: #fff !important;
 }
 /***********************************研究成果-详情 & 公告详情************************/
