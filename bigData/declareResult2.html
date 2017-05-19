@@ -105,7 +105,7 @@
                         <small>(最多3张)</small>
                     </span>
        <!--             <div class="imgCont">
-                        <input type="file" name="file0" id="0"/>
+                        <input type="file" name="file0" id="0" accept="image/jpeg, image/png,image/bmp"/>
                         <label for="0"></label>
                         <img src="static/images/index_bg.jpg" alt="img"/>
                         <div class="imgShadow">
@@ -199,7 +199,7 @@
                 }
             });
             var fileHtml='<div class="imgCont">\
-                <input type="file" name="file'+num+'" id="'+num+'"/>\
+                <input type="file" name="file'+num+'" id="'+num+'" accept="image/jpeg, image/png,image/bmp"/>\
                 <label for="'+num+'"></label>\
                 </div>';
             $(".ral").append(fileHtml);
