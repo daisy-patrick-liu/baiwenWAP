@@ -145,17 +145,20 @@
 .report .result>div>p>a{color:rgb(229,83,85); display: inline-block; padding-right: 15px; background: url("../images/xiazaixixi.png") right center no-repeat;}
 .report form{margin-top: 10px;}
 .report form .inlineB{overflow: hidden;}
+.report form .inlineB>div{float:left;}
 .report form .inlineB>.ral{width: 660px; height: 220px; overflow: hidden;}
-.report .inlineB>.ral>span{display: inline-block; vertical-align: top; margin-right: 10px; line-height: 14px;}
-.report .inlineB>.ral>div{display: inline-block; vertical-align: top; width: 150px; height: 220px; margin-right: 20px; position: relative; overflow: hidden;}
-.report .inlineB>.ral>div>.imgShadow{position: absolute; left: 0; top: 0; z-index: 10; width: 100%; height: 100%; background: rgba(0,0,0,0.3); display: none;}
-.report .inlineB>.ral>div .myBtn{width: 76px; margin: 0 auto; color: white; cursor: pointer;}
+.report .inlineB>.example>span,.report .inlineB>.ral>span{display: inline-block; vertical-align: top; margin-right: 10px; line-height: 14px;}
+.report .inlineB>.example>div,.report .inlineB>.ral>div{display: inline-block; vertical-align: top; width: 150px; height: 220px; margin-right: 20px; position: relative; overflow: hidden;}
+.report .inlineB>.example>div>.imgShadow,.report .inlineB>.ral>div>.imgShadow{position: absolute; left: 0; top: 0; z-index: 10; width: 100%; height: 100%; background: rgba(0,0,0,0.3); display: none;}
+.report .inlineB>.example>div .myBtn,.report .inlineB>.ral>div .myBtn{width: 76px; margin: 0 auto; color: white; cursor: pointer;}
+.report .inlineB>.example>div .myBtn{margin-top: 98px;}
 .report .inlineB>.ral>div .myBtn{margin-top: 82px;}
-.report .inlineB>.ral>div .myBtn>span{display: block; border-radius: 2px; border: 1px white solid; text-align: center; padding: 5px 0; margin-bottom: 5px;}
-.report .inlineB>.ral>div>img{display: block; width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 9;}
+.report .inlineB>.example>div .myBtn>span,.report .inlineB>.ral>div .myBtn>span{display: block; border-radius: 2px; border: 1px white solid; text-align: center; padding: 5px 0; margin-bottom: 5px;}
+.report .inlineB>.example>div>img,.report .inlineB>.ral>div>img{display: block; width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 9;}
 .report .inlineB>.ral>div>label{position: absolute; left: 0; top:0; z-index: 3; display: block; width: 100%; height: 100%; background: white;
     border: 1px rgb(233,233,233) solid; box-sizing: border-box; background-image: url("../images/jiajia.png"); background-position: center center; background-repeat: no-repeat;}
-.report .inlineB>.ral>div>input{position: absolute; left: 0; top:0; z-index: 1;}
+.report .inlineB>.example>div>input,.report .inlineB>.ral>div>input{position: absolute; left: 0; top:0; z-index: 1;}
+.report .inlineB>.ral>span{margin-left: 64px;}
 .report .inlineB>.ral>span>small{display: block; margin-top: 10px; color: rgb(153,153,153); font-size: 12px;}
 .report .inP{margin-top: 24px;}
 .report .inP>label{display: inline-block; width: 64px;  height: 45px; line-height: 45px; vertical-align: middle;}
@@ -305,48 +308,6 @@
 .applyVip2 .r2>.info>div>a{color: rgb(229,83,85);}
 .applyVip2 .r2>.info>div>img{width: 156px; height: 230px; margin-right: 5px;}
 .applyVip2 .r2>.info>div>span{color: rgb(153,153,153);}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

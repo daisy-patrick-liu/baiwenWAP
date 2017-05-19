@@ -6,6 +6,12 @@ $(function(){
 		"width":parseInt($("html").css("width"))+"px",
 		"height":parseInt($("html").css("height"))+"px"
 	});
+	$(window).resize(function(){
+		$("#bgImg").css({
+			"width":parseInt($("html").css("width"))+"px",
+			"height":parseInt($("html").css("height"))+"px"
+		});
+	});
    $(window).scroll(function(){
        $(".contact").css("top",$(window).scrollTop()+"px");
    }) ;
