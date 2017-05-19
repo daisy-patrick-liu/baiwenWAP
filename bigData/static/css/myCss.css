@@ -53,7 +53,7 @@
 .declareResult .inlineB>.ral>span{margin-left: 64px;}
 .declareResult .inlineB>.ral>span>small{display: block; margin-top: 10px; color: rgb(153,153,153); font-size: 12px;}
 .declareResult .inP{margin-top: 24px;}
-.declareResult .inP>label{display: inline-block; width: 64px;  height: 45px; line-height: 45px; vertical-align: middle;}
+.declareResult .inP>label{display: inline-block; width: 52px;  height: 45px; line-height: 45px; vertical-align: middle;}
 .declareResult .inP>input{display: inline-block; width: 488px;  height: 44px; line-height: 45px; vertical-align: middle; border: 1px rgb(233,233,233) solid; padding: 0 20px;}
 .declareResult form>button{display: block; width: 150px; height: 50px; line-height: 50px; text-align: center; font-size: 18px; color: white; background: rgb(36,68,150); border: none; margin: 0 auto; margin-top: 44px;}
 
@@ -162,7 +162,7 @@
 .report .inlineB>.ral>span{margin-left: 64px;}
 .report .inlineB>.ral>span>small{display: block; margin-top: 10px; color: rgb(153,153,153); font-size: 12px;}
 .report .inP{margin-top: 24px;}
-.report .inP>label{display: inline-block; width: 64px;  height: 45px; line-height: 45px; vertical-align: middle;}
+.report .inP>label{display: inline-block; width: 52px;  height: 45px; line-height: 45px; vertical-align: middle;}
 .report .inP>input{display: inline-block; width: 488px;  height: 44px; line-height: 45px; vertical-align: middle; border: 1px rgb(233,233,233) solid; padding: 0 20px;}
 .report form>button{display: block; width: 150px; height: 50px; line-height: 50px; text-align: center; font-size: 18px; color: white; background: rgb(36,68,150); border: none; margin: 0 auto; margin-top: 44px;}
 
@@ -266,7 +266,7 @@
 .applyVip .inlineB>.ral>span{margin-left: 64px;}
 .applyVip .inlineB>.ral>span>small{display: block; margin-top: 10px; color: rgb(153,153,153); font-size: 12px;}
 .applyVip .inP{margin-top: 24px;}
-.applyVip .inP>label{display: inline-block; width: 64px;  height: 45px; line-height: 45px; vertical-align: middle;}
+.applyVip .inP>label{display: inline-block; width: 52px;  height: 45px; line-height: 45px; vertical-align: middle;}
 .applyVip .inP>input{display: inline-block; width: 488px;  height: 44px; line-height: 45px; vertical-align: middle; border: 1px rgb(233,233,233) solid; padding: 0 20px;}
 .applyVip form>button{display: block; width: 150px; height: 50px; line-height: 50px; text-align: center; font-size: 18px; color: white; background: rgb(36,68,150); border: none; margin: 0 auto; margin-top: 44px;}
 
