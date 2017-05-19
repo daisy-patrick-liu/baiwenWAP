@@ -246,5 +246,19 @@
 			console.log(eq);
 			$(".con_r .content_box").eq(eq).show().siblings().hide();
 		});
+
+		// 左侧导航固定
+		$(window).scroll(function() {
+			if ($(window).scrollTop() >= 197) {
+				$("ul.nav").css({
+					position: 'fixed',
+					top: '0'
+				});
+			} else {
+				$("ul.nav").css({
+					position: 'initial'
+				});
+			}
+		});
 	});
 </script>

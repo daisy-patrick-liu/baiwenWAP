@@ -8,7 +8,7 @@ header {padding-top: 28px; width: 1180px; margin: 0 auto; font-size: 16px;}
 .nav a:hover{color: #e55355;}
 .nav a.active{border-bottom: 3px solid #e55355;}
 
-footer{width: 100%; height: 46px; line-height: 46px; text-align: center; font-size: 12px; color: #95a5cd; }
+footer{width: 100%; height: 46px; line-height: 46px; text-align: center; font-size: 12px; color: #95a5cd; background: #244496;}
 #bgImg{background: url(../images/index_bg.jpg) no-repeat; background-size: cover;  min-height: 100%; position: fixed; left: 0; top: 0; z-index: -1;}
 /* 右侧浮标 */
 .contact {
