@@ -52,10 +52,11 @@
     <div class="result">
         <div>
             <p>下载：<a href="javascript:void(0)">点此下载《国家大数据专业委员会软件著作成果申报表模板.doc》</a></p>
-            <span>上传word文件：</span><a href="javascript:void(0)">国家大数据专业委员会活动代发服务申请.DOC<span>删除</span></a>
+            <span>上传word文件：</span><a href="javascript:void(0)" id="filePointed"><label for="hiddenF">点击上传word文件</label></a>
             <p>要求：请上传加盖企业鲜章后的申请书彩色扫描件或高清照片（格式可为jpg、png、BMP），文件大小在2M以内</p>
         </div>
         <form action="#">
+            <input type="file" id="hiddenF" onchange="fileC(this);" hidden/>
             <div class="inlineB">
                 <div class="example">
                     <span>
@@ -181,6 +182,28 @@
             });
         }
     });
+    function fileC(ele){
+        var changeV=$(ele).val(),myN=changeV.substring(changeV.lastIndexOf("\\")+1);
+        $("#filePointed").find("label").text(myN);
+        if($("#filePointed").find("label").text()!=""){
+            if($("#filePointed").find("span").length==0){
+                $("#filePointed").append("<span>删除</span>");
+            }
+            $("#filePointed").find("span").click(function(){
+                $("#filePointed").find("label").text("点击上传word文件");
+                $(this).remove();
+                var file=$("#hiddenF")[0];
+                if (file.outerHTML) {// for IE, Opera, Safari, Chrome
+                    file.outerHTML = file.outerHTML;
+                } else { // FF(包括3.搜索5)
+                    file.value = "";
+                }
+            });
+        }else{
+            $("#filePointed").find("label").text("点击上传word文件");
+            $("#filePointed").find("span").remove();
+        }
+    }
     function getObjectURL(file) {
         var url = null;
         if (window.createObjectURL != undefined) {
