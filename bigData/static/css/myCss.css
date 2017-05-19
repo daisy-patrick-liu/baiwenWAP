@@ -139,8 +139,9 @@
 .report .result>div>.RSIT>p{font-size: 12px; line-height: 25px; margin-top: 8px; height: 100px; overflow: hidden;}
 .report .result>a{display: block; text-decoration: none; width: 240px; height: 50px; line-height: 50px; text-align: center; font-size: 18px; color: white; background: rgb(36,68,150); border: none; margin: 0 auto; margin-top: 44px;}
 .report .result>a:hover,.report form>a:hover{background: rgb(30,56,114);}
-.report .result>div>a{display: inline-block; color:rgb(229,83,85); text-decoration: underline; text-decoration: none; margin-bottom: 25px; padding-right: 15px; background: url("../images/chacha.png") right center no-repeat;}
-.report .result>div>a>span{margin-left: 20px;}
+.report .result>div>a{display: inline-block; color:rgb(229,83,85); text-decoration: underline; text-decoration: none; margin-bottom: 25px;}
+.report .result>div>a>label{cursor: pointer;}
+.report .result>div>a>span{margin-left: 20px; display: inline-block; background: url("../images/chacha.png") right center no-repeat; padding-right: 15px;}
 .report .result>div>p{margin-bottom: 20px;}
 .report .result>div>p>a{color:rgb(229,83,85); display: inline-block; padding-right: 15px; background: url("../images/xiazaixixi.png") right center no-repeat;}
 .report form{margin-top: 10px;}
