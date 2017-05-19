@@ -2,7 +2,10 @@
    右侧浮标相关js
 */
 $(function(){
-
+	$("#bgImg").css({
+		"width":parseInt($("html").css("width"))+"px",
+		"height":parseInt($("html").css("height"))+"px"
+	});
    $(window).scroll(function(){
        $(".contact").css("top",$(window).scrollTop()+"px");
    }) ;
