@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<title>会员</title>
+<style type="text/css" media="screen">
+    .header .head-box {
+        background: none;
+    }
+    a.btn_edit {
+        display: inline-block;
+        width: 2.506667rem;
+        height: 0.72rem;
+        line-height: 0.72rem;
+        border-radius: 0.133333rem;
+        color: #1a1a1a;
+        /*border: 1px solid #1a1a1a;*/
+        background: url(images/editIcn_03.png) no-repeat;
+        background-size: 0.333333rem 0.36rem;
+        background-position: 0.36rem 0.16rem;
+        padding-left: 0.853333rem;
+        position: absolute;
+        right: 0.266667rem;
+        top: 0.266667rem;
+        box-sizing: border-box;
+    }
+    .font12 {
+        font-size: 12px;
+    }
+    [data-dpr="2"] .font12 {
+        font-size: 24px;
+    }
+    [data-dpr="3"] .font12 {
+        font-size: 36px;
+    }
+
+    .font14 {
+        font-size: 14px;
+    }
+    [data-dpr="2"] .font14 {
+        font-size: 28px;
+    }
+    [data-dpr="3"] .font14 {
+        font-size: 42px;
+    }
+
+    .font18 {
+        font-size: 18px;
+    }
+    [data-dpr="2"] .font18 {
+        font-size: 36px;
+    }
+    [data-dpr="3"] .font18 {
+        font-size: 54px;
+    }
+
+    div.basic {
+        padding-top: 1.12rem;
+    }
+    .avaster {
+        margin: 0 auto;
+        width: 1.6rem;
+        height: 1.6rem;
+        border: 0.133333rem solid #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        line-height: 1.6rem;
+        text-align: center;
+        padding: 0;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+    }
+    .avaster img {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    div.basicInfo {
+        text-align: center;
+        color: #1a1a1a;
+        margin-top: 0.4rem;
+    }
+    span.nick {
+        margin-right: 0.533333rem;
+    }
+    div.bgPic {
+        height: 1.813333rem;
+        background: url(images/usercenter_bg_11.png) no-repeat;
+        background-size: cover;
+    }
+    .form-wrap {
+        padding-top: 0;
+    }
+    .left-mes .iconfont {
+        margin-right: 0.333333rem;
+    }
+</style>
+</head>
+
+<body class="set">
+    
+    <!-- 头部 -->
+    <div class="header">
+        <div class="head-box">
+            <div class="ico-wrap">
+                <i class="back"></i>
+            </div>
+            <a class="btn_edit font12" href="#">编辑资料</a>
+        </div>
+    </div>
+    <!-- 头像等基本信息 -->
+    <div class="basic">
+        <div class="avaster" style="background-image: url(images/avaster_07.png)">
+        </div>
+        <div class="basicInfo font14">
+            <span class="nick">昵称：ncabb7b</span>
+            <span class="mobile">手机号：15925324223</span>
+        </div>
+        <div class="bgPic"></div>
+    </div>
+    <div class="form-wrap">
+        <form action="">
+            <div class="item">
+                <a class="list info" href="">
+                    <div class="show-input">
+                        <span class="left-mes">会员信息</span>
+                        <p class="right-mes"><i class="right-arr"></i></p>
+                    </div>
+                </a>
+                <a class="list cache" href="">
+                    <div class="show-input">
+                        <span class="left-mes">清除缓存</span>
+                        <p>
+                            <span style="color: #333">12.11M</span>
+                            <i class="right-arr"></i>
+                        </p>
+                    </div>
+                </a>
+                <a class="list feedback" href="">
+                    <div class="show-input">
+                        <span class="left-mes">意见反馈</span>
+                        <p class="right-mes"><i class="right-arr"></i></p>
+                    </div>
+                </a>
+                <a class="list collect" href="">
+                    <div class="show-input">
+                        <span class="left-mes">我的收藏</span>
+                        <p class="right-mes"><i class="right-arr"></i></p>
+                    </div>
+                </a>
+                <a class="list broad" href="">
+                    <div class="show-input">
+                        <span class="left-mes">我的推广</span>
+                        <p class="right-mes"><i class="right-arr"></i></p>
+                    </div>
+                </a>
+                <a class="list setting" href="">
+                    <div class="show-input">
+                        <span class="left-mes">设置</span>
+                        <p class="right-mes"><i class="right-arr"></i></p>
+                    </div>
+                </a>
+            </div>
+        </form>
+    </div>
+            <div class="footer">
+        <ul class="foot-box">
+            <li>
+                <i class="ico view-ico"></i>
+                <p>时政</p>
+            </li>
+            <li>
+                <i class="ico bookstore-ico"></i>
+                <p>书店</p>
+            </li>
+            <li>
+                <i class="ico book-frame-ico"></i>
+                <p>书架</p>
+            </li>
+            <li class="active">
+                <i class="ico person-ico"></i>
+                <p>会员</p>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+
+</html>
+<script>
+    $(function() {
+        $(".list").on("touchstart", function() {
+            $(this).css('background-color', '#f7f7f7');
+        })
+    })
+</script>
