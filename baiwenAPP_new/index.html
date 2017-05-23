@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="package/dropload/dropload.css">
+<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="package/dropload/dropload.min.js"></script>
+<title>首页</title>
+</head>
+
+<body class="index">
+    <!-- 头部 -->
+    <div class="header">
+        <div class="head-box">
+            <div class="logo ico-wrap">
+                <i class="ico"></i>
+            </div>
+            <div class="title">
+                时政日报
+            </div>
+            <div class="search-ico ico-wrap">
+                <i class="ico"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!-- banner -->
+        <a class="banner_wrap" href="#" style="background-image: url(images/index_banner.jpg);">
+            <div class="title_wrap">
+                <h1>李克强举行仪式欢迎柬埔寨首相访华李克强举行仪式欢迎柬埔寨首相访华</h1>
+                <div class="info">
+                    <span class="date">2017-05-16</span>
+                    <span class="source">来自：百问在线</span>
+                </div>
+            </div>
+        </a>
+        <!-- 推荐列表 -->
+        <div class="list_wrap">
+            <div class="list">
+                <a href="#">
+                    <div class="content">
+                        <div class="img_wrap" style="background-image: url(images/index_pic.jpg);"></div>
+                        <div class="desc">
+                            <h2>国务院办公厅关于加快推进“多证合一”改革的指导意见改革的指导意见</h2>
+                            <div class="info">
+                                <span class="date">2017-05-16</span>
+                                <span class="source">来自：百问在线</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="content">
+                        <div class="img_wrap" style="background-image: url(images/index_pic.jpg);"></div>
+                        <div class="desc">
+                            <h2>国务院办公厅关于加快推进“多证合一”改革的指导意见改革的指导意见</h2>
+                            <div class="info">
+                                <span class="date">2017-05-16</span>
+                                <span class="source">来自：百问在线</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="content">
+                        <div class="img_wrap" style="background-image: url(images/index_pic.jpg);"></div>
+                        <div class="desc">
+                            <h2>机器人 带你体验未来“智能+”</h2>
+                            <div class="info">
+                                <span class="date">2017-05-16</span>
+                                <span class="source">来自：百问在线</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="foot-box">
+            <li class="active">
+                <i class="ico view-ico"></i>
+                <p>时政</p>
+            </li>
+            <li>
+                <i class="ico bookstore-ico"></i>
+                <p>书店</p>
+            </li>
+            <li>
+                <i class="ico book-frame-ico"></i>
+                <p>书架</p>
+            </li>
+            <li>
+                <i class="ico person-ico"></i>
+                <p>会员</p>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+$(function() {
+    // 列表无限加载: 接口URL需要替换
+    // 页数
+    var page = 0;
+    // 每页展示5个
+    var size = 5;
+
+    // dropload
+    /*$('.list_wrap').dropload({
+        scrollArea : window,
+        loadDownFn : function(me){
+            page++;
+            // 拼接HTML
+            var result = '';
+            $.ajax({
+                type: 'GET',
+                url: 'http://ons.me/tools/dropload/json.php?page='+page+'&size='+size,
+                dataType: 'json',
+                success: function(data){
+                    var arrLen = data.length;
+                    if(arrLen > 0){
+                        for(var i=0; i<arrLen; i++){
+                            result +=   '<a class="item opacity" href="'+data[i].link+'">'
+                                            +'<img src="'+data[i].pic+'" alt="">'
+                                            +'<h3>'+data[i].title+'</h3>'
+                                            +'<span class="date">'+data[i].date+'</span>'
+                                        +'</a>';
+                        }
+                    // 如果没有数据
+                    }else{
+                        // 锁定
+                        me.lock();
+                        // 无数据
+                        me.noData();
+                    }
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        // 插入数据到页面，放到最后面
+                        $('.lists').append(result);
+                        // 每次数据插入，必须重置
+                        me.resetload();
+                    },1000);
+                },
+                error: function(xhr, type){
+                    alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+            });
+        }
+    });*/
+});
+</script>
+</html>

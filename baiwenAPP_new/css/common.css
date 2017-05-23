@@ -1,0 +1,202 @@
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .head-box {
+    background: #f9f9f9;
+    height: 1.12rem;
+    line-height: 1.12rem;
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+}
+
+.header .ico-wrap {
+    width: 1.52rem;
+    text-align: center;
+}
+
+.header .title {
+    font-size: 0.426667rem;
+    color: #d33c3e;
+    font-family: 'siyuan';
+}
+
+.header .title span {
+    font-size: 0.4rem;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.12rem;
+    width: 0.826667rem;
+    text-align: center;
+}
+
+.header .title span.active {
+    color: #d33c3e;
+    position: relative;
+}
+
+.header .title span.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: auto;
+    width: 0.826667rem;
+    border: 1px solid #d33c3e;
+    z-index: 102;
+}
+
+.header .title .dot {
+    width: 6px;
+    height: 6px;
+    background: #2d2d2d;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 0.52rem;
+    display: inline-block;
+}
+
+.header .right-btn {
+    width: 1.24rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    position: absolute;
+    font-size: 0.426667rem;
+    color: #333;
+    right: 0;
+    top: 0;
+}
+
+.header .ico-wrap .back {
+    background: url(../images/back_03.png)no-repeat center center;
+    width: 0.426667rem;
+    display: inline-block;
+    height: 0.426667rem;
+    vertical-align: middle;
+    background-size: contain;
+}
+.header .logo .ico {
+    background: url(../images/logo.png)no-repeat;
+    width: 0.466667rem;
+    height: 0.813333rem;
+    background-size: contain;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .search-ico .ico {
+    background: url(../images/search-ico.png)no-repeat;
+    width: 0.453333rem;
+    height: 0.453333rem;
+    background-size: contain;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer .foot-box {
+    background: #fff;
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    /*两端对齐*/
+    -webkit-box-align: center;
+    padding: 0 0.4rem;
+}
+
+.footer .foot-box li .ico {
+    display: inline-block;
+}
+
+.footer .foot-box li .view-ico {
+    background: url(../images/f-shizheng-ico.png)no-repeat center center;
+    background-size: cover;
+    width: 0.573333rem;
+    height: 0.56rem;
+}
+
+.footer .foot-box li .bookstore-ico {
+    background: url(../images/f-book-ico.png)no-repeat center center;
+    background-size: cover;
+    width: 0.453333rem;
+    height: 0.573333rem;
+}
+
+.footer .foot-box li .book-frame-ico {
+    background: url(../images/f-bookframe-ico.png)no-repeat center center;
+    background-size: cover;
+    width: 0.493333rem;
+    height: 0.52rem;
+}
+.footer .foot-box li:nth-of-type(3).active .ico{
+       background: url(../images/book-fram-active.png)no-repeat center center;
+       background-size: cover;
+       width:0.52rem;
+       height:0.546667rem;
+}
+.footer .foot-box li:nth-of-type(1).active .ico{
+    background: url(../images/shizheng-active.png) no-repeat center center;
+    background-size: cover;
+    width:0.586667rem;
+    height:0.6rem;
+}
+.footer .foot-box li:nth-of-type(2).active .ico{
+    background: url(../images/book-active.png) no-repeat center center;
+    background-size: cover;
+    width:0.453333rem;
+    height:0.573333rem;
+}
+.footer .foot-box li:nth-of-type(4).active .ico{
+    background: url(../images/f-footer-active-ico_03.png) no-repeat center center;
+    background-size: cover;
+    width: 0.653333rem;
+    height: 0.52rem;
+    
+}
+.footer .foot-box li .person-ico {
+    background: url(../images/f-footer-ico.png)no-repeat center center;
+    background-size: cover;
+    width: 0.386667rem;
+    height: 0.546667rem;
+}
+
+.footer .foot-box li {
+    width: 25%;
+    text-align: center;
+    padding: 0.173333rem 0;
+}
+
+.footer .foot-box li p {
+    font-size: 0.32rem;
+    color: #333;
+    text-align: center;
+    line-height: 0.38rem;
+}
+
+/* 内容页留出上面的padding */
+.main {
+    padding-top: 1.173333rem;
+    padding-bottom: 1.4rem;
+}
+
+/* 思源字体 */
+@font-face {
+    font-family: 'siyuan';
+    src: url(../fonts/SourceHanSansCN-Normal.otf);
+}
