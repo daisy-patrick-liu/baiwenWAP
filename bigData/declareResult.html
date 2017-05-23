@@ -261,6 +261,123 @@
         Copyright © 2017. 国家大数据专业委员会
     </footer>
 </div>
+<div class="declareResult3" style="display: none;">
+    <header class="w1180 clearfix">
+        <div class="fl">
+            <img src="static/images/logo.png" alt="">
+        </div>
+        <div class="fr">
+            <div class="nav">
+                <a href="index.html">首页</a>
+                <a href="关于我们.html">关于我们</a>
+                <a href="公告动态.html">公告动态</a>
+                <a href="vipSearch.html">会员名录</a>
+                <a href="研究成果.html" class="active">研究成果</a>
+                <a href="会议活动.html">会议活动</a>
+                <a href="applyVip.html">申请加入</a>
+            </div>
+        </div>
+    </header>
+    <div class="content w1180 clearfix">
+        <p>成果申报</p>
+        <h2>申请流程</h2>
+        <div class="progress">
+            <div class="sb sb1">
+                <span></span>
+                <p>1..选择成果类型</p>
+            </div>
+        <span>
+
+        </span>
+            <div class="sb sb2">
+                <span></span>
+                <p>2.提交申请书</p>
+            </div>
+        <span>
+
+        </span>
+            <div class="sb sb3  active">
+                <span></span>
+                <p>3.资格评审</p>
+            </div>
+        <span>
+
+        </span>
+            <div class="sb sb4">
+                <span></span>
+                <p>4.签署协议 </p>
+            </div>
+        <span>
+
+        </span>
+            <div class="sb sb5">
+                <span></span>
+                <p>5.颁发证书</p>
+            </div>
+        </div>
+        <div class="result">
+            <div class="r2">
+                <span>资质正在评审,请等候官方通知...</span>
+                <div class="info">
+                    <label>申请类型：</label>
+                    <div>
+                        会员单位
+                    </div>
+                </div>
+                <div class="info">
+                    <label>申请文件：</label>
+                    <div>
+                        <img src="static/images/word.png" alt="img"/>
+                        <img src="static/images/word.png" alt="img"/>
+                        <img src="static/images/word.png" alt="img"/>
+                    </div>
+                </div>
+                <div class="info">
+                    <label>邮箱：</label>
+                    <div>
+                        <span>466458916@qq.com</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <label>手机：</label>
+                    <div>
+                        <span>13554322136</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <label>提示：</label>
+                    <div>
+                        若上述资料有误，请联系客服（QQ：466458916）修改，切勿重复提交！
+                    </div>
+                </div>
+            </div>
+            <a href="index.html">返回首页</a>
+        </div>
+        <div class="contact">
+            <div class="cell wechat">
+                <div class="qrcode" style="display: none;">
+                    <div class="clearfix">
+                        <div class="fl">
+                            <img src="static/images/qrcode.png" width="132" alt="">
+                        </div>
+                        <div class="fr">
+                            <p class="ttl">国家大数据微信公众号</p>
+                            <ul class="texts">
+                                <li>扫描二维码关注</li>
+                                <li>随时随地获取信息</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell qq"><a href="#"></a></div>
+            <div class="cell message" title="反馈"></div>
+        </div>
+    </div>
+    <footer>
+        Copyright © 2017. 国家大数据专业委员会
+    </footer>
+</div>
 </body>
 <script>
     $(function(){
@@ -268,6 +385,10 @@
             $(".declareResult:eq(0) button").click(function(){
                 $(".declareResult:eq(0)").css("display","none");
                 $(".declareResult:eq(1)").css("display","block");
+            });
+            $(".declareResult:eq(1) button").click(function(){
+                $(".declareResult:eq(1)").css("display","none");
+                $(".declareResult3").css("display","block");
             });
         })();
         $(".imgCont").hover(function(){
