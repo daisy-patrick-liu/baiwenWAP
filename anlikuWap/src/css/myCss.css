@@ -1,0 +1,77 @@
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family:"microsoft yahei";
+}
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-family:"microsoft yahei";
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {line-height: 1;}
+ol, ul {list-style: none; }
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {border-collapse: collapse;border-spacing: 0;}
+body, button, input, keygen, legend, select, textarea {
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    outline: 0;
+}
+del, ins, s, u {text-decoration: none;}
+img{border:0; vertical-align: middle;}
+.cjk_clear{clear: both; width: 0; height: 0;}
+/*以上cssreset部分*/
+
+body{background: rgb(248,248,248);}
+header{padding: 0 0.6rem 0 1.8rem; line-height: 1.7rem; color: white; font-size: 0.7rem; background-image: url("../img/logo.png"); background-position: 0.7rem center; background-size: 0.8rem 0.8rem;
+    background-repeat: no-repeat; background-color: rgb(70,70,70); overflow: hidden;}
+footer{font-size: 0.6rem; color: rgb(200,200,200); text-align: center; line-height: 2.5rem; background: rgb(248,248,248);}
+.content-block{padding: 0 0; margin: 0;}
+.cjk_fixed{display: block; width: 2rem; height: 2rem; border-radius: 1rem; background: rgba(0,0,0,0.4); position: absolute; right: 0.6rem; top: 3rem; background-image: url("../img/backtop.png");
+    background-position: center center; background-size: 0.8rem 0.8rem; background-repeat: no-repeat; z-index: 99999;}
+
+/*index页*/
+.cjk_reload{background-image: url("../img/reload.png"); display: block; width: 0.7rem; height: 0.7rem; background-position: center center; background-size: 0.7rem 0.7rem; float: right; margin:0.4rem 0.1rem;}
+.cjk_banner{width: 100%; height: 7rem; background:url("../img/bigbanner.png") no-repeat; background-size: 100% 100%; padding: 0.3rem 0.6rem;}
+.cjk_banner>span{display: block; float: right; height: 0.8rem; line-height: 0.8rem; font-size: 0.6rem; color: rgb(173,173,173);}
+.cjk_banner>span>img{display: block; width: 0.8rem; height: 0.8rem;}
+.cjk_banner>img{display: block; width: 4.3rem; height: 1.9rem; margin: 0 auto; margin-top: 1.5rem; margin-bottom: 0.6rem;}
+.cjk_search{width: 14.7rem; height: 1.8rem; line-height: 1.8rem; margin: 0 auto;}
+.cjk_search>input{float: left; display: block; width: 11.2rem; height: 100%; background: white; border: 0.05rem rgb(236,236,236) solid; border-right: none; font-size: 0.65rem; padding: 0 0.55rem;}
+.cjk_search>button{float: left; display: block; border: none; background: rgb(229,83,85); font-size: 0.7rem; width: 3.5rem; height: 100%; text-align: center; color: white;}
+.cjk_mybtn{display: block; width: 100%; height: 2.5rem; background: white; font-size: 0.8rem; color: rgb(56,56,56); padding: 0 0.6rem; border-bottom: 0.05rem rgb(246,246,246) solid;}
+.cjk_mybtn>img{width: auto; height: 0.9rem; display: inline-block; vertical-align: middle; line-height: 2.5rem;}
+.cjk_mybtn>p{display: inline-block; vertical-align: middle; padding-left: 0.8rem; width: 9.5rem; height: 2.5rem; line-height: 2.5rem; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}
+.cjk_mybtn>span{float: right; display: block; font-size: 0.6rem; color:rgb(190,190,190); height: 2.5rem; line-height: 2.5rem; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}
+.cjk_row{overflow: hidden;}
+.cjk_row>div{border-bottom: 0.05rem rgb(240,240,240) solid; border-right: 0.05rem rgb(240,240,240) solid; background: rgb(251,251,251); width: 33.333%; float: left; height: 2.1rem; line-height: 2.1rem; text-align: center;}
+.cjk_row>div:last-of-type{border-right: none;}
+.cjk_row>div>a{color: rgb(150,150,150); font-size: 0.65rem; display: block; width: 100%; height: 100%; padding: 0 0.3rem; text-align: center; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}

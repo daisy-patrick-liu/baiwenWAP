@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>案例库</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="author" content="案例库">
+    <meta name="keywords" content="案例库">
+    <meta name="description" content="案例库">
+    <meta name="generator" content="案例库">
+    <meta name="apple-mobile-web-app-title" content="案例库">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <link rel="shortcut icon" href="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <!--<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">-->
+    <link rel="stylesheet" href="build/css/myCss.min.css">
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current" id="index">
+        <div class="content">
+            <header>
+                {{header.text}}
+                <span class="cjk_reload"></span>
+            </header>
+            <div class="content-block">
+                <div class="cjk_banner">
+                    <span>
+                        <!--欧阳苹果-->
+                        <img src="build/img/huiyuan.png" alt="img"/>
+                    </span>
+                    <img src="build/img/banner.png" alt="img"/>
+                    <div class="cjk_search">
+                        <input type="text"/>
+                        <button>搜索</button>
+                        <div class="cjk_clear"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#result" class="cjk_mybtn" v-for="indexList in indexLists" v-bind:style="">
+                <img v-bind:src="indexList.bgUrl" alt="img"/>
+                <p>{{indexList.text}}</p>
+                <span>{{indexList.spText}}</span>
+                <div class="cjk_clear"></div>
+            </a>
+            <div class="cjk_row">
+                <div><a>充值</a></div>
+                <div><a href="#" class="open-cjk_login" v-else>登录</a><a v-if="cjk_row.isLogin">{{cjk_row.email}}</a></div>
+                <div><a v-if="cjk_row.isLogin">退出</a><a href="#" class="open-cjk_regist" v-else>注册</a></div>
+            </div>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+
+    <div class="page" id="result">
+        haha
+    </div>
+</div>
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<!--<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>-->
+<script type='text/javascript' src='build/js/index.min.js' charset='utf-8'></script>
+</body>
+</html>
