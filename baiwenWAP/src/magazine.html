@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta description="百问网">
+    <meta keywords="百问网">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/flexible.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../package/dropload/dropload.css">
+    <script src="../package/dropload/dropload.min.js"></script>
+    <title>百问网-杂志订阅</title>
+</head>
+
+<body class="subscribe">
+    <header>
+        <div class="header_box">
+            <h1>政务服务大数据</h1>
+            <i class="iconfont fix_r">&#xe603;</i>
+        </div>
+        <!-- 分享弹出层 -->
+        <div class="sharewrap">
+            <div class="share-to">
+                <div class="share-title">
+                    <p>分享到</p>
+                </div>
+                <div class="bdsharebuttonbox share-module">
+                    <a href="javascript:;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+                    <a href="javascript:;" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+                    <a href="javascript:;" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mask" style="display: none;"></div>
+    <div class="content_wrap">
+        <section class="list">
+            
+        </section>
+    </div>
+    <footer>
+        <div class="footerbox">
+            <a class="cell" href="index.html">
+                <p><i class="iconfont">&#xe634;</i></p>
+                <p>时政日报</p>
+            </a>
+            <a class="cell active" href="magazine.html">
+                <p><i class="iconfont">&#xe66e;</i></p>
+                <p>杂志订阅</p>
+            </a>
+            <a class="cell" href="contactus.html">
+                <p><i class="iconfont">&#xe6a3;</i></p>
+                <p>联系我们</p>
+            </a>
+        </div>
+    </footer>
+    <!-- 详情 -->
+    <div class="detail_sub" style="display: none;">
+        <header>
+            <div class="header_box">
+                <h1>
+                    <a href="javascript:$('.mask').hide();$('.sharewrap').removeClass('bounceInDown animated');$('.detail_sub').hide(); ">
+                        <i class="iconfont">&#xe604;</i>
+                        杂志详情
+                    </a>
+                </h1>
+                <i class="iconfont fix_r">&#xe603;</i>
+            </div>
+            <!-- 分享弹出层 -->
+            <div class="sharewrap">
+                <div class="share-to">
+                    <div class="share-title">
+                        <p>分享到</p>
+                    </div>
+                    <div class="bdsharebuttonbox share-module">
+                        <a href="javascript:;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+                        <a href="javascript:;" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+                        <a href="javascript:;" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mask" style="display: none;"></div>
+        <div class="content_wrap">
+            <img class="cover" src="../images/cover_large.jpg" alt="">
+            <div class="price_wrap">
+                <h1>网路理政新模式 蓟州打造智慧随手拍</h1>
+                <div class="price">￥100</div>
+            </div>
+            <div class="datas">
+                <span class="shipping">
+                    <i class="iconfont">&#xe62b;</i>
+                    运费：<span>免运费</span>
+                </span>
+                <div class="sales">
+                    <i class="iconfont">&#xe639;</i>
+                    销量：<span>529</span>
+                </div>
+            </div>
+            <button class="tobuy">立即购买</button>
+        </div>
+        <footer>
+            <div class="footerbox">
+                <a class="cell" href="index.html">
+                    <p><i class="iconfont">&#xe634;</i></p>
+                    <p>时政日报</p>
+                </a>
+                <a class="cell active" href="magazine.html">
+                    <p><i class="iconfont">&#xe66e;</i></p>
+                    <p>杂志订阅</p>
+                </a>
+                <a class="cell" href="contactus.html">
+                    <p><i class="iconfont">&#xe6a3;</i></p>
+                    <p>联系我们</p>
+                </a>
+            </div>
+        </footer>
+        <!-- 下载悬浮 -->
+        <div class="float_bar">
+            <div class="wrap">
+                <h1>百问在线</h1>
+                <h2>打开百问在线，掌握政务决策</h2>
+                <div class="abs">
+                    <button onclick="appdownload()">立即体验</button>
+                    <button id="closebar"><img src="../images/close_gray.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function openDetail(cover, name, sales) {
+        $(".detail_sub .cover").attr('src', cover);
+        $(".detail_sub .price_wrap h1").text(name);
+        $(".detail_sub .sales span").text(sales);
+        $(".mask").hide();
+        $(".detail_sub").fadeIn('200');
+    }
+    
+    $(".list a").on("touchstart", function() {
+        // 背景色
+        $(this).css('background-color', '#f7f7f7');
+    });
+    $(".list a").on("touchend", function() {
+        // 背景色
+        $(this).css('background-color', '#fff');
+    });
+
+    $(function() {
+
+        // dropload
+        // 页数
+    var page = 0;
+    // 每页展示7个
+    var size = 7;
+    $('.subscribe>.content_wrap').dropload({
+        scrollArea : window,
+        loadDownFn : function(me){
+            page++;
+            // 拼接HTML
+            var result = '';
+            var timestr = '';
+            $.ajax({
+                type: 'post',
+                url: 'http://172.16.8.123:8080/app/mag/getNewestMagList?page='+page+'&pageSize=' + size,
+                dataType: 'json',
+                success: function(data){
+                    var listData = data.resultData;
+                    var arrLen = listData.length;
+                    if(arrLen > 0){
+                        for(var i=0; i<arrLen; i++){
+                            timestr = formatDate(listData[i].createDate);
+                            // 取100-500的随机数
+                            let ran = getRandom(100,500);
+                            result += '<a href="javascript:;" onclick="openDetail(\''+listData[i].thumb+'\',\''+listData[i].name+'\','+ran+')">';
+                            // 第一条数据加最新标志
+                            if (i === 0 && page == 1) {
+                                result += '<div class="img_wrap newest" style="background-image: url('+listData[i].thumb+');"></div>';
+                            } else {
+                                result += '<div class="img_wrap" style="background-image: url('+listData[i].thumb+');"></div>';
+                            }
+                            result += 
+                            '<div class="desc">\
+                                <h2>'+listData[i].name+'</h2>\
+                                <ul class="texts">';
+                            for (let x=0; x<listData[i].contents; x++) {
+                                result += '<li>\
+                                        <div class="dot"></div>\
+                                        <span>'+listData[i].contents[x]+'</span>\
+                                    </li>';
+                            }
+                                    
+                                result += '</ul>\
+                                <div class="type_num">';
+                                let typestr = '';
+                                if (listData[i].type === 0) {
+                                    typestr = '应用版';
+                                } else {
+                                    typestr = '学术版';
+                                }
+                                    result += '<span class="type">类型：'+typestr+'</span>\
+                                    <span class="num">'+ran+'人已购买</span>\
+                                </div>\
+                            </div>\
+                        </a>';
+                        }
+                    // 如果没有数据
+                    }else{
+                        // 锁定
+                        me.lock();
+                        // 无数据
+                        me.noData();
+                    }
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        // 插入数据到页面，放到最后面
+                        $('.list').append(result);
+                        // 每次数据插入，必须重置
+                        me.resetload();
+                    },1000);
+
+                    
+        
+                },
+                error: function(xhr, type){
+                    //alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+            });
+        }
+    });
+
+    // 顶部悬浮条关闭
+        $("#closebar").on("touchend", function() {
+            $(".float_bar").slideUp(300);
+        });
+
+        // 生成min-max的随机数
+        function getRandom(min, max) {
+            let range = max-min;
+            let rand = Math.random();
+            return (min + Math.round(range * rand));
+        }
+
+        
+    });
+</script>
+</html>
