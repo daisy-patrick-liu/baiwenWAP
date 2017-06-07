@@ -207,7 +207,6 @@ footer{width: 100%; height: 46px; line-height: 0; text-align: center; font-size:
 	height: 32px;
 	line-height: 32px;
 	box-sizing: border-box;
-	background-image: url(../images/icn_sch.png);
 	background-repeat: no-repeat;
 	background-position: 140px center;
 	border: none;
@@ -216,6 +215,18 @@ footer{width: 100%; height: 46px; line-height: 0; text-align: center; font-size:
 	vertical-align: top;
 	padding-left: 20px;
 	padding-right: 30px;
+}
+.filter .sch_wrap {
+	position: relative;
+}
+.filter #btn_sch {
+	position: absolute;
+	width: 40px;
+	height: 32px;
+	right: 0;
+	top: 0;
+	background: url(../images/icn_sch.png) center no-repeat;
+	cursor: pointer;
 }
 /* 分页 */
 .pager {
