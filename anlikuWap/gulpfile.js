@@ -23,7 +23,7 @@ gulp.task('minifyjs2', function () {//压缩js库
         .pipe(gulp.dest('build/lab'))
 });
 //////////////////////////////////////
-gulp.task('concat1', function () {//合并分支任务1
+gulp.task('concat1', function () {//合并分支任务
     return gulp.src(['src/lab/vue.min.js','src/js/index.js'])
         .pipe(concat('all.js'))
         .pipe(rename('index.js'))

@@ -24,10 +24,10 @@
 <div class="page-group">
     <div class="page page-current" id="index">
         <div class="content">
-            <header>
+     <!--       <header>
                 {{header.text}}
                 <span class="cjk_reload"></span>
-            </header>
+            </header>-->
             <div class="content-block">
                 <div class="cjk_banner">
                     <span>
@@ -36,22 +36,22 @@
                     </span>
                     <img src="build/img/banner.png" alt="img"/>
                     <div class="cjk_search">
-                        <input type="text"/>
-                        <button>搜索</button>
+                        <input type="text" id="searchInput"/>
+                        <a v-bind:href="searchVal" v-on:touchstart="isSearch">搜索</a>
                         <div class="cjk_clear"></div>
                     </div>
                 </div>
             </div>
-            <a href="#result" class="cjk_mybtn" v-for="indexList in indexLists" v-bind:style="">
+            <a class="cjk_mybtn" v-for="indexList in indexLists" v-on:touchstart="sendMsg" v-bind:href="indexList.href">
                 <img v-bind:src="indexList.bgUrl" alt="img"/>
                 <p>{{indexList.text}}</p>
                 <span>{{indexList.spText}}</span>
                 <div class="cjk_clear"></div>
             </a>
             <div class="cjk_row">
-                <div><a>充值</a></div>
-                <div><a href="#" class="open-cjk_login" v-else>登录</a><a v-if="cjk_row.isLogin">{{cjk_row.email}}</a></div>
-                <div><a v-if="cjk_row.isLogin">退出</a><a href="#" class="open-cjk_regist" v-else>注册</a></div>
+                <div><a class="create-cjk_money">充值</a></div>
+                <div><a v-if="cjk_row.isLogin">{{cjk_row.email}}</a><a href="" class="create-cjk_login" v-else>登录</a></div>
+                <div><a v-if="cjk_row.isLogin" v-on:touchend="outU">退出</a><a href="" class="create-cjk_regist" v-else>注册</a></div>
             </div>
             <footer>2017©中国政府管理案例库编委会</footer>
             <span class="cjk_fixed" v-on:touchend="backTop"></span>
@@ -59,8 +59,340 @@
     </div>
 
     <div class="page" id="result">
-        haha
+        <div class="content" style="background: rgb(251,251,251);">
+            <div class="content-block">
+                <div class="cjk_resultT">
+                    <div class="cjk_searchLab">
+                        <img src="build/img/banner2.png" alt="img"/>
+                        <ul>
+                            <li v-for="searchLab in searchLabs" v-bind:class="searchLab.isAc">{{searchLab.text}}</li>
+                        </ul>
+                    </div>
+                    <div class="cjk_search" style="margin-bottom: 0.6rem;">
+                        <input type="text" v-bind:value="searchVal"/>
+                        <a>搜索</a>
+                        <div class="cjk_clear"></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="cjk_anli">
+                <li v-for="newList in newLists">
+                    <a v-bind:href="newList.url">
+                        {{newList.text}}
+                    </a>
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
     </div>
+
+    <div class="page" id="anliku">
+        <div class="content cjk_bgr">
+            <div class="cjk_topdiv">
+                <img v-bind:src="indexList.bgUrl" alt="img"/>
+                <p>{{indexList.text}}</p>
+                <span>{{indexList.spText}}</span>
+                <div class="cjk_clear"></div>
+            </div>
+            <ul class="cjk_anli">
+                <li v-for="newList in newLists">
+                    <a v-bind:href="newList.url" v-on:touchstart="getCont">
+                        {{newList.text}}
+                    </a>
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+
+    <div class="page" id="zq">
+        <div class="content cjk_bgr">
+            <div class="cjk_topdiv">
+                <img v-bind:src="indexList.bgUrl" alt="img"/>
+                <p>{{indexList.text}}</p>
+                <span>{{indexList.spText}}</span>
+                <div class="cjk_clear"></div>
+            </div>
+            <a class="cjk_title" href="#zqDetail" v-on:touchstart="gettop">
+                <span class="cjk_F"></span><span>{{title}}政情</span>
+            </a>
+            <div class="cjk_dsc">下属区域</div>
+            <ul class="cjk_zqli">
+                <li v-for="newList in newLists">
+                    <a v-bind:href="newList.url" v-on:touchstart="getTitle">
+                        <i>{{newList.text}}</i>
+                        <span>
+                            >
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+    <!--通用详情页-->
+    <div class="page" id="cdetail">
+        <div class="content">
+            <div class="cjk_detail">
+                <h3>{{content.title}}</h3>
+                <span>{{content.time}}</span><span>{{content.author}}</span>
+                <div class="cjk_detailcont" v-html="content.text"></div>
+                <button>阅读全文 (限会员)</button>
+            </div>
+            <ul class="cjk_detailList">
+                <div class="cjk_read">
+                    <span class="cjk_F"></span><span>延伸阅读</span>
+                </div>
+                <li v-for="newList in newLists">
+                    <a v-bind:href="newList.url">
+                        {{newList.text}}
+                    </a>
+                </li>
+                <a href="" class="cjk_hBack">返回上页</a>
+            </ul>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+    <!--通用详情页-->
+    <!--政情部分-->
+    <div class="page" id="zqDatabase">
+        <div class="content cjk_bgr">
+            <div class="cjk_topZq">
+                <p>< {{title}}</p>
+            </div>
+            <a href="#zqDetail" class="cjk_title" v-on:touchstart="getTitleText">
+                <span class="cjk_F"></span><span>{{title}}政情</span>
+            </a>
+            <div class="cjk_dsc">下属区域</div>
+            <ul class="cjk_zqli">
+                <li v-for="newList in newLists">
+                    <a v-bind:href="newList.url" v-on:touchstart="getText">
+                        <i>{{newList.text}}</i>
+                        <span>
+                            >
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+
+    <div class="page" id="zqDatabase2">
+        <div class="content cjk_bgr">
+            <div class="cjk_topZq">
+                <p>< {{title}}</p>
+            </div>
+            <a href="#zqDetail" class="cjk_title" v-on:touchstart="getTitleText">
+                <span class="cjk_F"></span><span>{{title2}}政情</span>
+            </a>
+            <div class="cjk_dsc">下属区域</div>
+            <ul class="cjk_zqli">
+                <li v-for="newList in newLists">
+                    <a v-bind:href="newList.url" v-on:touchstart="getText">
+                        <i>{{newList.text}}</i>
+                        <span>
+                            >
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+
+    <div class="page" id="zqDetail">
+        <div class="content cjk_bgr">
+            <div class="cjk_detail">
+                <div class="cjk_lastD">
+                    <span class="cjk_F"></span><span>{{title}}</span>
+                </div>
+                <span>{{content.time}}</span><span>{{content.author}}</span>
+                <div class="cjk_detailcont" v-html="content.text"></div>
+            </div>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+    <!--政情部分-->
+    <!--公务员部分-->
+    <div class="page" id="GWY">
+        <div class="content cjk_bgr">
+            <div class="cjk_topdiv">
+                <img v-bind:src="indexList.bgUrl" alt="img"/>
+                <p>{{indexList.text}}</p>
+                <span>{{indexList.spText}}</span>
+                <div class="cjk_clear"></div>
+            </div>
+            <ul class="cjk_anli">
+                <li v-for="newList in newLists">
+                    <a v-bind:href="newList.url" v-on:touchstart="getCont">
+                        <i>{{newList.text}}</i>
+                        <span>
+                            >
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+
+    <div class="page" id="GWY2">
+        <div class="content cjk_bgr">
+            <div class="cjk_topZq">
+                <p class="cjk_ll">< {{title}}</p>
+            </div>
+            <ul class="cjk_anli">
+                <li v-for="newList in newLists">
+                    <a v-bind:href="newList.url" v-on:touchstart="getCont">
+                        <i>{{newList.text}}</i>
+                        <span>
+                            {{newList.job}}
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+
+    <div class="page" id="perGWY">
+        <div class="content cjk_bgr">
+            <div class="cjk_topZq">
+                <p class="cjk_ll">< {{title}}</p>
+            </div>
+            <div class="cjk_gwyS">
+                <img v-bind:src="person.imgurl" alt="img"/>
+                <div>
+                    <h3>{{person.name}}</h3>
+                    <p>{{person.simple}}</p>
+                </div>
+            </div>
+            <div class="cjk_btnDiv">
+                <a class="cjk_mybtn2" v-for="indexList in indexLists" v-on:touchstart="getCont" v-bind:href="indexList.href">
+                    <img v-bind:src="indexList.bgUrl" alt="img"/>
+                    <p>{{indexList.text}}</p>
+                    <span>{{indexList.spText}}</span>
+                    <div class="cjk_clear"></div>
+                </a>
+            </div>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+
+    <div class="page" id="GWYmeeting">
+        <div class="content cjk_bgr">
+            <div class="cjk_topZq">
+                <p class="cjk_ll">< {{title}}</p>
+            </div>
+            <ul class="cjk_anli">
+                <li v-for="newList in newLists">
+                    <a v-bind:href="newList.url">
+                        <i>{{newList.text}}</i>
+                    </a>
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+
+    <div class="page" id="GWYinfo">
+        <div class="content cjk_bgr">
+            <div class="cjk_topZq">
+                <p class="cjk_ll">< {{title}}</p>
+            </div>
+            <ul class="cjk_infoLst"> 
+                <li v-for="infoLst in infoLsts">
+                    <span>{{infoLst.title}}</span>{{infoLst.cont}}
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+
+    <div class="page" id="GWYll">
+        <div class="content cjk_bgr">
+            <div class="cjk_topZq">
+                <p class="cjk_ll">< {{title}}</p>
+            </div>
+            <ul class="cjk_GWYll">
+                <li v-for="cont in conts">
+                    <span>{{cont.time}}</span>{{cont.text}}
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+
+    <div class="page" id="GWYyl">
+        <div class="content cjk_bgr">
+            <div class="cjk_topZq">
+                <p class="cjk_ll">< {{title}}</p>
+            </div>
+            <ul class="cjk_GWYyl">
+                <li v-for="cont in conts">
+                    <p>{{cont.text}}</p>
+                    <span>--{{cont.time}}</span>
+                </li>
+            </ul>
+            <span class="cjk_load"><img src="build/img/load.gif" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>加载更多</small></span>
+            <a href="" class="back cjk_back"><img src="build/img/back.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回上页</small></a>
+            <a href="javascript:void(0)" class="cjk_bindex" v-on:touchend="homeFun"><img src="build/img/home.png" alt="img" style="height: 0.7rem; vertical-align: middle; display: inline-block; margin:0 0.5rem 0.2rem 0;"/><small>返回首页</small></a>
+            <footer>2017©中国政府管理案例库编委会</footer>
+            <span class="cjk_fixed" v-on:touchend="backTop"></span>
+        </div>
+    </div>
+    <!--公务员部分-->
+</div>
 </div>
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>

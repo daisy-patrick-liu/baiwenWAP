@@ -57,6 +57,7 @@ footer{font-size: 0.6rem; color: rgb(200,200,200); text-align: center; line-heig
 .content-block{padding: 0 0; margin: 0;}
 .cjk_fixed{display: block; width: 2rem; height: 2rem; border-radius: 1rem; background: rgba(0,0,0,0.4); position: absolute; right: 0.6rem; top: 3rem; background-image: url("../img/backtop.png");
     background-position: center center; background-size: 0.8rem 0.8rem; background-repeat: no-repeat; z-index: 99999;}
+.cjk_bgr{background: rgb(248,248,248);}
 
 /*index页*/
 .cjk_reload{background-image: url("../img/reload.png"); display: block; width: 0.7rem; height: 0.7rem; background-position: center center; background-size: 0.7rem 0.7rem; float: right; margin:0.4rem 0.1rem;}
@@ -66,7 +67,7 @@ footer{font-size: 0.6rem; color: rgb(200,200,200); text-align: center; line-heig
 .cjk_banner>img{display: block; width: 4.3rem; height: 1.9rem; margin: 0 auto; margin-top: 1.5rem; margin-bottom: 0.6rem;}
 .cjk_search{width: 14.7rem; height: 1.8rem; line-height: 1.8rem; margin: 0 auto;}
 .cjk_search>input{float: left; display: block; width: 11.2rem; height: 100%; background: white; border: 0.05rem rgb(236,236,236) solid; border-right: none; font-size: 0.65rem; padding: 0 0.55rem;}
-.cjk_search>button{float: left; display: block; border: none; background: rgb(229,83,85); font-size: 0.7rem; width: 3.5rem; height: 100%; text-align: center; color: white;}
+.cjk_search>a{float: left; display: block; border: none; background: rgb(229,83,85); font-size: 0.7rem; width: 3.5rem; height: 100%; text-align: center; color: white;}
 .cjk_mybtn{display: block; width: 100%; height: 2.5rem; background: white; font-size: 0.8rem; color: rgb(56,56,56); padding: 0 0.6rem; border-bottom: 0.05rem rgb(246,246,246) solid;}
 .cjk_mybtn>img{width: auto; height: 0.9rem; display: inline-block; vertical-align: middle; line-height: 2.5rem;}
 .cjk_mybtn>p{display: inline-block; vertical-align: middle; padding-left: 0.8rem; width: 9.5rem; height: 2.5rem; line-height: 2.5rem; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}
@@ -75,3 +76,140 @@ footer{font-size: 0.6rem; color: rgb(200,200,200); text-align: center; line-heig
 .cjk_row>div{border-bottom: 0.05rem rgb(240,240,240) solid; border-right: 0.05rem rgb(240,240,240) solid; background: rgb(251,251,251); width: 33.333%; float: left; height: 2.1rem; line-height: 2.1rem; text-align: center;}
 .cjk_row>div:last-of-type{border-right: none;}
 .cjk_row>div>a{color: rgb(150,150,150); font-size: 0.65rem; display: block; width: 100%; height: 100%; padding: 0 0.3rem; text-align: center; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}
+
+.cjk_topdiv{display: block; width: 100%; height: 2.5rem; background: rgb(229,83,85); font-size: 0.8rem; color: white; padding: 0 0.6rem; border-bottom: 0.05rem rgb(246,246,246) solid;}
+.cjk_topdiv>img{width: auto; height: 0.9rem; display: inline-block; vertical-align: middle; line-height: 2.5rem;}
+.cjk_topdiv>p{display: inline-block; vertical-align: middle; padding-left: 0.8rem; width: 9.5rem; height: 2.5rem; line-height: 2.5rem; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}
+.cjk_topdiv>span{float: right; display: block; font-size: 0.6rem; color:white; height: 2.5rem; line-height: 2.5rem; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}
+.cjk_anli{border-bottom:0.05rem rgb(235,235,235) solid; border-top:0.05rem rgb(235,235,235) solid; padding: 0 0.6rem; box-sizing: border-box; margin-top: 0.2rem; background: white;}
+.cjk_anli>li{border-bottom:0.05rem rgb(235,235,235) solid;}
+.cjk_anli>li:last-of-type{border-bottom:none;}
+.cjk_anli>li>a{display: block; color: rgb(30,30,30); font-size: 0.65rem; height: 2rem; line-height: 2rem; background: url("../img/icn_dot.png") 0 center no-repeat; background-size: 0.1rem 0.1rem; padding-left: 0.6rem;}
+.cjk_load,.cjk_back,.cjk_bindex{display: block; width: 100%; height: 2.2rem; line-height: 2.2rem; text-align: center; color: rgb(30,30,30); font-size: 0.65rem; border-bottom:0.05rem rgb(235,235,235) solid; border-top:0.05rem rgb(235,235,235) solid;}
+.cjk_load{background: rgb(245,245,245);}
+
+.cjk_title{display: block; color: black; padding: 0 0.6rem; height: 2.5rem; line-height: 2.5rem; margin-top: 0.2rem; background: white; box-shadow: 0 0.1rem 0.2rem rgb(240,240,240),0 -0.1rem 0.2rem rgb(240,240,240);}
+.cjk_title>span{display:inline-block; vertical-align:middle; font-size: 0.8rem;}
+.cjk_title>span.cjk_F{border-left: 0.15rem rgb(229,83,85) solid; height: 0.6rem; margin-right: 0.4rem; margin-top: 0.1rem;}
+.cjk_dsc{padding: 0.2rem 0.6rem 0 0.6rem; height: 2rem; line-height: 1.8rem; font-size: 0.7rem; color: rgb(180,180,180);}
+.cjk_zqli{border-bottom:0.05rem rgb(235,235,235) solid; border-top:0.05rem rgb(235,235,235) solid; padding: 0 0.6rem; box-sizing: border-box; margin-top: 0.2rem; background: white;}
+.cjk_zqli>li{border-bottom:0.05rem rgb(235,235,235) solid;}
+.cjk_zqli>li:last-of-type{border-bottom:none;}
+.cjk_zqli>li>a{display: block; color: rgb(30,30,30); font-size: 0.65rem; height: 2rem; line-height: 2rem; background: url("../img/icn_dot.png") 0 center no-repeat; background-size: 0.1rem 0.1rem; padding-left: 0.6rem;}
+.cjk_zqli>li>a>span,.cjk_anli>li>a>span{float: right; color: rgb(180,180,180);}
+
+.cjk_resultT{background: rgb(251,251,251);}
+.cjk_searchLab{padding:0.6rem; overflow: hidden;}
+.cjk_searchLab>img{float: left; display: block; width: 4rem; height: 1.2rem;}
+.cjk_searchLab>ul{float: right; overflow: hidden; color: black;}
+.cjk_searchLab>ul>li{float: left; font-size: 0.7rem; margin-left: 0.45rem; box-sizing: border-box; padding-bottom: 0.35rem;}
+.cjk_searchLab>ul>li.cjk_active{color:rgb(229,83,85); border-bottom: 0.1rem rgb(229,83,85) solid;}
+
+.popup footer{background: none;}
+.cjk_form{ padding: 1rem 0.6rem;}
+.cjk_rT{overflow: hidden; margin-bottom: 2rem;}
+.cjk_rT>span{font-size: 0.7rem; display: block; line-height: 0.7rem; float: left; padding-left: 0.8rem; background: url(../img/regist.png) 0 center no-repeat; background-size: 0.6rem 0.6rem;}
+.cjk_rT>a{float: right; background: url(../img/shut.png) center center no-repeat; background-size: 100% 100%; display: block; width: 0.7rem; height: 0.7rem;}
+.cjk_form>input{width: 100%; height: 2.1rem; line-height: 2.1rem; font-size: 0.6rem; color: rgb(183,183,183); padding: 0 1.8rem 0 0.5rem; margin-bottom: 0.8rem; border:0.05rem rgb(238,238,238) solid;}
+.cjk_Ruser{background: url(../img/user.png) right center no-repeat; background-size:auto 0.8rem;}
+.cjk_Rpwd{background: url(../img/pwd.png) right center no-repeat; background-size:auto 0.8rem;}
+.cjk_Rpwd2{background: url(../img/pwd.png) right center no-repeat; background-size:auto 0.8rem;}
+.cjk_form>button{width: 100%; height: 2.1rem; line-height: 2.1rem; font-size: 0.8rem; color: white; margin-top: 1.7rem; background: rgb(229,83,85); text-align: center; border:none; border-radius: 0.1rem; margin-bottom: 4rem;}
+.cjk_link{text-align: center; color: rgb(30,30,30); font-size: 0.6rem; margin-bottom: 1.5rem;}
+.cjk_link>a{color: rgb(30,30,30); font-size: 0.6rem; margin: 0 0.4rem;}
+
+.cjk_lT{overflow: hidden; margin-bottom: 2rem;}
+.cjk_lT>span{font-size: 0.7rem; display: block; line-height: 0.7rem; float: left; padding-left: 0.8rem; background: url(../img/login.png) 0 center no-repeat; background-size: 0.6rem 0.6rem;}
+.cjk_lT>a{float: right; background: url(../img/shut.png) center center no-repeat; background-size: 100% 100%; display: block; width: 0.7rem; height: 0.7rem;}
+.cjk_luser{background: url(../img/user.png) right center no-repeat; background-size:auto 0.8rem;}
+.cjk_lpwd{background: url(../img/pwd.png) right center no-repeat; background-size:auto 0.8rem;}
+
+.cjk_code{overflow: hidden; margin-bottom: 2rem;}
+.cjk_code>span{font-size: 0.7rem; display: block; line-height: 0.7rem; float: left; padding-left: 0.8rem; background: url(../img/pwdr.png) 0 center no-repeat; background-size: 0.6rem 0.6rem;}
+.cjk_code>a{float: right; background: url(../img/shut.png) center center no-repeat; background-size: 100% 100%; display: block; width: 0.7rem; height: 0.7rem;}
+.cjk_codeInput{background: url(../img/code.png) right center no-repeat; background-size:auto 0.8rem;}
+.cjk_retime{width: 100%; height: 2.1rem; padding: 0 0.6rem; margin-bottom: 1rem;}
+.cjk_retime>span{display: block; width: 100%; height: 100%; line-height: 2.1rem; font-size: 0.8rem; color: rgb(30,30,30); margin-top: 1.7rem; background: #fafafa; text-align: center; border:0.05rem rgb(238,238,238) solid; border-radius: 0.1rem; margin-bottom: 4rem;}
+.cjk_retime>span>i{color: rgb(183,183,183); margin-left: 0.2rem;}
+
+.cjk_BT1{overflow: hidden; margin-bottom: 2rem;}
+.cjk_BT1>span{font-size: 0.7rem; display: block; line-height: 0.7rem; float: left; padding-left: 0.8rem; background: url(../img/pwdr.png) 0 center no-repeat; background-size: 0.6rem 0.6rem;}
+.cjk_BT1>a{float: right; background: url(../img/shut.png) center center no-repeat; background-size: 100% 100%; display: block; width: 0.7rem; height: 0.7rem;}
+.cjk_Buser{background: url(../img/user.png) right center no-repeat; background-size:auto 0.8rem;}
+p.cjk_b{width: 100%; height: 2.1rem; padding: 0 0.6rem; margin-bottom: 1rem;}
+p.cjk_b a{display: block; width: 100%; height: 100%; line-height: 2.1rem; font-size: 0.8rem; color: rgb(30,30,30); margin-top: 1.7rem; background: #fafafa; text-align: center; border:0.05rem rgb(238,238,238) solid; border-radius: 0.1rem; margin-bottom: 4rem;}
+
+.cjk_money{box-sizing: border-box; padding: 1rem 0.6rem;}
+.cjk_mc{overflow: hidden; margin-bottom: 2rem;}
+.cjk_mc>span{font-size: 0.7rem; display: block; line-height: 0.7rem; float: left; padding-left: 0.8rem; background: url(../img/money.png) 0 center no-repeat; background-size: 0.6rem 0.6rem;}
+.cjk_mc>a{float: right; background: url(../img/shut.png) center center no-repeat; background-size: 100% 100%; display: block; width: 0.7rem; height: 0.7rem;}
+.cjk_choose{display: block; width: 100%; height: 100%; line-height: 2.1rem; font-size: 0.7rem; color: rgb(183,183,183); text-align: center; border:0.05rem rgb(238,238,238) solid; border-radius: 0.1rem; margin-bottom: 0.8rem;}
+.cjk_choose.cjk_active{border-color: rgb(229,83,85); color: rgb(229,83,85);}
+.cjk_ZFB{display: block; width: 100%; height: 2.1rem; line-height: 2.1rem; font-size: 0.8rem; color: white; margin-top: 2.5rem; background: rgb(229,83,85); text-align: center; border:none; border-radius: 0.1rem; margin-bottom: 1rem;}
+.cjk_Ind{display: block; width: 100%; height: 100%; line-height: 2.1rem; font-size: 0.7rem; color: rgb(183,183,183); text-align: center; background: #fafafa; border:0.05rem rgb(238,238,238) solid; border-radius: 0.1rem;}
+
+
+
+.cjk_detail{padding: 0.6rem; background: white; padding-bottom: 1.3rem;}
+.cjk_detail>h3{ width: 100%; max-height: 2.8rem; line-height: 1.4rem;font-size: 0.8rem; color: black; overflow: hidden; margin-bottom: 0.2rem;}
+.cjk_detail>span{color: rgb(183,183,183); font-size: 0.6rem; margin-right: 0.7rem;}
+.cjk_detailcont{font-size: 0.7rem; color: rgb(30,30,30); line-height: 1.15rem; margin-top: 1rem; border-top: 0.05rem rgb(248,248,248) solid; padding-top: 0.7rem;}
+.cjk_detailcont>p{margin-bottom: 1.5rem;}
+.cjk_detail>button{display: block; width: 100%; height: 100%; line-height: 2.1rem; font-size: 0.7rem; color: rgb(229,83,85); text-align: center; background: #fafafa; border:0.05rem rgb(238,238,238) solid; border-radius: 0.1rem;}
+.cjk_detailList{border-bottom:0.05rem rgb(235,235,235) solid; border-top:0.05rem rgb(235,235,235) solid; padding: 0 0.6rem; box-sizing: border-box; margin-top: 0.05rem; background: white;}
+.cjk_detailList>li{border-bottom:0.05rem rgb(235,235,235) solid;}
+.cjk_detailList>li:last-of-type{border-bottom:none;}
+.cjk_detailList>li>a{display: block; color: rgb(30,30,30); font-size: 0.65rem; height: 2rem; line-height: 2rem; background: url("../img/icn_dot.png") 0 center no-repeat; background-size: 0.1rem 0.1rem; padding-left: 0.6rem;}
+.cjk_read{height: 1.6rem; line-height: 1.6rem; margin-top: 0.2rem; background: white;}
+.cjk_read>span{display:inline-block; vertical-align:middle; font-size: 0.8rem;}
+.cjk_read>span.cjk_F{border-left: 0.15rem rgb(229,83,85) solid; height: 0.6rem; margin-right: 0.4rem;}
+.cjk_hBack{display: block; width: 100%; height: 2.1rem; line-height: 2.1rem; font-size: 0.7rem; color: rgb(30,30,30); margin: 1.2rem 0; text-align: center; background: #fafafa; border:0.05rem rgb(238,238,238) solid; border-radius: 0.1rem;}
+
+.cjk_topZq{display: block; width: 100%; height: 2.5rem; background: rgb(229,83,85); font-size: 0.8rem; color: white; padding: 0 0.6rem; border-bottom: 0.05rem rgb(246,246,246) solid;}
+.cjk_topZq>p{display: inline-block; vertical-align: middle; width: 9.5rem; height: 2.5rem; line-height: 2.5rem; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}
+
+.cjk_lastD{display: block; color: black; height: 1.5rem; line-height: 1.5rem; background: white; margin-top: -0.6rem;}
+.cjk_lastD>span{display:inline-block; vertical-align:middle; font-size: 0.8rem;}
+.cjk_lastD>span.cjk_F{border-left: 0.15rem rgb(229,83,85) solid; height: 0.6rem; margin-right: 0.4rem; margin-top: 0.1rem;}
+
+.cjk_gwyS{padding: 0.7rem 0.6rem 1rem 0.6rem; overflow: hidden;}
+.cjk_gwyS>img{display: block; width: 15%; height: auto; float: left;}
+.cjk_gwyS>div{display: block; width: 80%; float: right; font-size: 0.6rem;}
+.cjk_gwyS>div>h3{font-size: 0.8rem; color: rgb(229,83,85); margin-bottom: 0.4rem;}
+.cjk_gwyS>div>p{line-height: 1rem; max-height: 3rem; overflow: hidden; color: rgb(183,183,183);}
+.cjk_btnDiv{background: white; padding: 0 0.6rem; border-top: 0.05rem #ebebeb solid;}
+.cjk_mybtn2{display: block; width: 100%; height: 2.5rem; background: white; font-size: 0.7rem; color: rgb(56,56,56); border-bottom: 0.05rem rgb(246,246,246) solid;}
+.cjk_mybtn2>img{width: auto; height: 0.9rem; display: inline-block; vertical-align: middle; line-height: 2.5rem;}
+.cjk_mybtn2>p{display: inline-block; vertical-align: middle; padding-left: 0.5rem; width: 9.5rem; height: 2.5rem; line-height: 2.5rem; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}
+.cjk_mybtn2>span{float: right; display: block; font-size: 0.9rem; color:rgb(190,190,190); height: 2.5rem; line-height: 2.5rem; overflow: hidden; text-overflow: ellipsis; word-break: break-all; white-space: nowrap;}
+.cjk_topZq>p.cjk_ll{width: 100%;}
+
+.cjk_infoLst{padding: 0 0.6rem; border-bottom: 0.05rem rgb(235,235,235) solid; border-top: 0.05rem rgb(235,235,235) solid; margin-top: 0.1rem;}
+.cjk_infoLst>li{font-size: 0.7rem; color: rgb(30,30,30); height: 2.5rem; line-height: 2.5rem; border-bottom: 0.05rem rgb(235,235,235) solid;}
+.cjk_infoLst>li:last-of-type{border-bottom:none;}
+.cjk_infoLst>li>span{ color: rgb(183,183,183); display: inline-block; width: 5rem;}
+
+.cjk_GWYll{padding: 0 0.6rem; border-bottom: 0.05rem rgb(235,235,235) solid; border-top: 0.05rem rgb(235,235,235) solid; margin-top: 0.1rem; padding-top: 1.5rem;}
+.cjk_GWYll>li{font-size: 0.7rem; color: rgb(30,30,30); line-height: 1rem; margin-bottom: 2rem; padding-left: 0.7rem; background: url("../img/circle.png") 0 0.3rem no-repeat; background-size: 0.3rem 0.3rem;}
+.cjk_GWYll>li>span{margin-right: 0.7rem;}
+
+.cjk_GWYyl{padding: 0 0.6rem; border-bottom: 0.05rem rgb(235,235,235) solid; border-top: 0.05rem rgb(235,235,235) solid; margin-top: 0.1rem;}
+.cjk_GWYyl>li{font-size: 0.7rem; line-height: 1.2rem; color: rgb(30,30,30); border-bottom: 0.05rem rgb(235,235,235) solid; padding-top: 0.8rem;}
+.cjk_GWYyl>li:last-of-type{border-bottom: none;}
+.cjk_GWYyl>li>span{font-size: 0.6rem; color: rgb(183,183,183); display: block; line-height: 3rem; text-align: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
