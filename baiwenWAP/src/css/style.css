@@ -335,8 +335,17 @@ footer .cell.active {
 .contact .qrcode_box .cell:first-child {
     margin-right: 0.866667rem;
 }
-.contact .qrcode_box img {
-    width: 100%;
+.contact .qrwrap {
+    height: 3.12rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact .qrwrap.ios {
+    background-image: url(../images/qrcode1.jpg);
+}
+.contact .qrwrap.android {
+    background-image: url(../images/qrcode2.jpg);
 }
 .contact .qrcode_box h2 {
     font-size: 0.4rem;
@@ -484,9 +493,16 @@ footer .cell.active {
     font-size: 0.32rem;
     color: #fff;
 }
-.float_bar .abs #closebar img {
-    width: 0.32rem;
-    height: 0.32rem;
+.float_bar .abs #closebar {
+    width: 0.8rem;
+    height: 0.72rem;
+    background-image: url(../images/close_03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.32rem;
+}
+.detail_sub .abs #closebar {
+    background-image: url(../images/close_gray.png);
 }
 
 /******************************* 杂志详情页 *******************************/

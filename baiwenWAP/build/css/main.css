@@ -2,7 +2,6 @@
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    overflow: hidden;
 }
 
 input[type=button] {
@@ -109,6 +108,49 @@ header .fix_r {
     font-size: 0.6rem;
 }
 /* 分享 */
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -1000px, 0);
+  }
+
+  /* 60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  
+  90% {
+    transform: translate3d(0, 5px, 0);
+  } */
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInDown {
+  animation-name: bounceInDown;
+}
+.animated {
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
 .mask {
     position: fixed;
     width: 100%;
@@ -116,6 +158,9 @@ header .fix_r {
     top: 0;
     z-index: 9;
     background-color: rgba(0,0,0,0.8);
+}
+.sharewrap {
+    transform: translate3d(0, -1000px, 0);
 }
 .sharewrap .share-to {
     background-color: #fff;
@@ -234,6 +279,24 @@ footer .cell.active {
     font-size: 0.32rem;
 }
 
+/* slideInRight 动画 */
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+}
+
+.slideInRight {
+    animation: slideInRight 300ms ease;
+    animation-fill-mode: both;
+}
+
 /********************** 联系我们 *******************/
 .contact #mapbox {
     height: 4.933333rem;
@@ -303,7 +366,7 @@ footer .cell.active {
     box-sizing: border-box;
 }
 .index .banner_wrap .title_wrap h1 {
-    font-size: 36px;
+    font-size: 0.48rem;
     color: #fff;
     margin-bottom: 0.08rem;
     line-height: 0.533333rem;
@@ -430,12 +493,29 @@ footer .cell.active {
 .detail {
     position: fixed;
     width: 100%;
-    /* height: 100%; */
+    min-height: 100%;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 11;
     background-color: #fff !important;
-    /* overflow: auto; */
+    visibility: hidden;
+    /* overflow: scroll; */
+}
+.detail .scroller-hook {
+    position: absolute;
+    top: 0.88rem;
+    width: 100%;
+    bottom: 1.266667rem;
+    -webkit-backface-visibility:hidden;  
+    -webkit-transform-style:preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.detail .scroller-hook .content_wrap {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .detail .titlebox {
     padding: 0.4rem;
@@ -462,6 +542,9 @@ footer .cell.active {
 }
 .detail article p {
     margin-bottom: 0.4rem;
+}
+.detail article img {
+    max-width: 100%;
 }
 
 /************************ 杂志订阅 *****************************/
@@ -558,11 +641,12 @@ footer .cell.active {
     background-color: #fff !important;
     position: fixed;
     width: 100%;
-    /* height: 100%; */
-    /* overflow: scroll; */
+    height: 100%;
+    overflow: scroll;
     top: 0;
     left: 0;
     z-index: 11;
+    -webkit-overflow-scrolling: touch;
 }
 .detail_sub .cover {
     display: block;
@@ -639,4 +723,54 @@ footer .cell.active {
 .detail_sub .float_bar .abs button {
     background-color: #f9f9f9;
     color: #d33c3e;
+}.dropload-up,.dropload-down{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    font-size: 12px;
+    /* 开启硬件加速 */
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0);
+}
+.dropload-down{
+    height: 50px;
+}
+.dropload-refresh,.dropload-update,.dropload-load,.dropload-noData{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.dropload-load .loading{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin: 6px;
+    border: 2px solid #666;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+    -webkit-animation: rotate 0.75s linear infinite;
+    animation: rotate 0.75s linear infinite;
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

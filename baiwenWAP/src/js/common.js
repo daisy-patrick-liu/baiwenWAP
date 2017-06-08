@@ -30,7 +30,7 @@ $(function() {
 		e.preventDefault();
 		$(this).hide();
 		$('.sharewrap').removeClass('bounceInDown animated');
-	})
+	});
 });
 
 // 时间戳处理
