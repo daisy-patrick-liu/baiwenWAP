@@ -90,15 +90,18 @@ var index=new Vue({
             var imgurl=ele.getElementsByTagName("img")[0].getAttribute("src");
             imgurl=imgurl.substring(0,imgurl.lastIndexOf(".png"));
             imgurl=imgurl+"r.png";
-            anliku.indexList.bgUrl=imgurl;
-            anliku.indexList.text=ele.getElementsByTagName("p")[0].textContent;
-            anliku.indexList.spText=ele.getElementsByTagName("span")[0].textContent;
-            zq.indexList.bgUrl=imgurl;
-            zq.indexList.text=ele.getElementsByTagName("p")[0].textContent;
-            zq.indexList.spText=ele.getElementsByTagName("span")[0].textContent;
-            GWY.indexList.bgUrl=imgurl;
-            GWY.indexList.text=ele.getElementsByTagName("p")[0].textContent;
-            GWY.indexList.spText=ele.getElementsByTagName("span")[0].textContent;
+            setCookie("index_bgUrl",imgurl);
+            setCookie("index_text",ele.getElementsByTagName("p")[0].textContent);
+            setCookie("index_spText",ele.getElementsByTagName("span")[0].textContent);
+            anliku.indexList.bgUrl=getCookie("index_bgUrl");
+            anliku.indexList.text=getCookie("index_text");
+            anliku.indexList.spText=getCookie("index_spText");
+            zq.indexList.bgUrl=getCookie("index_bgUrl");
+            zq.indexList.text=getCookie("index_text");
+            zq.indexList.spText=getCookie("index_spText");
+            GWY.indexList.bgUrl=getCookie("index_bgUrl");
+            GWY.indexList.text=getCookie("index_text");
+            GWY.indexList.spText=getCookie("index_spText");
         },
         isSearch:function(){
             var val=trim(document.getElementById("searchInput").value);
@@ -149,7 +152,8 @@ var anliku=new Vue({
         },
         getCont:function(event){
             var ele=event.currentTarget;
-            cdetail.content.title=ele.textContent;
+            setCookie("cdetail_t",ele.textContent);
+            cdetail.content.title=getCookie("cdetail_t");
         }
     },
     mounted:function(){
@@ -164,7 +168,7 @@ var anliku=new Vue({
     }
 });
 anliku.$watch("indexList.text",function(newVal, oldVal){//监听变化
-    if(newVal!="政情数据库"){
+    if(newVal!="政情数据库"&&newVal!="中国公务员信息库"){
         anliku.newLists=[//创建新列表数组
             {
                 url:"#cdetail",
@@ -186,6 +190,9 @@ anliku.$watch("indexList.text",function(newVal, oldVal){//监听变化
     }
 
 });
+anliku.indexList.bgUrl=getCookie("index_bgUrl");
+anliku.indexList.text=getCookie("index_text");
+anliku.indexList.spText=getCookie("index_spText");
 
 var cdetail=new Vue({
     el:'#cdetail',//详情页
@@ -235,6 +242,10 @@ var cdetail=new Vue({
         });
     }
 });
+cdetail.$watch("content.title",function(newVal, oldVal){//监听变化
+
+});
+cdetail.content.title=getCookie("cdetail_t");
 //、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、首页通用案例库部分
 //、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、政情数据库
 var zq=new Vue({
@@ -262,10 +273,13 @@ var zq=new Vue({
         },
         getTitle:function(event){
             var ele=event.currentTarget.getElementsByTagName("i")[0];
-            zqDatabase.title=ele.textContent;
+            setCookie("zqDatabase_t",ele.textContent);
+            zqDatabase.title=getCookie("zqDatabase_t");
         },
         gettop:function(){
-            det.title=this.title;
+            var tt=this.title;
+            setCookie("det_t",tt);
+            det.title=getCookie("det_t");
         }
     },
     mounted:function(){
@@ -301,6 +315,9 @@ zq.$watch("indexList.text",function(newVal, oldVal){//监听变化
         ];
     }
 });
+zq.indexList.bgUrl=getCookie("index_bgUrl");
+zq.indexList.text=getCookie("index_text");
+zq.indexList.spText=getCookie("index_spText");
 
 var zqDatabase=new Vue({
     el:'#zqDatabase',
@@ -350,11 +367,16 @@ var zqDatabase=new Vue({
         },
         getText:function(event){
             var ele=event.currentTarget.getElementsByTagName("i")[0];
-            zqDatabase2.title=this.title+" · "+ele.textContent;
-            zqDatabase2.title2=ele.textContent;
+            var t1=this.title+" · "+ele.textContent;
+            setCookie("zqDatabase2_t1",t1);
+            setCookie("zqDatabase2_t2",ele.textContent);
+            zqDatabase2.title=getCookie("zqDatabase2_t1");
+            zqDatabase2.title2=getCookie("zqDatabase2_t2");
         },
         getTitleText:function(){
-            det.title="中国 · "+this.title;
+            var t2="中国 · "+this.title;
+            setCookie("det_t",t2);
+            det.title=getCookie("det_t");
         }
     },
     mounted:function(){
@@ -367,6 +389,10 @@ var zqDatabase=new Vue({
         });
     }
 });
+zqDatabase.$watch("title",function(newVal, oldVal){//监听变化
+
+});
+zqDatabase.title=getCookie("zqDatabase_t");
 
 var zqDatabase2=new Vue({
     el:'#zqDatabase2',//详情页2
@@ -417,10 +443,14 @@ var zqDatabase2=new Vue({
         },
         getText:function(event){
             var ele=event.currentTarget.getElementsByTagName("i")[0];
-            det.title="中国 · "+this.title+" · "+ele.textContent;
+            var t1="中国 · "+this.title+" · "+ele.textContent;
+            setCookie("det_t",t1);
+            det.title=getCookie("det_t");
         },
         getTitleText:function(){
-            det.title="中国 · "+this.title;
+            var t2="中国 · "+this.title;
+            setCookie("det_t",t2);
+            det.title=getCookie("det_t");
         }
     },
     mounted:function(){
@@ -433,6 +463,11 @@ var zqDatabase2=new Vue({
         });
     }
 });
+zqDatabase2.$watch("title",function(newVal, oldVal){//监听变化
+
+});
+zqDatabase2.title=getCookie("zqDatabase2_t1");
+zqDatabase2.title2=getCookie("zqDatabase2_t2");
 
 var det=new Vue({
     el:'#zqDetail',//详情页2
@@ -467,6 +502,10 @@ var det=new Vue({
         });
     }
 });
+det.$watch("title",function(newVal, oldVal){//监听变化
+
+});
+det.title=getCookie("det_t");
 //、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、政情数据库
 //、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、公务员信息库
 var GWY=new Vue({
@@ -493,7 +532,8 @@ var GWY=new Vue({
         },
         getCont:function(event){
             var ele=event.currentTarget.getElementsByTagName("i")[0];
-            GWY2.title=ele.textContent;
+            setCookie("GWY2_t",ele.textContent);
+            GWY2.title=getCookie("GWY2_t");
         }
     },
     mounted:function(){
@@ -541,6 +581,9 @@ GWY.$watch("indexList.text",function(newVal, oldVal){//监听变化
         ];
     }
 });
+GWY.indexList.bgUrl=getCookie("index_bgUrl");
+GWY.indexList.text=getCookie("index_text");
+GWY.indexList.spText=getCookie("index_spText");
 
 var GWY2=new Vue({
     el:'#GWY2',
@@ -563,8 +606,11 @@ var GWY2=new Vue({
         },
         getCont:function(event){
             var ele=event.currentTarget.getElementsByTagName("i")[0];
-            perGWY.person.name=ele.textContent;
-            perGWY.title=this.title;
+            var t1=this.title;
+            setCookie("perGWY_n",ele.textContent);
+            setCookie("perGWY_title",t1);
+            perGWY.person.name=getCookie("perGWY_n");
+            perGWY.title=getCookie("perGWY_title");
         }
     },
     mounted:function(){
@@ -617,6 +663,7 @@ GWY2.$watch("title",function(newVal, oldVal){//监听变化
         }
     ];
 });
+GWY2.title=getCookie("GWY2_t");
 
 var perGWY=new Vue({
     el:'#perGWY',
@@ -693,10 +740,12 @@ var perGWY=new Vue({
         },
         getCont:function(event){
             var ele=event.currentTarget.getElementsByTagName("p")[0];
-            GWYmeeting.title=this.title+" · "+this.person.name+" · "+ele.textContent;
-            GWYinfo.title=this.title+" · "+this.person.name+" · "+ele.textContent;
-            GWYll.title=this.title+" · "+this.person.name+" · "+ele.textContent;
-            GWYyl.title=this.title+" · "+this.person.name+" · "+ele.textContent;
+            var t1=this.title+" · "+this.person.name+" · "+ele.textContent;
+            setCookie("perGWY_t",t1);
+            GWYmeeting.title=getCookie("perGWY_t");
+            GWYinfo.title=getCookie("perGWY_t");
+            GWYll.title=getCookie("perGWY_t");
+            GWYyl.title=getCookie("perGWY_t");
         }
     },
     mounted:function(){
@@ -714,6 +763,8 @@ perGWY.$watch("title",function(newVal, oldVal){//监听变化
     perGWY.person.imgurl="build/img/xidada.png";
     perGWY.person.simple="国家主席，军委主席等牛逼职业；国家主席，军委主席等牛逼职业；国家主席，军委主席等牛逼职业；国家主席，军委主席等牛逼职业；国家主席，军委主席等牛逼职业；";
 });
+perGWY.person.name=getCookie("perGWY_n");
+perGWY.title=getCookie("perGWY_title");
 
 var GWYmeeting=new Vue({
     el:'#GWYmeeting',
@@ -769,6 +820,7 @@ GWYmeeting.$watch("title",function(newVal, oldVal){//监听变化
         }
     ]
 });
+GWYmeeting.title=getCookie("perGWY_t");
 
 var GWYinfo=new Vue({
     el:'#GWYinfo',
@@ -848,6 +900,7 @@ GWYinfo.$watch("title",function(newVal, oldVal){//监听变化
         }
     ]
 });
+GWYinfo.title=getCookie("perGWY_t");
 
 var GWYll=new Vue({
     el:'#GWYll',
@@ -899,6 +952,7 @@ GWYll.$watch("title",function(newVal, oldVal){//监听变化
         }
     ]
 });
+GWYll.title=getCookie("perGWY_t");
 
 var GWYyl=new Vue({
     el:'#GWYyl',
@@ -950,6 +1004,7 @@ GWYyl.$watch("title",function(newVal, oldVal){//监听变化
         }
     ]
 });
+GWYyl.title=getCookie("perGWY_t");
 //、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、公务员信息库
 //、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、搜索结果
 var result=new Vue({
@@ -1029,6 +1084,39 @@ result.$watch("searchVal",function(newVal, oldVal){//监听变化
 
 function trim(str){ //删除左右两端的空格
     return str.replace(/(^\s*)|(\s*$)/g, "");
+}
+//创建cookies函数
+function setCookie(c_name,value,expiredays)
+{
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate()+expiredays);
+    document.cookie=c_name+ "=" +escape(value)+
+        ((expiredays==null) ? "" : ";expires="+exdate.toGMTString())+";path=/";
+}
+//获取cookies函数
+function getCookie(c_name)
+{
+    if (document.cookie.length>0)
+    {
+        c_start=document.cookie.indexOf(c_name + "=");
+        if (c_start!=-1)
+        {
+            c_start=c_start + c_name.length+1;
+            c_end=document.cookie.indexOf(";",c_start);
+            if (c_end==-1) c_end=document.cookie.length;
+            return unescape(document.cookie.substring(c_start,c_end))
+        }
+    }
+    return ""
+}
+//删除cookies
+function delCookie(name)
+{
+    var exp = new Date();
+    exp.setTime(exp.getTime() - 1);
+    var cval=getCookie(name);
+    if(cval!=null)
+        document.cookie= name + "="+cval+";expires="+exp.toGMTString()+";path=/";
 }
 
 (function(){//sui弹框popup部分js
