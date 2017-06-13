@@ -149,6 +149,8 @@
 <script type="text/javascript" src="/js/index.js"></script></body>
 <script>
     $(function() {
+        // 消除点击延迟
+        FastClick.attach(document.body);
         // 列表item触摸反馈：背景变色
         $(".list a").on("touchstart", function() {
             $(this).css('background-color', '#f7f7f7');
@@ -174,7 +176,7 @@
             $.ajax({
                 type: 'post',
                 async: false,
-                url: 'http://172.16.8.123:8080/app/politics/getNewestPoliticsList?page='+page+'&size='+size,
+                url: 'http://172.16.8.108:8081/app/politics/getNewestPoliticsList?page='+page+'&size='+size,
                 dataType: 'json',
                 success: function(data){
                     var listData = data.resultData;
@@ -210,6 +212,8 @@
                         // 每次数据插入，必须重置
                         me.resetload();
                     },1000);
+
+                    
                 },
                 error: function(xhr, type){
                     //alert('Ajax error!');
@@ -221,7 +225,7 @@
     });
 
     // 顶部banner数据替换
-    $.post('http://172.16.8.123:8080/app/politics/getNewestPoliticsList?page=1&pageSize=1', function(result){
+    $.post('http://172.16.8.108:8081/app/politics/getNewestPoliticsList?page=1&pageSize=1', function(result){
         let data = result.resultData[0];
         $(".banner_wrap").css('background-image', 'url('+data.cover+')');
         $(".banner_wrap").attr({
@@ -241,7 +245,7 @@
         $.ajax({
             type: 'post',
             async: false,
-            url: 'http://172.16.8.123:8080/app/politics/detail?politicsId=' + id,
+            url: 'http://172.16.8.108:8081/app/politics/detail?politicsId=' + id,
             dataType: 'json',
             success: function(data) {
                 var result = data.resultData;
@@ -268,6 +272,49 @@ function formatDate(time) {
     return(Y+M+D);
 }
 
+function isWeiXin(){
+        var ua = window.navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    function appdownload() {
+        if(isWeiXin()){     
+            window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.bwnews.online";
+        }
+        else{
+            var ua = navigator.userAgent.toLowerCase();
+            if (/iphone|ipad|ipod/.test(ua)) {
+                var loadDateTime = new Date();
+                window.setTimeout(function() {
+                    var timeOutDateTime = new Date();
+                    if (timeOutDateTime - loadDateTime < 3000) {
+                        window.location.href = "https://itunes.apple.com/app/id1146725552";//ios下载地址
+                    } else {
+                        window.close();
+                    }
+                },1500);
+                //window.location = "://";
+            } else if (/android/.test(ua)) {
+                try {
+                    var loadDateTime = new Date();
+                    //window.location = "://";
+                    setTimeout(function()
+                    {
+                        var timeOutDateTime = new Date();
+                        if (timeOutDateTime - loadDateTime < 1100) {
+                            window.location.href = "http://downloadpkg.apicloud.com/app/download?path=http://7ya5up.com1.z0.glb.clouddn.com/f2edf36b94767470f382ff8914ebe4a3_d"; //android下载地址
+                        } else {
+                            window.close();
+                        }
+                    },1000);
+                } catch(e) {}
+            }
+        } 
+    }
 /*new BScroll(document.getElementById('scroller-hook'), {
     probeType: 3
 });*/

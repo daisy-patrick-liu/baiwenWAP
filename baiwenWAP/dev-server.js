@@ -36,7 +36,7 @@ app.get('/:viewname?', function(req, res, next) {
 	});
 });
 
-module.exports = app.listen(8080, function(err) {
+module.exports = app.listen(9090, function(err) {
 	if (err) {
 		// do something
 		return;
